@@ -1,0 +1,1165 @@
+{
+  "category": "India Politics",
+  "levels": [
+    {
+      "level": 1,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "ip_1_1",
+          "question": "Who is known as the 'Father of the Indian Constitution'?",
+          "options": [
+            "Mahatma Gandhi",
+            "B.R. Ambedkar",
+            "Jawaharlal Nehru",
+            "Sardar Patel"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_1_2",
+          "question": "In which year did India become a Republic?",
+          "options": [
+            "1947",
+            "1948",
+            "1950",
+            "1952"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_1_3",
+          "question": "Who was India's first Prime Minister?",
+          "options": [
+            "Sardar Patel",
+            "B.R. Ambedkar",
+            "Rajendra Prasad",
+            "Jawaharlal Nehru"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ip_1_4",
+          "question": "The Rajya Sabha is also known as?",
+          "options": [
+            "House of the People",
+            "Council of States",
+            "Upper Council",
+            "Senate"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_1_5",
+          "question": "Who was the first President of India?",
+          "options": [
+            "S. Radhakrishnan",
+            "Rajendra Prasad",
+            "V.V. Giri",
+            "Zakir Husain"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_1_6",
+          "question": "How many Lok Sabha constituencies are there in India?",
+          "options": [
+            "530",
+            "543",
+            "552",
+            "560"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_1_7",
+          "question": "Who was the first woman Prime Minister of India?",
+          "options": [
+            "Sonia Gandhi",
+            "Pratibha Patil",
+            "Indira Gandhi",
+            "Sarojini Naidu"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_1_8",
+          "question": "Who appoints the Prime Minister of India?",
+          "options": [
+            "Parliament",
+            "Supreme Court",
+            "The President",
+            "Council of Ministers"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_1_9",
+          "question": "Which article of the Indian Constitution deals with the Right to Equality?",
+          "options": [
+            "Article 12",
+            "Article 14",
+            "Article 19",
+            "Article 21"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_1_10",
+          "question": "Who was the first woman President of India?",
+          "options": [
+            "Indira Gandhi",
+            "Sarojini Naidu",
+            "Sonia Gandhi",
+            "Pratibha Patil"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "ip_2_1",
+          "question": "How many articles did the original Indian Constitution have?",
+          "options": [
+            "356",
+            "375",
+            "395",
+            "444"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_2_2",
+          "question": "The term 'Secular' was added to the Preamble by which amendment?",
+          "options": [
+            "24th Amendment",
+            "38th Amendment",
+            "42nd Amendment",
+            "44th Amendment"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_2_3",
+          "question": "Which article of the Indian Constitution abolishes untouchability?",
+          "options": [
+            "Article 14",
+            "Article 17",
+            "Article 19",
+            "Article 21"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_2_4",
+          "question": "The Indian Constitution was adopted on?",
+          "options": [
+            "15 August 1947",
+            "26 January 1950",
+            "26 November 1949",
+            "2 October 1949"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_2_5",
+          "question": "Which house of Parliament can be dissolved by the President?",
+          "options": [
+            "Rajya Sabha",
+            "Lok Sabha",
+            "Both houses",
+            "Neither house"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_2_6",
+          "question": "The minimum age to become the Prime Minister of India is?",
+          "options": [
+            "21 years",
+            "25 years",
+            "30 years",
+            "35 years"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_2_7",
+          "question": "Who was the first Deputy Prime Minister of India?",
+          "options": [
+            "Jawaharlal Nehru",
+            "B.R. Ambedkar",
+            "Sardar Vallabhbhai Patel",
+            "Maulana Azad"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_2_8",
+          "question": "The Indian Parliament consists of how many houses?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_2_9",
+          "question": "Which article of the Constitution provides for the Right to Life?",
+          "options": [
+            "Article 14",
+            "Article 19",
+            "Article 21",
+            "Article 32"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_2_10",
+          "question": "The Lok Sabha members are elected for a term of?",
+          "options": [
+            "4 years",
+            "5 years",
+            "6 years",
+            "3 years"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "ip_3_1",
+          "question": "Who is the constitutional head of India?",
+          "options": [
+            "Prime Minister",
+            "Chief Justice",
+            "President",
+            "Speaker of Lok Sabha"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_3_2",
+          "question": "The Rajya Sabha consists of how many maximum members?",
+          "options": [
+            "238",
+            "245",
+            "250",
+            "252"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_3_3",
+          "question": "Which is the highest court in India?",
+          "options": [
+            "High Court",
+            "District Court",
+            "Supreme Court",
+            "National Court"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_3_4",
+          "question": "Who was the Chairman of the Constituent Assembly of India?",
+          "options": [
+            "B.R. Ambedkar",
+            "Jawaharlal Nehru",
+            "Rajendra Prasad",
+            "Sardar Patel"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_3_5",
+          "question": "Article 370 was related to which state?",
+          "options": [
+            "Punjab",
+            "Assam",
+            "Jammu and Kashmir",
+            "Himachal Pradesh"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_3_6",
+          "question": "Which is the national animal of India?",
+          "options": [
+            "Lion",
+            "Elephant",
+            "Bengal Tiger",
+            "Leopard"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_3_7",
+          "question": "The Election Commission of India is a?",
+          "options": [
+            "Constitutional body",
+            "Statutory body",
+            "Advisory body",
+            "Executive body"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ip_3_8",
+          "question": "The Indian National Congress was founded in?",
+          "options": [
+            "1857",
+            "1875",
+            "1885",
+            "1906"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_3_9",
+          "question": "Who was the first Chief Election Commissioner of India?",
+          "options": [
+            "T.N. Seshan",
+            "S.P. Sen Verma",
+            "Sukumar Sen",
+            "K.V.K. Sundaram"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_3_10",
+          "question": "The concept of 'Panchayati Raj' is related to?",
+          "options": [
+            "State government",
+            "Central government",
+            "Local self-government",
+            "Union territories"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "ip_4_1",
+          "question": "Which schedule of the Indian Constitution contains the list of states and union territories?",
+          "options": [
+            "First Schedule",
+            "Second Schedule",
+            "Third Schedule",
+            "Fourth Schedule"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ip_4_2",
+          "question": "The 73rd Constitutional Amendment Act relates to?",
+          "options": [
+            "Reservation for women",
+            "Panchayati Raj institutions",
+            "Right to Education",
+            "Urban local bodies"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_4_3",
+          "question": "The Comptroller and Auditor General of India submits reports to?",
+          "options": [
+            "Prime Minister",
+            "Parliament",
+            "President",
+            "Finance Minister"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_4_4",
+          "question": "Who presides over the joint sitting of Parliament?",
+          "options": [
+            "President",
+            "Speaker of Lok Sabha",
+            "Chairman of Rajya Sabha",
+            "Prime Minister"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_4_5",
+          "question": "The National Human Rights Commission was established in?",
+          "options": [
+            "1990",
+            "1991",
+            "1993",
+            "1995"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_4_6",
+          "question": "Who was the Prime Minister of India during the Emergency period (1975-77)?",
+          "options": [
+            "Rajiv Gandhi",
+            "Indira Gandhi",
+            "Morarji Desai",
+            "V.P. Singh"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_4_7",
+          "question": "The Directive Principles of State Policy are contained in which Part of the Constitution?",
+          "options": [
+            "Part III",
+            "Part IV",
+            "Part V",
+            "Part VI"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_4_8",
+          "question": "Which amendment gave constitutional status to Panchayati Raj?",
+          "options": [
+            "42nd Amendment",
+            "44th Amendment",
+            "73rd Amendment",
+            "86th Amendment"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_4_9",
+          "question": "The President of India can be removed from office by?",
+          "options": [
+            "Supreme Court",
+            "Prime Minister",
+            "Impeachment by Parliament",
+            "Council of Ministers"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_4_10",
+          "question": "Who has the power to declare a National Emergency in India?",
+          "options": [
+            "Prime Minister",
+            "Parliament",
+            "President",
+            "Cabinet"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "ip_5_1",
+          "question": "The Finance Commission of India is constituted every?",
+          "options": [
+            "3 years",
+            "4 years",
+            "5 years",
+            "6 years"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_5_2",
+          "question": "Which article deals with the amendment procedure of the Indian Constitution?",
+          "options": [
+            "Article 356",
+            "Article 368",
+            "Article 370",
+            "Article 352"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_5_3",
+          "question": "The concept of 'judicial review' is borrowed from which country?",
+          "options": [
+            "UK",
+            "USSR",
+            "USA",
+            "Canada"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_5_4",
+          "question": "Who was the first Lok Sabha Speaker?",
+          "options": [
+            "Hukum Singh",
+            "G.V. Mavalankar",
+            "M.A. Ayyangar",
+            "Sardar Hukum Singh"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_5_5",
+          "question": "The Indian Constitution is?",
+          "options": [
+            "Rigid",
+            "Flexible",
+            "Both rigid and flexible",
+            "Unwritten"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_5_6",
+          "question": "Which article of the Constitution defines India as a Union of States?",
+          "options": [
+            "Article 1",
+            "Article 2",
+            "Article 3",
+            "Article 4"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ip_5_7",
+          "question": "The Right to Information Act was passed in?",
+          "options": [
+            "2003",
+            "2004",
+            "2005",
+            "2006"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_5_8",
+          "question": "Who appoints the Chief Justice of India?",
+          "options": [
+            "Prime Minister",
+            "President",
+            "Parliament",
+            "Law Minister"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_5_9",
+          "question": "The Fundamental Rights in India are guaranteed under which Part?",
+          "options": [
+            "Part II",
+            "Part III",
+            "Part IV",
+            "Part V"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_5_10",
+          "question": "Which state was first to implement Panchayati Raj in India in 1959?",
+          "options": [
+            "Maharashtra",
+            "Gujarat",
+            "Rajasthan",
+            "Madhya Pradesh"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "ip_6_1",
+          "question": "The Inter-State Council was established under which article?",
+          "options": [
+            "Article 261",
+            "Article 263",
+            "Article 265",
+            "Article 267"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_6_2",
+          "question": "Who was the Prime Minister during the Kargil War (1999)?",
+          "options": [
+            "P.V. Narasimha Rao",
+            "H.D. Deve Gowda",
+            "Atal Bihari Vajpayee",
+            "I.K. Gujral"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_6_3",
+          "question": "The Ninth Schedule was added to the Constitution by which amendment?",
+          "options": [
+            "1st Amendment",
+            "7th Amendment",
+            "17th Amendment",
+            "24th Amendment"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ip_6_4",
+          "question": "Which article deals with the residuary powers of legislation?",
+          "options": [
+            "Article 246",
+            "Article 248",
+            "Article 249",
+            "Article 250"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_6_5",
+          "question": "The Planning Commission was replaced by which body?",
+          "options": [
+            "Finance Commission",
+            "NITI Aayog",
+            "Economic Advisory Council",
+            "National Planning Board"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_6_6",
+          "question": "The Indian Constitution borrows the concept of Fundamental Duties from which country?",
+          "options": [
+            "USA",
+            "UK",
+            "USSR",
+            "France"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_6_7",
+          "question": "Which amendment reduced the voting age from 21 to 18?",
+          "options": [
+            "42nd Amendment",
+            "44th Amendment",
+            "61st Amendment",
+            "73rd Amendment"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_6_8",
+          "question": "How long is the term of the President of India?",
+          "options": [
+            "4 years",
+            "5 years",
+            "6 years",
+            "Lifetime"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_6_9",
+          "question": "The Rajya Sabha is chaired by?",
+          "options": [
+            "President",
+            "Prime Minister",
+            "Vice President",
+            "Speaker"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_6_10",
+          "question": "Which committee recommended the formation of the Lok Pal?",
+          "options": [
+            "L.M. Singhvi Committee",
+            "Santhanam Committee",
+            "Sarkaria Commission",
+            "First ARC"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "ip_7_1",
+          "question": "The Preamble of the Indian Constitution declares India to be?",
+          "options": [
+            "Democratic Republic",
+            "Sovereign Socialist Secular Democratic Republic",
+            "Federal State",
+            "Parliamentary Democracy"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_7_2",
+          "question": "Which case established the 'Basic Structure' doctrine?",
+          "options": [
+            "Golaknath case",
+            "Kesavananda Bharati case",
+            "Maneka Gandhi case",
+            "Minerva Mills case"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_7_3",
+          "question": "The Constituent Assembly took how many years to draft the Constitution?",
+          "options": [
+            "1 year",
+            "2 years 11 months 18 days",
+            "3 years 6 months",
+            "4 years"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_7_4",
+          "question": "Article 32 of the Indian Constitution is related to?",
+          "options": [
+            "Right to Equality",
+            "Right to Freedom",
+            "Right to Constitutional Remedies",
+            "Right against Exploitation"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_7_5",
+          "question": "The Goods and Services Tax (GST) was implemented in India from?",
+          "options": [
+            "1 April 2016",
+            "1 July 2017",
+            "1 January 2018",
+            "1 April 2017"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_7_6",
+          "question": "Which article gives power to the President to impose President's Rule in a state?",
+          "options": [
+            "Article 352",
+            "Article 356",
+            "Article 360",
+            "Article 365"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_7_7",
+          "question": "The minimum age required to be a member of the Rajya Sabha is?",
+          "options": [
+            "21 years",
+            "25 years",
+            "30 years",
+            "35 years"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_7_8",
+          "question": "Who was the Chairman of the Drafting Committee of the Indian Constitution?",
+          "options": [
+            "Rajendra Prasad",
+            "Jawaharlal Nehru",
+            "B.R. Ambedkar",
+            "Sardar Patel"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_7_9",
+          "question": "The Speaker of the Lok Sabha is elected by?",
+          "options": [
+            "President",
+            "Members of Lok Sabha",
+            "Members of both Houses",
+            "Council of Ministers"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_7_10",
+          "question": "The National Commission for Scheduled Castes derives its powers from?",
+          "options": [
+            "Article 338",
+            "Article 340",
+            "Article 342",
+            "Article 350"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "ip_8_1",
+          "question": "Which case established that Parliament cannot abridge Fundamental Rights?",
+          "options": [
+            "Kesavananda Bharati",
+            "Golaknath v State of Punjab",
+            "A.K. Gopalan",
+            "Romesh Thappar"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_8_2",
+          "question": "The Seventh Schedule of the Constitution deals with?",
+          "options": [
+            "Languages",
+            "Forms of oaths",
+            "Distribution of legislative powers",
+            "Anti-defection law"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_8_3",
+          "question": "Which part of the Indian Constitution deals with 'Emergency Provisions'?",
+          "options": [
+            "Part XVI",
+            "Part XVII",
+            "Part XVIII",
+            "Part XIX"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_8_4",
+          "question": "The Anti-Defection Law was added to the Constitution by which amendment?",
+          "options": [
+            "42nd",
+            "44th",
+            "52nd",
+            "61st"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_8_5",
+          "question": "How many Fundamental Duties are there in the Indian Constitution?",
+          "options": [
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_8_6",
+          "question": "The concept of 'Concurrent List' in India's Constitution is borrowed from?",
+          "options": [
+            "USA",
+            "UK",
+            "Canada",
+            "Australia"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ip_8_7",
+          "question": "The Sarkaria Commission was set up to review?",
+          "options": [
+            "Electoral reforms",
+            "Centre-State relations",
+            "Judicial reforms",
+            "Administrative reforms"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_8_8",
+          "question": "Which article of the Constitution deals with Freedom of Press?",
+          "options": [
+            "Article 14",
+            "Article 16",
+            "Article 19(1)(a)",
+            "Article 21"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_8_9",
+          "question": "The Union Public Service Commission is established under which article?",
+          "options": [
+            "Article 308",
+            "Article 315",
+            "Article 320",
+            "Article 325"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_8_10",
+          "question": "In which year was the Representation of People Act passed?",
+          "options": [
+            "1947",
+            "1950",
+            "1951",
+            "1952"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "ip_9_1",
+          "question": "The writ of 'Mandamus' is issued to?",
+          "options": [
+            "Quash court proceedings",
+            "Direct a public authority to perform its duty",
+            "Produce a detained person",
+            "Prohibit lower court from exceeding jurisdiction"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_9_2",
+          "question": "Which schedule contains provisions regarding disqualification on grounds of defection?",
+          "options": [
+            "Eighth Schedule",
+            "Ninth Schedule",
+            "Tenth Schedule",
+            "Eleventh Schedule"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_9_3",
+          "question": "The doctrine of 'Colourable Legislation' implies?",
+          "options": [
+            "Legislation passed in good faith",
+            "Legislature does indirectly what it cannot do directly",
+            "Legislation with hidden meaning",
+            "Fiscal legislation"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_9_4",
+          "question": "The Lok Sabha can pass a vote of no confidence against the government by?",
+          "options": [
+            "2/3 majority",
+            "Simple majority",
+            "Absolute majority",
+            "3/4 majority"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_9_5",
+          "question": "Which Constitutional Amendment introduced the National Judicial Appointments Commission?",
+          "options": [
+            "98th Amendment",
+            "99th Amendment",
+            "100th Amendment",
+            "101st Amendment"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_9_6",
+          "question": "The 'Zero Hour' in Indian Parliament refers to?",
+          "options": [
+            "First hour of Parliament session",
+            "Time immediately after Question Hour",
+            "Last hour of Parliament session",
+            "Time for private member bills"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_9_7",
+          "question": "The National Emergency under Article 352 must be approved by Parliament within?",
+          "options": [
+            "15 days",
+            "30 days",
+            "60 days",
+            "90 days"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_9_8",
+          "question": "In which case did the Supreme Court rule that right to privacy is a fundamental right?",
+          "options": [
+            "Maneka Gandhi v Union of India",
+            "Justice K.S. Puttaswamy v Union of India",
+            "Navtej Singh Johar v Union of India",
+            "Shreya Singhal v Union of India"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_9_9",
+          "question": "The concept of 'Delegated Legislation' means?",
+          "options": [
+            "Laws made by states",
+            "Powers delegated to executive to make rules",
+            "Laws made by judiciary",
+            "Laws passed by local bodies"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_9_10",
+          "question": "Which article deals with the special status previously given to Jammu & Kashmir?",
+          "options": [
+            "Article 368",
+            "Article 370",
+            "Article 371",
+            "Article 374"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "ip_10_1",
+          "question": "The 'Doctrine of Eclipse' in constitutional law means?",
+          "options": [
+            "A law becomes void permanently",
+            "A pre-constitutional law inconsistent with FR becomes dormant",
+            "Supreme Court can ignore lower court decisions",
+            "Emergency powers eclipse normal rights"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_10_2",
+          "question": "Which article provides for the formation of new states?",
+          "options": [
+            "Article 1",
+            "Article 2",
+            "Article 3",
+            "Article 4"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_10_3",
+          "question": "The 'Doctrine of Prospective Overruling' was first applied in India in?",
+          "options": [
+            "Golaknath case",
+            "Kesavananda Bharati case",
+            "Minerva Mills case",
+            "I.R. Coelho case"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ip_10_4",
+          "question": "How many languages are listed in the Eighth Schedule of the Constitution?",
+          "options": [
+            "18",
+            "20",
+            "22",
+            "24"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_10_5",
+          "question": "The concept of 'Integrated audit' in India is carried out by?",
+          "options": [
+            "Finance Ministry",
+            "CAG of India",
+            "RBI",
+            "SEBI"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ip_10_6",
+          "question": "The first no-confidence motion in independent India was moved against the government of?",
+          "options": [
+            "Jawaharlal Nehru",
+            "Lal Bahadur Shastri",
+            "Indira Gandhi",
+            "Morarji Desai"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ip_10_7",
+          "question": "Which writ literally means 'you may have the body'?",
+          "options": [
+            "Mandamus",
+            "Prohibition",
+            "Certiorari",
+            "Habeas Corpus"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ip_10_8",
+          "question": "The concept of 'Judicial Activism' in India gained prominence in which decade?",
+          "options": [
+            "1960s",
+            "1970s",
+            "1980s",
+            "1990s"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_10_9",
+          "question": "Article 21A (Right to Education) was inserted by which amendment?",
+          "options": [
+            "82nd Amendment",
+            "84th Amendment",
+            "86th Amendment",
+            "88th Amendment"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ip_10_10",
+          "question": "Which commission recommended the three-tier Panchayati Raj system?",
+          "options": [
+            "Balwant Rai Mehta Committee",
+            "Ashok Mehta Committee",
+            "G.V.K. Rao Committee",
+            "L.M. Singhvi Committee"
+          ],
+          "correct": 0
+        }
+      ]
+    }
+  ]
+}

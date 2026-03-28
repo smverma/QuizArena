@@ -1,0 +1,1165 @@
+{
+  "category": "World History",
+  "levels": [
+    {
+      "level": 1,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "wh_1_1",
+          "question": "In which year did World War II end?",
+          "options": [
+            "1943",
+            "1944",
+            "1945",
+            "1946"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_1_2",
+          "question": "The French Revolution began in which year?",
+          "options": [
+            "1776",
+            "1789",
+            "1799",
+            "1815"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_1_3",
+          "question": "Who was the first President of the United States?",
+          "options": [
+            "John Adams",
+            "Thomas Jefferson",
+            "Benjamin Franklin",
+            "George Washington"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wh_1_4",
+          "question": "The Berlin Wall fell in which year?",
+          "options": [
+            "1987",
+            "1988",
+            "1989",
+            "1991"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_1_5",
+          "question": "Who was known as the 'Iron Lady'?",
+          "options": [
+            "Angela Merkel",
+            "Margaret Thatcher",
+            "Indira Gandhi",
+            "Golda Meir"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_1_6",
+          "question": "Christopher Columbus arrived in the Americas in?",
+          "options": [
+            "1488",
+            "1490",
+            "1492",
+            "1498"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_1_7",
+          "question": "Who was the first person to walk on the Moon?",
+          "options": [
+            "Buzz Aldrin",
+            "Yuri Gagarin",
+            "John Glenn",
+            "Neil Armstrong"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wh_1_8",
+          "question": "The Battle of Waterloo took place in which year?",
+          "options": [
+            "1812",
+            "1813",
+            "1814",
+            "1815"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wh_1_9",
+          "question": "World War I started in which year?",
+          "options": [
+            "1912",
+            "1914",
+            "1916",
+            "1918"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_1_10",
+          "question": "Nelson Mandela was president of which country?",
+          "options": [
+            "Zimbabwe",
+            "Kenya",
+            "Nigeria",
+            "South Africa"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "wh_2_1",
+          "question": "The Roman Empire fell in which year?",
+          "options": [
+            "410 AD",
+            "455 AD",
+            "476 AD",
+            "500 AD"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_2_2",
+          "question": "Mahatma Gandhi was assassinated in which year?",
+          "options": [
+            "1946",
+            "1947",
+            "1948",
+            "1950"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_2_3",
+          "question": "The American Declaration of Independence was signed in?",
+          "options": [
+            "1774",
+            "1776",
+            "1778",
+            "1781"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_2_4",
+          "question": "The atomic bomb was first used in warfare in which year?",
+          "options": [
+            "1943",
+            "1944",
+            "1945",
+            "1946"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_2_5",
+          "question": "Who discovered America (Europeans) in 1492?",
+          "options": [
+            "Vasco da Gama",
+            "Ferdinand Magellan",
+            "Christopher Columbus",
+            "Amerigo Vespucci"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_2_6",
+          "question": "The Cold War was primarily between which two superpowers?",
+          "options": [
+            "USA and China",
+            "USA and USSR",
+            "UK and USSR",
+            "USA and Germany"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_2_7",
+          "question": "The Renaissance originated in which country?",
+          "options": [
+            "France",
+            "England",
+            "Germany",
+            "Italy"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wh_2_8",
+          "question": "Adolf Hitler became Chancellor of Germany in?",
+          "options": [
+            "1930",
+            "1932",
+            "1933",
+            "1935"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_2_9",
+          "question": "The Magna Carta was signed in which year?",
+          "options": [
+            "1106",
+            "1215",
+            "1265",
+            "1350"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_2_10",
+          "question": "The United Nations was founded in?",
+          "options": [
+            "1944",
+            "1945",
+            "1946",
+            "1947"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "wh_3_1",
+          "question": "Who was the leader of Nazi Germany during World War II?",
+          "options": [
+            "Heinrich Himmler",
+            "Hermann G\u00f6ring",
+            "Adolf Hitler",
+            "Joseph Goebbels"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_3_2",
+          "question": "The Titanic sank in which year?",
+          "options": [
+            "1910",
+            "1911",
+            "1912",
+            "1914"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_3_3",
+          "question": "Which ancient wonder of the world still exists today?",
+          "options": [
+            "Hanging Gardens of Babylon",
+            "Great Pyramid of Giza",
+            "Colossus of Rhodes",
+            "Lighthouse of Alexandria"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_3_4",
+          "question": "India gained independence from Britain in?",
+          "options": [
+            "1945",
+            "1946",
+            "1947",
+            "1948"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_3_5",
+          "question": "The first successful powered flight was made by the Wright Brothers in?",
+          "options": [
+            "1900",
+            "1901",
+            "1903",
+            "1905"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_3_6",
+          "question": "Which empire was ruled by Genghis Khan?",
+          "options": [
+            "Ottoman Empire",
+            "Mongol Empire",
+            "Mughal Empire",
+            "Persian Empire"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_3_7",
+          "question": "The ancient city of Pompeii was destroyed by which volcano?",
+          "options": [
+            "Vesuvius",
+            "Etna",
+            "Stromboli",
+            "Santorini"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wh_3_8",
+          "question": "The Russian Revolution took place in which year?",
+          "options": [
+            "1915",
+            "1916",
+            "1917",
+            "1918"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_3_9",
+          "question": "Who was the first female Prime Minister of the United Kingdom?",
+          "options": [
+            "Teresa May",
+            "Theresa May",
+            "Margaret Thatcher",
+            "Elizabeth II"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_3_10",
+          "question": "The partition of India (1947) resulted in the creation of which two countries?",
+          "options": [
+            "India and Bangladesh",
+            "India and Pakistan",
+            "India and Sri Lanka",
+            "India and Nepal"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "wh_4_1",
+          "question": "The assassination of Archduke Franz Ferdinand in 1914 triggered which war?",
+          "options": [
+            "World War II",
+            "Austro-Prussian War",
+            "World War I",
+            "Balkan War"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_4_2",
+          "question": "The 'Hundred Years War' was fought between which countries?",
+          "options": [
+            "England and Spain",
+            "France and Germany",
+            "England and France",
+            "Spain and France"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_4_3",
+          "question": "The Opium Wars were fought between China and?",
+          "options": [
+            "France",
+            "Russia",
+            "United Kingdom",
+            "Japan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_4_4",
+          "question": "The Treaty of Versailles officially ended which war?",
+          "options": [
+            "Crimean War",
+            "American Civil War",
+            "World War II",
+            "World War I"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wh_4_5",
+          "question": "Napoleon Bonaparte was exiled to which island?",
+          "options": [
+            "Corsica",
+            "Elba",
+            "Saint Helena",
+            "Malta"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_4_6",
+          "question": "The Cuban Missile Crisis occurred in which year?",
+          "options": [
+            "1960",
+            "1961",
+            "1962",
+            "1963"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_4_7",
+          "question": "The Holocaust resulted in the systematic murder of how many Jews?",
+          "options": [
+            "3 million",
+            "4 million",
+            "6 million",
+            "8 million"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_4_8",
+          "question": "Which country was partitioned into North and South in 1953?",
+          "options": [
+            "Vietnam",
+            "Korea",
+            "Germany",
+            "China"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_4_9",
+          "question": "The Suez Crisis of 1956 involved the nationalization of the Suez Canal by?",
+          "options": [
+            "Israel",
+            "Egypt",
+            "Jordan",
+            "Saudi Arabia"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_4_10",
+          "question": "The 'Long March' (1934-35) was a military retreat by which army?",
+          "options": [
+            "Japanese Imperial Army",
+            "Soviet Red Army",
+            "Chinese Communist Army",
+            "Vietnamese People's Army"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "wh_5_1",
+          "question": "The Black Death (plague) that devastated Europe was in the?",
+          "options": [
+            "13th century",
+            "14th century",
+            "15th century",
+            "16th century"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_5_2",
+          "question": "Which empire was the largest contiguous empire in history?",
+          "options": [
+            "Roman Empire",
+            "Mongol Empire",
+            "British Empire",
+            "Ottoman Empire"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_5_3",
+          "question": "The Boston Tea Party of 1773 was a protest against?",
+          "options": [
+            "Sugar taxes",
+            "Stamp Act",
+            "Taxation without representation (tea tax)",
+            "Import duties"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_5_4",
+          "question": "The Korean War ended in which year?",
+          "options": [
+            "1950",
+            "1951",
+            "1953",
+            "1955"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_5_5",
+          "question": "The 'Scramble for Africa' refers to the period when European powers?",
+          "options": [
+            "Explored Africa",
+            "Colonized Africa in the 1880s-1900s",
+            "Traded in Africa",
+            "Built railways in Africa"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_5_6",
+          "question": "Who wrote 'The Communist Manifesto'?",
+          "options": [
+            "Vladimir Lenin",
+            "Leon Trotsky",
+            "Karl Marx and Friedrich Engels",
+            "Friedrich Engels alone"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_5_7",
+          "question": "The Meiji Restoration in Japan occurred in which year?",
+          "options": [
+            "1848",
+            "1858",
+            "1868",
+            "1878"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_5_8",
+          "question": "The Soviet Union officially dissolved in which year?",
+          "options": [
+            "1989",
+            "1990",
+            "1991",
+            "1992"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_5_9",
+          "question": "Which civilization built Machu Picchu?",
+          "options": [
+            "Aztec",
+            "Maya",
+            "Inca",
+            "Olmec"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_5_10",
+          "question": "The Thirty Years War (1618-1648) was primarily fought in?",
+          "options": [
+            "France",
+            "Central Europe (Holy Roman Empire)",
+            "Italy",
+            "Eastern Europe"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "wh_6_1",
+          "question": "The Rwandan Genocide occurred in which year?",
+          "options": [
+            "1990",
+            "1992",
+            "1994",
+            "1996"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_6_2",
+          "question": "The Gulf War (1990-91) was triggered by Iraq's invasion of?",
+          "options": [
+            "Saudi Arabia",
+            "Iran",
+            "Kuwait",
+            "Jordan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_6_3",
+          "question": "Which empire did Alexander the Great build?",
+          "options": [
+            "Roman Empire",
+            "Macedonian/Hellenistic Empire",
+            "Persian Empire",
+            "Greek city-states"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_6_4",
+          "question": "The Partition of Bengal (1905) was ordered by which British Viceroy?",
+          "options": [
+            "Lord Curzon",
+            "Lord Dalhousie",
+            "Lord Mountbatten",
+            "Lord Ripon"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wh_6_5",
+          "question": "In which year did China become the People's Republic of China?",
+          "options": [
+            "1947",
+            "1948",
+            "1949",
+            "1950"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_6_6",
+          "question": "The Nuremberg Trials were conducted after which event?",
+          "options": [
+            "World War I",
+            "Korean War",
+            "World War II",
+            "Cold War"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_6_7",
+          "question": "The 'Reconquista' refers to the Christian reconquest of which peninsula?",
+          "options": [
+            "Italian Peninsula",
+            "Scandinavian Peninsula",
+            "Balkan Peninsula",
+            "Iberian Peninsula"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wh_6_8",
+          "question": "In which year did apartheid officially end in South Africa?",
+          "options": [
+            "1990",
+            "1992",
+            "1994",
+            "1996"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_6_9",
+          "question": "The Indian National Army (INA) was led by?",
+          "options": [
+            "Bhagat Singh",
+            "Subhash Chandra Bose",
+            "Bal Gangadhar Tilak",
+            "Lala Lajpat Rai"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_6_10",
+          "question": "The Silk Road connected which two regions?",
+          "options": [
+            "Europe and Africa",
+            "China and the Mediterranean (Europe)",
+            "India and China",
+            "Africa and Asia"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "wh_7_1",
+          "question": "The Peloponnesian War was fought between which two Greek city-states?",
+          "options": [
+            "Athens and Thebes",
+            "Sparta and Corinth",
+            "Athens and Sparta",
+            "Thebes and Sparta"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_7_2",
+          "question": "Who established the Gupta Empire in India?",
+          "options": [
+            "Chandragupta Maurya",
+            "Ashoka",
+            "Sri Gupta",
+            "Chandragupta I"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wh_7_3",
+          "question": "The Aztec Empire was conquered by?",
+          "options": [
+            "Francisco Pizarro",
+            "Vasco de Gama",
+            "Hern\u00e1n Cort\u00e9s",
+            "Christopher Columbus"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_7_4",
+          "question": "The Sputnik satellite was launched by which country in 1957?",
+          "options": [
+            "USA",
+            "Germany",
+            "China",
+            "USSR"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wh_7_5",
+          "question": "The 'Night of the Long Knives' (1934) occurred in which country?",
+          "options": [
+            "Italy",
+            "Spain",
+            "Germany",
+            "Austria"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_7_6",
+          "question": "The Defenestration of Prague (1618) triggered which war?",
+          "options": [
+            "Thirty Years War",
+            "Seven Years War",
+            "Hundred Years War",
+            "War of Austrian Succession"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wh_7_7",
+          "question": "Cleopatra was the queen of which ancient civilization?",
+          "options": [
+            "Roman Empire",
+            "Carthage",
+            "Egypt (Ptolemaic)",
+            "Greece"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_7_8",
+          "question": "The Battle of Plassey (1757) established British rule in?",
+          "options": [
+            "Madras",
+            "Bombay",
+            "Bengal",
+            "Delhi"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_7_9",
+          "question": "The Paris Commune of 1871 lasted for approximately?",
+          "options": [
+            "3 weeks",
+            "72 days",
+            "6 months",
+            "1 year"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_7_10",
+          "question": "Galileo Galilei was forced to recant his heliocentric theory by which institution?",
+          "options": [
+            "Protestant Church",
+            "Roman Catholic Inquisition",
+            "Ottoman Empire",
+            "English Crown"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "wh_8_1",
+          "question": "The Zimmermann Telegram (1917) was sent by Germany to which country?",
+          "options": [
+            "Austria-Hungary",
+            "Mexico",
+            "Japan",
+            "Ottoman Empire"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_8_2",
+          "question": "The Sykes-Picot Agreement (1916) divided which region between UK and France?",
+          "options": [
+            "Sub-Saharan Africa",
+            "Middle East",
+            "Indian subcontinent",
+            "Southeast Asia"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_8_3",
+          "question": "The 'Scramble for Africa' was formalized at which conference?",
+          "options": [
+            "Paris Conference 1856",
+            "Berlin Conference 1884-85",
+            "Congress of Vienna 1815",
+            "Versailles Conference 1919"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_8_4",
+          "question": "The Tanzimat reforms in the 19th century were undertaken by?",
+          "options": [
+            "Egyptian Khedives",
+            "Persian Qajar dynasty",
+            "Ottoman Empire",
+            "Russian Tsars"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_8_5",
+          "question": "Which battle marked the end of Napoleon's Hundred Days?",
+          "options": [
+            "Battle of Leipzig",
+            "Battle of Austerlitz",
+            "Battle of Waterloo",
+            "Battle of Borodino"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_8_6",
+          "question": "The 'White Terror' (1919-1921) refers to anti-communist violence in?",
+          "options": [
+            "Germany and Hungary",
+            "Russia and Eastern Europe",
+            "China and Korea",
+            "Spain and Italy"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_8_7",
+          "question": "Kautilya's 'Arthashastra' was written during the reign of?",
+          "options": [
+            "Ashoka",
+            "Chandragupta Maurya",
+            "Samudragupta",
+            "Kanishka"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_8_8",
+          "question": "The Balfour Declaration (1917) supported the establishment of a Jewish homeland in?",
+          "options": [
+            "Syria",
+            "Jordan",
+            "Palestine",
+            "Iraq"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_8_9",
+          "question": "The 'Iron Curtain' speech was delivered by?",
+          "options": [
+            "Harry Truman",
+            "George Marshall",
+            "Winston Churchill",
+            "Dwight Eisenhower"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_8_10",
+          "question": "The Mongol invasion of Europe reached its westernmost point at?",
+          "options": [
+            "Paris, France",
+            "Vienna, Austria",
+            "Poland and Hungary",
+            "The Rhine River"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "wh_9_1",
+          "question": "The 'War of Spanish Succession' (1701-14) was triggered by the death of?",
+          "options": [
+            "Philip IV of Spain",
+            "Carlos II of Spain",
+            "Ferdinand of Aragon",
+            "Philip V of Spain"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_9_2",
+          "question": "The Safavid dynasty ruled which empire?",
+          "options": [
+            "Ottoman Empire",
+            "Mughal Empire",
+            "Persian Empire",
+            "Timurid Empire"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_9_3",
+          "question": "The 'Scramble for Africa' began after which exploration?",
+          "options": [
+            "Livingstone's exploration",
+            "Stanley's exploration of Congo",
+            "Speke's discovery of Lake Victoria",
+            "Berlin Conference outcomes"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wh_9_4",
+          "question": "The Lateran Treaty (1929) established the independence of?",
+          "options": [
+            "San Marino",
+            "Vatican City",
+            "Monaco",
+            "Liechtenstein"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_9_5",
+          "question": "The Warsaw Pact was formed in which year?",
+          "options": [
+            "1949",
+            "1953",
+            "1955",
+            "1957"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_9_6",
+          "question": "The Compromise of 1867 created which dual monarchy?",
+          "options": [
+            "Prussia-Austria",
+            "Austria-Hungary",
+            "Germany-Austria",
+            "France-Spain"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_9_7",
+          "question": "The Battle of Adwa (1896) was a victory of which African nation against Italy?",
+          "options": [
+            "Libya",
+            "Sudan",
+            "Ethiopia",
+            "Somalia"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_9_8",
+          "question": "The 'Velvet Revolution' (1989) occurred in which country?",
+          "options": [
+            "Poland",
+            "Hungary",
+            "East Germany",
+            "Czechoslovakia"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wh_9_9",
+          "question": "The 'Scramble for China' (1894-1900) resulted in which event?",
+          "options": [
+            "Boxer Rebellion",
+            "Taiping Rebellion",
+            "First Sino-Japanese War",
+            "Opium War"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wh_9_10",
+          "question": "The Emancipation Proclamation (1863) was issued by which US President?",
+          "options": [
+            "George Washington",
+            "Ulysses Grant",
+            "Abraham Lincoln",
+            "Andrew Jackson"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "wh_10_1",
+          "question": "The Molotov-Ribbentrop Pact (1939) was a non-aggression pact between?",
+          "options": [
+            "Germany and Italy",
+            "Germany and Japan",
+            "USSR and Germany",
+            "USSR and Japan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_10_2",
+          "question": "The 'Potemkin village' phrase originates from?",
+          "options": [
+            "Russian Revolutionary period",
+            "Catherine the Great's reign in Russia",
+            "Byzantine Empire",
+            "Cold War propaganda"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_10_3",
+          "question": "The 'Year of Africa' (1960) saw how many African nations gain independence?",
+          "options": [
+            "12",
+            "14",
+            "17",
+            "20"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_10_4",
+          "question": "The Meiji Restoration restored power to which Japanese emperor?",
+          "options": [
+            "Hirohito",
+            "Meiji (Mutsuhito)",
+            "Taisho",
+            "Showa"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_10_5",
+          "question": "The 'Sepoy Mutiny' of 1857 was triggered by?",
+          "options": [
+            "Tax revolt",
+            "Land reforms by British",
+            "Introduction of new rifle cartridges",
+            "Suppression of religion"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_10_6",
+          "question": "The Non-Aligned Movement was co-founded by which Indian Prime Minister?",
+          "options": [
+            "Lal Bahadur Shastri",
+            "Indira Gandhi",
+            "Jawaharlal Nehru",
+            "Rajiv Gandhi"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_10_7",
+          "question": "The 'Scramble for Africa' formally began with the?",
+          "options": [
+            "Congress of Vienna (1815)",
+            "Treaty of Berlin (1885)",
+            "Treaty of Versailles (1919)",
+            "Anglo-French Entente (1904)"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_10_8",
+          "question": "The Mukden Incident (1931) was staged by Japan to justify invasion of?",
+          "options": [
+            "Korea",
+            "Manchuria",
+            "China proper",
+            "Mongolia"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wh_10_9",
+          "question": "The 'Domino Theory' in Cold War politics was articulated by?",
+          "options": [
+            "Harry Truman",
+            "John F. Kennedy",
+            "Dwight Eisenhower",
+            "Lyndon B. Johnson"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wh_10_10",
+          "question": "The 'Peasants' Revolt' of 1381 in England was led by?",
+          "options": [
+            "John Ball and Wat Tyler",
+            "Jack Straw and John of Gaunt",
+            "John Wycliffe and Wat Tyler",
+            "Henry Bolingbroke and Wat Tyler"
+          ],
+          "correct": 0
+        }
+      ]
+    }
+  ]
+}

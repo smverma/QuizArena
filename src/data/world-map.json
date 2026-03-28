@@ -1,0 +1,1165 @@
+{
+  "category": "World Map & Countries",
+  "levels": [
+    {
+      "level": 1,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "wm_1_1",
+          "question": "What is the capital of Australia?",
+          "options": [
+            "Sydney",
+            "Melbourne",
+            "Canberra",
+            "Brisbane"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_1_2",
+          "question": "Which is the largest country by area in the world?",
+          "options": [
+            "China",
+            "Canada",
+            "USA",
+            "Russia"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_1_3",
+          "question": "What is the smallest country in the world?",
+          "options": [
+            "Monaco",
+            "San Marino",
+            "Vatican City",
+            "Liechtenstein"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_1_4",
+          "question": "The Amazon River flows through which country?",
+          "options": [
+            "Colombia",
+            "Peru",
+            "Brazil",
+            "Venezuela"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_1_5",
+          "question": "What is the capital of Canada?",
+          "options": [
+            "Toronto",
+            "Vancouver",
+            "Montreal",
+            "Ottawa"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_1_6",
+          "question": "Which country is known as the 'Land of the Rising Sun'?",
+          "options": [
+            "China",
+            "South Korea",
+            "Japan",
+            "Vietnam"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_1_7",
+          "question": "What is the capital of Brazil?",
+          "options": [
+            "Rio de Janeiro",
+            "S\u00e3o Paulo",
+            "Bras\u00edlia",
+            "Salvador"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_1_8",
+          "question": "Which is the world's largest ocean?",
+          "options": [
+            "Atlantic Ocean",
+            "Indian Ocean",
+            "Arctic Ocean",
+            "Pacific Ocean"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_1_9",
+          "question": "Which country has the most natural lakes?",
+          "options": [
+            "Russia",
+            "USA",
+            "Finland",
+            "Canada"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_1_10",
+          "question": "The Nile River flows through how many countries?",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "wm_2_1",
+          "question": "What is the capital of Germany?",
+          "options": [
+            "Munich",
+            "Frankfurt",
+            "Hamburg",
+            "Berlin"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_2_2",
+          "question": "Which country is called the 'Land of Midnight Sun'?",
+          "options": [
+            "Iceland",
+            "Sweden",
+            "Finland",
+            "Norway"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_2_3",
+          "question": "The Great Wall of China was built to protect against?",
+          "options": [
+            "Mongol invasions",
+            "Japanese invasions",
+            "Roman invasions",
+            "Persian invasions"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wm_2_4",
+          "question": "Which is the longest river in the world?",
+          "options": [
+            "Amazon",
+            "Nile",
+            "Yangtze",
+            "Mississippi"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_2_5",
+          "question": "What is the capital of South Africa's executive government?",
+          "options": [
+            "Cape Town",
+            "Durban",
+            "Pretoria",
+            "Johannesburg"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_2_6",
+          "question": "Which continent has the most countries?",
+          "options": [
+            "Asia",
+            "Europe",
+            "South America",
+            "Africa"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_2_7",
+          "question": "The Sahara Desert is located in which continent?",
+          "options": [
+            "Asia",
+            "South America",
+            "Australia",
+            "Africa"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_2_8",
+          "question": "What is the capital of Argentina?",
+          "options": [
+            "Montevideo",
+            "Santiago",
+            "Lima",
+            "Buenos Aires"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_2_9",
+          "question": "Which country has the longest coastline?",
+          "options": [
+            "Russia",
+            "USA",
+            "Australia",
+            "Canada"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_2_10",
+          "question": "The Eiffel Tower is located in which city?",
+          "options": [
+            "London",
+            "Rome",
+            "Paris",
+            "Berlin"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "wm_3_1",
+          "question": "Which country is known as the 'Land of Kangaroos'?",
+          "options": [
+            "New Zealand",
+            "South Africa",
+            "Australia",
+            "Papua New Guinea"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_3_2",
+          "question": "What is the currency of Japan?",
+          "options": [
+            "Won",
+            "Yuan",
+            "Yen",
+            "Ringgit"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_3_3",
+          "question": "The Strait of Gibraltar connects which two bodies of water?",
+          "options": [
+            "Atlantic Ocean and Mediterranean Sea",
+            "Pacific Ocean and Atlantic Ocean",
+            "North Sea and Baltic Sea",
+            "Red Sea and Indian Ocean"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wm_3_4",
+          "question": "Which country has the largest population in the world?",
+          "options": [
+            "USA",
+            "India",
+            "China",
+            "Indonesia"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_3_5",
+          "question": "What is the official language of Brazil?",
+          "options": [
+            "Spanish",
+            "Portuguese",
+            "English",
+            "French"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_3_6",
+          "question": "Mount Everest is located in which countries?",
+          "options": [
+            "China only",
+            "Nepal only",
+            "Nepal and China",
+            "India and Nepal"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_3_7",
+          "question": "Which country has the most time zones?",
+          "options": [
+            "Russia",
+            "USA",
+            "China",
+            "Australia"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wm_3_8",
+          "question": "What is the capital of New Zealand?",
+          "options": [
+            "Auckland",
+            "Wellington",
+            "Christchurch",
+            "Dunedin"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_3_9",
+          "question": "The Colosseum is located in which city?",
+          "options": [
+            "Athens",
+            "Paris",
+            "London",
+            "Rome"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_3_10",
+          "question": "Which is the largest desert in the world?",
+          "options": [
+            "Sahara Desert",
+            "Arabian Desert",
+            "Gobi Desert",
+            "Antarctic Desert"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "wm_4_1",
+          "question": "The Bosphorus Strait connects the Black Sea with which sea?",
+          "options": [
+            "Caspian Sea",
+            "Mediterranean Sea",
+            "Sea of Marmara",
+            "Aegean Sea"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_4_2",
+          "question": "Which country has the most UNESCO World Heritage Sites?",
+          "options": [
+            "China",
+            "Italy",
+            "Spain",
+            "France"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_4_3",
+          "question": "The Atacama Desert is in which continent?",
+          "options": [
+            "Africa",
+            "Asia",
+            "South America",
+            "North America"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_4_4",
+          "question": "Which is the only country that borders both the Atlantic and Indian Oceans?",
+          "options": [
+            "Brazil",
+            "South Africa",
+            "Angola",
+            "Mozambique"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_4_5",
+          "question": "What is the capital of Kazakhstan?",
+          "options": [
+            "Almaty",
+            "Astana (Nur-Sultan)",
+            "Bishkek",
+            "Tashkent"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_4_6",
+          "question": "The Magellan Strait separates which continent from Tierra del Fuego?",
+          "options": [
+            "North America",
+            "Africa",
+            "South America",
+            "Antarctica"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_4_7",
+          "question": "Which African country has the most pyramids?",
+          "options": [
+            "Egypt",
+            "Sudan",
+            "Libya",
+            "Ethiopia"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_4_8",
+          "question": "What is the capital of Myanmar?",
+          "options": [
+            "Yangon",
+            "Mandalay",
+            "Naypyidaw",
+            "Bago"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_4_9",
+          "question": "Which sea separates Europe from Africa?",
+          "options": [
+            "Arabian Sea",
+            "Caspian Sea",
+            "Mediterranean Sea",
+            "Red Sea"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_4_10",
+          "question": "The Amazon Basin covers what percentage of South America?",
+          "options": [
+            "20%",
+            "30%",
+            "40%",
+            "50%"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "wm_5_1",
+          "question": "Which country is both in Europe and Asia?",
+          "options": [
+            "Greece",
+            "Turkey",
+            "Bulgaria",
+            "Romania"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_5_2",
+          "question": "The Dead Sea borders which countries?",
+          "options": [
+            "Israel and Jordan",
+            "Egypt and Israel",
+            "Jordan and Syria",
+            "Israel, Jordan and Palestine"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_5_3",
+          "question": "What is the capital of the Philippines?",
+          "options": [
+            "Cebu",
+            "Davao",
+            "Manila",
+            "Quezon City"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_5_4",
+          "question": "Which country has the most islands?",
+          "options": [
+            "Indonesia",
+            "Philippines",
+            "Sweden",
+            "Norway"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_5_5",
+          "question": "The Danube River flows into which sea?",
+          "options": [
+            "Mediterranean Sea",
+            "Adriatic Sea",
+            "Black Sea",
+            "Caspian Sea"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_5_6",
+          "question": "Which is the least densely populated country in the world?",
+          "options": [
+            "Iceland",
+            "Greenland",
+            "Mongolia",
+            "Canada"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_5_7",
+          "question": "The Panama Canal connects which two oceans?",
+          "options": [
+            "Atlantic and Indian",
+            "Pacific and Arctic",
+            "Atlantic and Pacific",
+            "Pacific and Indian"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_5_8",
+          "question": "Which is the smallest country in Asia?",
+          "options": [
+            "Bhutan",
+            "Brunei",
+            "Maldives",
+            "Singapore"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_5_9",
+          "question": "Lake Victoria is shared by which three countries?",
+          "options": [
+            "Ethiopia, Sudan, Uganda",
+            "Kenya, Tanzania, Uganda",
+            "Rwanda, Burundi, Tanzania",
+            "Egypt, Sudan, Ethiopia"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_5_10",
+          "question": "The 'Ring of Fire' is associated with which ocean?",
+          "options": [
+            "Atlantic Ocean",
+            "Indian Ocean",
+            "Pacific Ocean",
+            "Arctic Ocean"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "wm_6_1",
+          "question": "Which landlocked country is completely surrounded by one other country?",
+          "options": [
+            "Vatican City",
+            "San Marino",
+            "Lesotho",
+            "Both Vatican City and San Marino and Lesotho"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_6_2",
+          "question": "The Suez Canal connects which two water bodies?",
+          "options": [
+            "Mediterranean Sea and Red Sea",
+            "Red Sea and Arabian Sea",
+            "Gulf of Aden and Indian Ocean",
+            "Mediterranean and Black Sea"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wm_6_3",
+          "question": "Which country is called the 'Switzerland of the East'?",
+          "options": [
+            "Nepal",
+            "Bhutan",
+            "Sri Lanka",
+            "Georgia"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wm_6_4",
+          "question": "The Orinoco River is primarily in which country?",
+          "options": [
+            "Brazil",
+            "Colombia",
+            "Venezuela",
+            "Peru"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_6_5",
+          "question": "What is the capital of Burkina Faso?",
+          "options": [
+            "Bamako",
+            "Niamey",
+            "Ouagadougou",
+            "N'Djamena"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_6_6",
+          "question": "Which country has the world's highest number of active volcanoes?",
+          "options": [
+            "Japan",
+            "Philippines",
+            "Indonesia",
+            "USA"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_6_7",
+          "question": "The Tropic of Capricorn passes through which continent?",
+          "options": [
+            "Europe and Asia",
+            "Africa, South America and Australia",
+            "North America and Asia",
+            "South America only"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_6_8",
+          "question": "Which is the deepest lake in the world?",
+          "options": [
+            "Caspian Sea",
+            "Lake Superior",
+            "Lake Baikal",
+            "Lake Tanganyika"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_6_9",
+          "question": "The country of Bhutan is located in?",
+          "options": [
+            "Southeast Asia",
+            "South Asia (between India and China)",
+            "East Asia",
+            "Central Asia"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_6_10",
+          "question": "What is the capital of Morocco?",
+          "options": [
+            "Casablanca",
+            "Marrakech",
+            "Fes",
+            "Rabat"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "wm_7_1",
+          "question": "Which country is known as the 'Pearl of the Indian Ocean'?",
+          "options": [
+            "Maldives",
+            "Seychelles",
+            "Sri Lanka",
+            "Mauritius"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_7_2",
+          "question": "The Volga River flows into?",
+          "options": [
+            "Black Sea",
+            "Baltic Sea",
+            "Caspian Sea",
+            "Aral Sea"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_7_3",
+          "question": "Which strait separates Alaska from Russia?",
+          "options": [
+            "Strait of Magellan",
+            "Bering Strait",
+            "Drake Passage",
+            "Hudson Strait"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_7_4",
+          "question": "What is the capital of Eritrea?",
+          "options": [
+            "Mogadishu",
+            "Djibouti City",
+            "Asmara",
+            "Addis Ababa"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_7_5",
+          "question": "Which country has the most official languages?",
+          "options": [
+            "India",
+            "South Africa",
+            "Switzerland",
+            "Belgium"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_7_6",
+          "question": "The Ural Mountains separate which two continents?",
+          "options": [
+            "Europe and Asia",
+            "Asia and North America",
+            "Europe and Africa",
+            "Asia and Australia"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wm_7_7",
+          "question": "Which country is known as 'The Hermit Kingdom'?",
+          "options": [
+            "Myanmar",
+            "Bhutan",
+            "North Korea",
+            "Turkmenistan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_7_8",
+          "question": "The Mekong River does NOT flow through?",
+          "options": [
+            "China",
+            "India",
+            "Thailand",
+            "Vietnam"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_7_9",
+          "question": "Which country has the longest land border in the world?",
+          "options": [
+            "Russia",
+            "China",
+            "USA",
+            "Brazil"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wm_7_10",
+          "question": "The Altai Mountains are found at the junction of?",
+          "options": [
+            "Russia, China, Mongolia and Kazakhstan",
+            "Russia, China and Mongolia only",
+            "China, India and Nepal",
+            "Russia, Georgia and Turkey"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "wm_8_1",
+          "question": "Which country has the most borders with other countries?",
+          "options": [
+            "Russia",
+            "Brazil",
+            "China",
+            "Germany"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_8_2",
+          "question": "The Wakhan Corridor is a narrow strip of land belonging to?",
+          "options": [
+            "Pakistan",
+            "Tajikistan",
+            "Afghanistan",
+            "China"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_8_3",
+          "question": "Which is the only country to have a non-rectangular flag?",
+          "options": [
+            "Switzerland",
+            "Vatican",
+            "Nepal",
+            "Bhutan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_8_4",
+          "question": "The Caprivi Strip (Namibia) is an exclave bordering four countries. Which is NOT one of them?",
+          "options": [
+            "Angola",
+            "Botswana",
+            "Zimbabwe",
+            "Mozambique"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_8_5",
+          "question": "Which is the only country through which both the Equator and the Tropic of Capricorn pass?",
+          "options": [
+            "Kenya",
+            "Democratic Republic of Congo",
+            "Brazil",
+            "Ecuador"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_8_6",
+          "question": "The Kaliningrad Oblast is an exclave of Russia bordering?",
+          "options": [
+            "Finland and Estonia",
+            "Poland and Lithuania",
+            "Latvia and Belarus",
+            "Estonia and Latvia"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_8_7",
+          "question": "Which country has the highest capital city in the world?",
+          "options": [
+            "Peru",
+            "Nepal",
+            "Bolivia",
+            "Ecuador"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_8_8",
+          "question": "The Khao Yai National Park is in which country?",
+          "options": [
+            "Vietnam",
+            "Cambodia",
+            "Laos",
+            "Thailand"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_8_9",
+          "question": "Which ocean is the youngest?",
+          "options": [
+            "Pacific Ocean",
+            "Indian Ocean",
+            "Arctic Ocean",
+            "Atlantic Ocean"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_8_10",
+          "question": "The Mariana Trench, the deepest point on Earth, is in which ocean?",
+          "options": [
+            "Indian Ocean",
+            "Atlantic Ocean",
+            "Pacific Ocean",
+            "Arctic Ocean"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "wm_9_1",
+          "question": "Which is the only country to border both Spain and France?",
+          "options": [
+            "Monaco",
+            "Andorra",
+            "Luxembourg",
+            "Belgium"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_9_2",
+          "question": "The Caspian Sea is bordered by how many countries?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_9_3",
+          "question": "Which country has the most lakes of all sizes?",
+          "options": [
+            "Canada",
+            "Russia",
+            "Finland",
+            "USA"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wm_9_4",
+          "question": "The Aral Sea, which has drastically shrunk, is in?",
+          "options": [
+            "Kazakhstan and Uzbekistan",
+            "Kazakhstan and Russia",
+            "Uzbekistan and Turkmenistan",
+            "Turkmenistan and Russia"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wm_9_5",
+          "question": "Lake Titicaca is shared by which two countries?",
+          "options": [
+            "Chile and Peru",
+            "Bolivia and Peru",
+            "Argentina and Bolivia",
+            "Brazil and Bolivia"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_9_6",
+          "question": "The Lesotho Highlands is a plateau in which country?",
+          "options": [
+            "South Africa",
+            "Zimbabwe",
+            "Lesotho",
+            "Botswana"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_9_7",
+          "question": "Which two continents share no land borders with any other continent?",
+          "options": [
+            "Australia and Antarctica",
+            "South America and Australia",
+            "Australia and Africa",
+            "Antarctica and South America"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wm_9_8",
+          "question": "The Balkan Peninsula is primarily in which region?",
+          "options": [
+            "Central Europe",
+            "Southeastern Europe",
+            "Western Europe",
+            "Northern Europe"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_9_9",
+          "question": "The Tristan da Cunha archipelago belongs to?",
+          "options": [
+            "South Africa",
+            "Australia",
+            "United Kingdom",
+            "Argentina"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_9_10",
+          "question": "Which country administers the island of Greenland?",
+          "options": [
+            "United Kingdom",
+            "Canada",
+            "Iceland",
+            "Denmark"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "wm_10_1",
+          "question": "Which country is the only one to be located on a single river island?",
+          "options": [
+            "Maldives",
+            "Nauru",
+            "Singapore",
+            "No such country exists"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wm_10_2",
+          "question": "The Zanzibar Archipelago is an autonomous region of?",
+          "options": [
+            "Kenya",
+            "Mozambique",
+            "Tanzania",
+            "Madagascar"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_10_3",
+          "question": "Which country has the largest Exclusive Economic Zone (EEZ)?",
+          "options": [
+            "Russia",
+            "USA",
+            "France",
+            "Australia"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_10_4",
+          "question": "The 38th Parallel divides which two countries?",
+          "options": [
+            "Vietnam (historically)",
+            "Korea - North and South Korea",
+            "China and Mongolia",
+            "India and China"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_10_5",
+          "question": "The Patagonia region is mainly in?",
+          "options": [
+            "Chile only",
+            "Argentina only",
+            "Argentina and Chile",
+            "Brazil and Argentina"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_10_6",
+          "question": "Liechtenstein is the only doubly landlocked country bordering?",
+          "options": [
+            "Germany and France",
+            "Austria and Switzerland",
+            "Germany and Austria",
+            "Switzerland and Italy"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_10_7",
+          "question": "Which river forms the border between the USA and Mexico for most of its length?",
+          "options": [
+            "Colorado River",
+            "Rio Grande",
+            "Gila River",
+            "Pecos River"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wm_10_8",
+          "question": "The Sahel region is a zone between which two areas?",
+          "options": [
+            "Sahara Desert and tropical Africa",
+            "Mediterranean and Sahara",
+            "Atlantic coast and Great Rift Valley",
+            "Red Sea and Atlantic Ocean"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wm_10_9",
+          "question": "Which is the only country to have three capital cities?",
+          "options": [
+            "Bolivia",
+            "Malaysia",
+            "South Africa",
+            "Germany"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wm_10_10",
+          "question": "The Drake Passage connects which two oceans?",
+          "options": [
+            "Pacific and Indian",
+            "Atlantic and Arctic",
+            "Atlantic and Pacific",
+            "Pacific and Southern"
+          ],
+          "correct": 2
+        }
+      ]
+    }
+  ]
+}

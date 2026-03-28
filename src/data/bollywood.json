@@ -1,0 +1,1165 @@
+{
+  "category": "Bollywood",
+  "levels": [
+    {
+      "level": 1,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "bw_1_1",
+          "question": "Who directed the iconic film 'Sholay' (1975)?",
+          "options": [
+            "Yash Chopra",
+            "Ramesh Sippy",
+            "Manmohan Desai",
+            "Prakash Mehra"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_1_2",
+          "question": "Which film featured the famous song 'Jai Ho'?",
+          "options": [
+            "Lagaan",
+            "Rang De Basanti",
+            "Slumdog Millionaire",
+            "Taare Zameen Par"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_1_3",
+          "question": "Who directed the film 'Mughal-E-Azam' (1960)?",
+          "options": [
+            "Bimal Roy",
+            "Guru Dutt",
+            "K. Asif",
+            "Mehboob Khan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_1_4",
+          "question": "Which actor is known as the 'Tragedy King' of Bollywood?",
+          "options": [
+            "Raj Kapoor",
+            "Dev Anand",
+            "Dilip Kumar",
+            "Guru Dutt"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_1_5",
+          "question": "Who played the role of Gabbar Singh in 'Sholay'?",
+          "options": [
+            "Amjad Khan",
+            "Danny Denzongpa",
+            "Pran",
+            "Amrish Puri"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_1_6",
+          "question": "The film 'Mother India' was directed by?",
+          "options": [
+            "K. Asif",
+            "Bimal Roy",
+            "Mehboob Khan",
+            "Guru Dutt"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_1_7",
+          "question": "Which was the first Indian film to be submitted to the Oscars?",
+          "options": [
+            "Boot Polish",
+            "Mother India",
+            "Do Bigha Zamin",
+            "Awaara"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_1_8",
+          "question": "Who is known as the 'King of Romance' in Bollywood?",
+          "options": [
+            "Amitabh Bachchan",
+            "Shah Rukh Khan",
+            "Salman Khan",
+            "Hrithik Roshan"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_1_9",
+          "question": "The first Filmfare Award was held in which year?",
+          "options": [
+            "1952",
+            "1954",
+            "1956",
+            "1958"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_1_10",
+          "question": "Who composed music for the iconic film 'Pyaasa' (1957)?",
+          "options": [
+            "Naushad",
+            "S.D. Burman",
+            "Madan Mohan",
+            "Shankar-Jaikishan"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "bw_2_1",
+          "question": "Who played the lead role in 'Devdas' (1955)?",
+          "options": [
+            "Raj Kapoor",
+            "Dev Anand",
+            "Dilip Kumar",
+            "Guru Dutt"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_2_2",
+          "question": "Which film is based on the 1857 revolt and won the National Award?",
+          "options": [
+            "Lagaan",
+            "Mangal Pandey",
+            "Kranti",
+            "1857 The Rising"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_2_3",
+          "question": "Who sang the famous song 'Aawara Hoon'?",
+          "options": [
+            "Mohammed Rafi",
+            "Mukesh",
+            "Kishore Kumar",
+            "Talat Mahmood"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_2_4",
+          "question": "The film 'Deewar' (1975) starred which actor?",
+          "options": [
+            "Rajesh Khanna",
+            "Dharmendra",
+            "Amitabh Bachchan",
+            "Shashi Kapoor"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_2_5",
+          "question": "Who is known as the 'Nightingale of India' (sang for Bollywood)?",
+          "options": [
+            "Asha Bhosle",
+            "Lata Mangeshkar",
+            "Geeta Dutt",
+            "Suman Kalyanpur"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_2_6",
+          "question": "Which Bollywood film won the Academy Award (Oscar) for Best Foreign Language Film in 2001?",
+          "options": [
+            "Lagaan",
+            "Mother India",
+            "Salaam Bombay!",
+            "No film won"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "bw_2_7",
+          "question": "Who directed 'Dilwale Dulhania Le Jayenge' (1995)?",
+          "options": [
+            "Yash Chopra",
+            "Karan Johar",
+            "Aditya Chopra",
+            "Sooraj Barjatya"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_2_8",
+          "question": "The film 'Zanjeer' (1973) launched which actor's career as an action hero?",
+          "options": [
+            "Rajesh Khanna",
+            "Dharmendra",
+            "Amitabh Bachchan",
+            "Vinod Khanna"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_2_9",
+          "question": "Which film featured the song 'Mere Sapnon Ki Rani'?",
+          "options": [
+            "Aradhana",
+            "Kati Patang",
+            "An Evening in Paris",
+            "Jewel Thief"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_2_10",
+          "question": "Mithun Chakraborty won his first National Award for which film?",
+          "options": [
+            "Disco Dancer",
+            "Mrigayaa",
+            "Agneepath",
+            "Tahader Katha"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "bw_3_1",
+          "question": "Which was the highest-grossing Bollywood film of the 1990s?",
+          "options": [
+            "Hum Aapke Hain Koun!",
+            "Dilwale Dulhania Le Jayenge",
+            "Kuch Kuch Hota Hai",
+            "Raja Hindustani"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_3_2",
+          "question": "The film 'Lagaan' (2001) was set during which period?",
+          "options": [
+            "Mughal era",
+            "British colonial era",
+            "Post-independence era",
+            "Maratha period"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_3_3",
+          "question": "Who played the villain Mogambo in 'Mr. India' (1987)?",
+          "options": [
+            "Danny Denzongpa",
+            "Amrish Puri",
+            "Sadashiv Amrapurkar",
+            "Shakti Kapoor"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_3_4",
+          "question": "Which actress starred in both 'Mother India' and 'Andaaz'?",
+          "options": [
+            "Meena Kumari",
+            "Nargis",
+            "Madhubala",
+            "Geeta Bali"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_3_5",
+          "question": "The film 'Border' (1997) was based on which war?",
+          "options": [
+            "1962 war with China",
+            "1971 Bangladesh Liberation War",
+            "1965 war with Pakistan",
+            "Kargil War"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_3_6",
+          "question": "Who directed 'Rang De Basanti' (2006)?",
+          "options": [
+            "Ashutosh Gowariker",
+            "Rakeysh Omprakash Mehra",
+            "Farhan Akhtar",
+            "Sanjay Leela Bhansali"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_3_7",
+          "question": "The song 'Ek Do Teen' became famous from which film?",
+          "options": [
+            "Tezaab",
+            "Ram Lakhan",
+            "Beta",
+            "Khalnayak"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_3_8",
+          "question": "Which actor won the first Filmfare Award for Best Actor?",
+          "options": [
+            "Raj Kapoor",
+            "Dilip Kumar",
+            "Balraj Sahni",
+            "Dev Anand"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_3_9",
+          "question": "The film 'Taare Zameen Par' (2007) deals with which condition?",
+          "options": [
+            "Autism",
+            "Dyslexia",
+            "ADHD",
+            "Down syndrome"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_3_10",
+          "question": "Who played Bhagat Singh in 'The Legend of Bhagat Singh' (2002)?",
+          "options": [
+            "Ajay Devgn",
+            "Sunny Deol",
+            "Bobby Deol",
+            "Akshay Khanna"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "bw_4_1",
+          "question": "The film 'Guide' (1965) was based on a novel by which author?",
+          "options": [
+            "Munshi Premchand",
+            "R.K. Narayan",
+            "Rabindranath Tagore",
+            "Ismat Chughtai"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_4_2",
+          "question": "Which was the first Indian talkie film?",
+          "options": [
+            "Alam Ara",
+            "Raja Harishchandra",
+            "Dena Paona",
+            "Indra Sabha"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_4_3",
+          "question": "'Alam Ara' (1931), the first Indian talkie, was directed by?",
+          "options": [
+            "Dhundiraj Govind Phalke",
+            "Ardeshir Irani",
+            "Himanshu Rai",
+            "Franz Osten"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_4_4",
+          "question": "The music of 'Mughal-E-Azam' was composed by?",
+          "options": [
+            "S.D. Burman",
+            "Shankar-Jaikishan",
+            "Naushad",
+            "Ravi"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_4_5",
+          "question": "Who played Paro in the 1955 film 'Devdas'?",
+          "options": [
+            "Nargis",
+            "Suchitra Sen",
+            "Meena Kumari",
+            "Waheeda Rehman"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_4_6",
+          "question": "The term 'Bollywood' was coined in which decade?",
+          "options": [
+            "1950s",
+            "1960s",
+            "1970s",
+            "1980s"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_4_7",
+          "question": "Who won the National Award for Best Actor for 'Naseem' (1995)?",
+          "options": [
+            "Naseeruddin Shah",
+            "Om Puri",
+            "Kaifi Azmi",
+            "Shabana Azmi"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_4_8",
+          "question": "Which film marked Amitabh Bachchan's directorial debut? (He has never directed)",
+          "options": [
+            "He has never directed",
+            "Aks",
+            "Bade Miyan Chote Miyan",
+            "Ab Tumhare Hawale Watan Saathiyo"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_4_9",
+          "question": "The song 'Mere Desh Ki Dharti' is from which film?",
+          "options": [
+            "Upkar",
+            "Naya Daur",
+            "Des Pardes",
+            "Kranti"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_4_10",
+          "question": "Which actress is known as the 'Tragedy Queen' of Bollywood?",
+          "options": [
+            "Nargis",
+            "Suraiya",
+            "Meena Kumari",
+            "Madhubala"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "bw_5_1",
+          "question": "Satyajit Ray's 'Pather Panchali' was released in which year?",
+          "options": [
+            "1952",
+            "1955",
+            "1957",
+            "1960"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_5_2",
+          "question": "The film 'Black' (2005) was directed by?",
+          "options": [
+            "Karan Johar",
+            "Sanjay Leela Bhansali",
+            "Vidhu Vinod Chopra",
+            "Ashutosh Gowariker"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_5_3",
+          "question": "Which composer duo created music for films like 'Awaara' and 'Shree 420'?",
+          "options": [
+            "S.D. Burman-Dev Anand",
+            "Shankar-Jaikishan",
+            "Laxmikant-Pyarelal",
+            "Kalyanji-Anandji"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_5_4",
+          "question": "The film '3 Idiots' (2009) was based on which novel?",
+          "options": [
+            "Five Point Someone",
+            "Two States",
+            "The Zoya Factor",
+            "Revolution 2020"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_5_5",
+          "question": "Who played the role of a blind & deaf girl in 'Black' (2005)?",
+          "options": [
+            "Preity Zinta",
+            "Rani Mukerji",
+            "Kajol",
+            "Aishwarya Rai"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_5_6",
+          "question": "The National Film Development Corporation (NFDC) was established in?",
+          "options": [
+            "1965",
+            "1969",
+            "1975",
+            "1980"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_5_7",
+          "question": "Which film features the song 'Tum Hi Ho' by Arijit Singh?",
+          "options": [
+            "Yeh Jawaani Hai Deewani",
+            "Aashiqui 2",
+            "Raaz Reboot",
+            "Jannat 2"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_5_8",
+          "question": "Who directed 'Devdas' (2002) with Shah Rukh Khan?",
+          "options": [
+            "Mahesh Bhatt",
+            "Vidhu Vinod Chopra",
+            "Sanjay Leela Bhansali",
+            "Karan Johar"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_5_9",
+          "question": "The film 'Omkara' (2006) is an adaptation of which Shakespeare play?",
+          "options": [
+            "Hamlet",
+            "Macbeth",
+            "Othello",
+            "King Lear"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_5_10",
+          "question": "Which was the first Bollywood film to cross Rs. 1000 crore worldwide?",
+          "options": [
+            "Dhoom 3",
+            "Chennai Express",
+            "Ek Tha Tiger",
+            "3 Idiots"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "bw_6_1",
+          "question": "The film 'Do Bigha Zamin' (1953) was directed by?",
+          "options": [
+            "Guru Dutt",
+            "Bimal Roy",
+            "K. Asif",
+            "Raj Kapoor"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_6_2",
+          "question": "Which actress starred in the acclaimed film 'Pakeezah' (1972)?",
+          "options": [
+            "Nargis",
+            "Meena Kumari",
+            "Waheeda Rehman",
+            "Sharmila Tagore"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_6_3",
+          "question": "The film 'Sahib Bibi Aur Ghulam' (1962) was produced by?",
+          "options": [
+            "Raj Kapoor",
+            "Dilip Kumar",
+            "Guru Dutt",
+            "Mehboob Khan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_6_4",
+          "question": "Who won the first Dadasaheb Phalke Award?",
+          "options": [
+            "Prithviraj Kapoor",
+            "Devika Rani",
+            "B.N. Sircar",
+            "Sulochana"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_6_5",
+          "question": "The film 'Garm Hava' (1973) dealt with which theme?",
+          "options": [
+            "Farmers' struggle",
+            "Partition of India",
+            "Emergency period",
+            "Independence movement"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_6_6",
+          "question": "Who composed music for the film 'Hum Dono' (1961) starring Dev Anand?",
+          "options": [
+            "S.D. Burman",
+            "Jaidev",
+            "Madan Mohan",
+            "Ravi"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_6_7",
+          "question": "The acclaimed film 'Ardh Satya' (1983) starred?",
+          "options": [
+            "Naseeruddin Shah",
+            "Om Puri",
+            "Girish Karnad",
+            "Kulbhushan Kharbanda"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_6_8",
+          "question": "Which actress won the most Filmfare Best Actress awards?",
+          "options": [
+            "Madhuri Dixit",
+            "Kajol",
+            "Hema Malini",
+            "Nutan"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "bw_6_9",
+          "question": "The film 'Salaam Bombay!' (1988) was directed by?",
+          "options": [
+            "Shekhar Kapur",
+            "Mrinal Sen",
+            "Mira Nair",
+            "Govind Nihalani"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_6_10",
+          "question": "Who played Karan Johar's role in 'Kuch Kuch Hota Hai' as Rahul's best friend?",
+          "options": [
+            "Salman Khan",
+            "Saif Ali Khan",
+            "Karan Johar himself",
+            "Rani Mukerji"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "bw_7_1",
+          "question": "The first Indian film directed by Dadasaheb Phalke was?",
+          "options": [
+            "Alam Ara",
+            "Raja Harishchandra",
+            "Lanka Dahan",
+            "Kaliya Mardan"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_7_2",
+          "question": "Which film won the Cannes Film Festival's Grand Prix in 1946?",
+          "options": [
+            "Neecha Nagar",
+            "Do Bigha Zamin",
+            "Awaara",
+            "Boot Polish"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_7_3",
+          "question": "The 'Parallel Cinema' movement in India was associated with which decade?",
+          "options": [
+            "1950s",
+            "1960s",
+            "1970s",
+            "1980s"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_7_4",
+          "question": "Which playback singer is associated with the phrase 'Mere sang gaao'?",
+          "options": [
+            "Lata Mangeshkar",
+            "Mohammed Rafi",
+            "Kishore Kumar",
+            "Manna Dey"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_7_5",
+          "question": "The film 'Naya Daur' (1957) starred which actor as a rickshaw driver?",
+          "options": [
+            "Raj Kapoor",
+            "Dev Anand",
+            "Dilip Kumar",
+            "Guru Dutt"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_7_6",
+          "question": "Who directed 'Ankur' (1974), which launched the parallel cinema movement in Hindi?",
+          "options": [
+            "Shyam Benegal",
+            "Govind Nihalani",
+            "Mrinal Sen",
+            "Mira Nair"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_7_7",
+          "question": "The Censor Board in India is officially known as?",
+          "options": [
+            "Film Certification Board",
+            "Central Board of Film Certification",
+            "National Film Board",
+            "Film Review Committee"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_7_8",
+          "question": "The film 'Kaagaz Ke Phool' (1959) was directed by and starred?",
+          "options": [
+            "Raj Kapoor",
+            "Guru Dutt",
+            "Bimal Roy",
+            "Dilip Kumar"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_7_9",
+          "question": "Who composed music for the classic film 'Barsaat' (1949)?",
+          "options": [
+            "Naushad",
+            "S.D. Burman",
+            "Shankar-Jaikishan",
+            "C. Ramchandra"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_7_10",
+          "question": "The film 'Mughal-E-Azam' was remade in color in which year?",
+          "options": [
+            "1995",
+            "2000",
+            "2004",
+            "2008"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "bw_8_1",
+          "question": "Ritwik Ghatak's trilogy 'Meghe Dhaka Tara', 'Komal Gandhar', and 'Subarnarekha' was made in which decade?",
+          "options": [
+            "1940s",
+            "1950s",
+            "1960s",
+            "1970s"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_8_2",
+          "question": "The International Film Festival of India (IFFI) was first held in?",
+          "options": [
+            "1952",
+            "1954",
+            "1960",
+            "1965"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_8_3",
+          "question": "The film 'Manthan' (1976) was funded by?",
+          "options": [
+            "Government of India",
+            "500,000 farmers of Gujarat",
+            "NFDC",
+            "National Dairy Development Board"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_8_4",
+          "question": "Which Indian film is the longest commercially released film?",
+          "options": [
+            "Mera Naam Joker",
+            "Mughal-E-Azam",
+            "Lagaan",
+            "Mehboob Khan's Mother India"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_8_5",
+          "question": "The film 'Bhumika' (1977) was based on the autobiography of which Marathi actress?",
+          "options": [
+            "Durga Khote",
+            "Hansa Wadkar",
+            "Vijaya Mehta",
+            "Usha Datar"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_8_6",
+          "question": "Who wrote the screenplay for Guru Dutt's 'Pyaasa' (1957)?",
+          "options": [
+            "Majrooh Sultanpuri",
+            "Sahir Ludhianvi",
+            "Guru Dutt himself",
+            "Abrar Alvi"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "bw_8_7",
+          "question": "The term 'New Wave Cinema' in India is associated with which filmmaker?",
+          "options": [
+            "Raj Kapoor",
+            "Satyajit Ray",
+            "Mrinal Sen",
+            "Adoor Gopalakrishnan"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_8_8",
+          "question": "Which film is based on Premchand's novel 'Nirmala'?",
+          "options": [
+            "Nirmala (1938)",
+            "Nirmala (1948)",
+            "Nirmala (1963)",
+            "Nirmala (2021)"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_8_9",
+          "question": "The Golden Lotus Award is given by which institution?",
+          "options": [
+            "Filmfare",
+            "Dadasaheb Phalke Foundation",
+            "National Film Awards (Government)",
+            "IFFI"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_8_10",
+          "question": "Shyam Benegal's 'Junoon' (1978) was based on which historical event?",
+          "options": [
+            "1857 Revolt",
+            "Partition of India",
+            "Jallianwala Bagh massacre",
+            "Bengal famine"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "bw_9_1",
+          "question": "The film 'Elaan' (1994) featured which actor playing multiple roles for the first time in an action film?",
+          "options": [
+            "Amitabh Bachchan",
+            "Sunny Deol",
+            "Akshay Kumar",
+            "Mithun Chakraborty"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_9_2",
+          "question": "Which film won the Golden Bear at Berlin Film Festival (BIFF) in 2001?",
+          "options": [
+            "Lagaan",
+            "Dil Chahta Hai",
+            "Asoka",
+            "No Indian film won"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "bw_9_3",
+          "question": "The film 'Mirch Masala' (1987) was directed by?",
+          "options": [
+            "Govind Nihalani",
+            "Mrinal Sen",
+            "Ketan Mehta",
+            "Shyam Benegal"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_9_4",
+          "question": "Who wrote the lyrics of the famous song 'Waqt Ne Kiya' from 'Kaagaz Ke Phool'?",
+          "options": [
+            "Sahir Ludhianvi",
+            "Kaifi Azmi",
+            "Majrooh Sultanpuri",
+            "Shakeel Badayuni"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_9_5",
+          "question": "The film 'Aakrosh' (1980) was produced under which banner?",
+          "options": [
+            "Films Division",
+            "NFDC",
+            "Film Finance Corporation",
+            "Blaze Film Enterprises"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "bw_9_6",
+          "question": "Which actress won three consecutive National Awards for Best Actress?",
+          "options": [
+            "Shabana Azmi",
+            "Smita Patil",
+            "Nandita Das",
+            "Revathi"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_9_7",
+          "question": "The film 'Saaransh' (1984) was the feature film debut of which director?",
+          "options": [
+            "Shekhar Kapur",
+            "Mahesh Bhatt",
+            "Priyadarshan",
+            "Ramesh Sippy"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_9_8",
+          "question": "Which Indian film was the first to win the Jury Prize at Cannes?",
+          "options": [
+            "Pather Panchali",
+            "Do Bigha Zamin",
+            "Neecha Nagar",
+            "Awaara"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_9_9",
+          "question": "The music of the film 'Umrao Jaan' (1981) was composed by?",
+          "options": [
+            "S.D. Burman",
+            "Madan Mohan",
+            "Khayyam",
+            "Jaidev"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_9_10",
+          "question": "The film 'Chandni Bar' (2001) was directed by?",
+          "options": [
+            "Vidhu Vinod Chopra",
+            "Madhur Bhandarkar",
+            "Ram Gopal Varma",
+            "Anurag Kashyap"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "bw_10_1",
+          "question": "V. Shantaram's 'Do Aankhen Barah Haath' (1957) had its US premiere at?",
+          "options": [
+            "Hollywood",
+            "United Nations",
+            "San Francisco Film Festival",
+            "New York Film Festival"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_10_2",
+          "question": "The film 'Naseem' (1995) was the last film appearance of which veteran actor?",
+          "options": [
+            "Balraj Sahni",
+            "A.K. Hangal",
+            "Kaifi Azmi",
+            "Utpal Dutt"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_10_3",
+          "question": "Who was the first Indian actress to win the Best Actress award at Cannes?",
+          "options": [
+            "Smita Patil",
+            "Shabana Azmi",
+            "Nandita Das",
+            "No Indian has won"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "bw_10_4",
+          "question": "The Dadasaheb Phalke Award is given by?",
+          "options": [
+            "Filmfare",
+            "Government of India (Ministry of Information & Broadcasting)",
+            "FICCI",
+            "NASSCOM"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_10_5",
+          "question": "Hrishikesh Mukherjee's 'Anand' (1971) is a story about a patient with?",
+          "options": [
+            "Cancer",
+            "Leukemia",
+            "Tuberculosis",
+            "Heart disease"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_10_6",
+          "question": "The film 'Haider' (2014) is set in which location?",
+          "options": [
+            "Punjab in 1984",
+            "Kashmir in 1995",
+            "Gujarat in 2002",
+            "Delhi in 1975"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "bw_10_7",
+          "question": "Which cinematographer worked on most of Satyajit Ray's films?",
+          "options": [
+            "Subrata Mitra",
+            "Soumendu Roy",
+            "Nemai Ghosh",
+            "Dulal Dutta"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "bw_10_8",
+          "question": "The film 'Swades' (2004) was inspired by the life of?",
+          "options": [
+            "A.R. Rahman",
+            "Mohan Bhargava (fictional)",
+            "Ashutosh Gowariker himself",
+            "An NASA scientist who returned to India"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "bw_10_9",
+          "question": "Girish Kasaravalli is a prominent film director from which Indian state?",
+          "options": [
+            "Tamil Nadu",
+            "Kerala",
+            "Karnataka",
+            "Andhra Pradesh"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "bw_10_10",
+          "question": "The film 'Nishant' (1975) was directed by?",
+          "options": [
+            "Govind Nihalani",
+            "Mrinal Sen",
+            "Shyam Benegal",
+            "Adoor Gopalakrishnan"
+          ],
+          "correct": 2
+        }
+      ]
+    }
+  ]
+}

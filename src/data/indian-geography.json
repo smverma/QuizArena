@@ -1,0 +1,1165 @@
+{
+  "category": "Indian Geography",
+  "levels": [
+    {
+      "level": 1,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "ig_1_1",
+          "question": "Which is the longest river in India?",
+          "options": [
+            "Yamuna",
+            "Ganga",
+            "Godavari",
+            "Krishna"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_1_2",
+          "question": "Which state has the most coastline in India?",
+          "options": [
+            "Tamil Nadu",
+            "Andhra Pradesh",
+            "Kerala",
+            "Gujarat"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ig_1_3",
+          "question": "The Thar Desert is located in which state?",
+          "options": [
+            "Punjab",
+            "Haryana",
+            "Rajasthan",
+            "Gujarat"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_1_4",
+          "question": "Which is the highest peak in India?",
+          "options": [
+            "Mount Everest",
+            "Kangchenjunga",
+            "Nanda Devi",
+            "K2"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_1_5",
+          "question": "The Sundarbans delta is formed by which rivers?",
+          "options": [
+            "Ganga and Yamuna",
+            "Ganga and Brahmaputra",
+            "Indus and Ravi",
+            "Mahanadi and Godavari"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_1_6",
+          "question": "Which Indian state has the most forest cover?",
+          "options": [
+            "Kerala",
+            "Assam",
+            "Madhya Pradesh",
+            "Uttarakhand"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_1_7",
+          "question": "The Chilika Lake is in which state?",
+          "options": [
+            "West Bengal",
+            "Kerala",
+            "Odisha",
+            "Andhra Pradesh"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_1_8",
+          "question": "India shares its longest border with which country?",
+          "options": [
+            "Pakistan",
+            "China",
+            "Nepal",
+            "Bangladesh"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ig_1_9",
+          "question": "Which is the smallest state by area in India?",
+          "options": [
+            "Goa",
+            "Sikkim",
+            "Tripura",
+            "Nagaland"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ig_1_10",
+          "question": "Which river is known as the 'Sorrow of Bihar'?",
+          "options": [
+            "Ganga",
+            "Son",
+            "Kosi",
+            "Gandak"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "ig_2_1",
+          "question": "The Western Ghats run along which coast of India?",
+          "options": [
+            "Eastern coast",
+            "Western coast",
+            "Northern coast",
+            "Southern coast"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_2_2",
+          "question": "Which is the largest lake in India?",
+          "options": [
+            "Dal Lake",
+            "Chilika Lake",
+            "Wular Lake",
+            "Sambhar Lake"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_2_3",
+          "question": "The Deccan Plateau is situated in which part of India?",
+          "options": [
+            "Northern India",
+            "Southern India",
+            "Eastern India",
+            "Western India"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_2_4",
+          "question": "The Tropic of Cancer passes through how many Indian states?",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_2_5",
+          "question": "Which Indian city is known as the 'Pink City'?",
+          "options": [
+            "Jodhpur",
+            "Jaipur",
+            "Udaipur",
+            "Jaisalmer"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_2_6",
+          "question": "The Brahmaputra river originates from?",
+          "options": [
+            "Himalayas in India",
+            "Tibetan Plateau, China",
+            "Nepal",
+            "Bhutan"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_2_7",
+          "question": "Which state is known as the 'Land of Five Rivers'?",
+          "options": [
+            "Haryana",
+            "Rajasthan",
+            "Punjab",
+            "Uttarakhand"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_2_8",
+          "question": "The Lakshadweep islands are located in which ocean?",
+          "options": [
+            "Bay of Bengal",
+            "Arabian Sea",
+            "Indian Ocean",
+            "Pacific Ocean"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_2_9",
+          "question": "Which is the largest state by area in India?",
+          "options": [
+            "Madhya Pradesh",
+            "Uttar Pradesh",
+            "Rajasthan",
+            "Maharashtra"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_2_10",
+          "question": "The Himalayan mountain range separates India from?",
+          "options": [
+            "Pakistan and Afghanistan",
+            "China, Nepal and Bhutan",
+            "Bangladesh and Myanmar",
+            "Sri Lanka and Maldives"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "ig_3_1",
+          "question": "The Narmada river flows into which sea?",
+          "options": [
+            "Bay of Bengal",
+            "Indian Ocean",
+            "Arabian Sea",
+            "Andaman Sea"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_3_2",
+          "question": "Which state is known as 'God's Own Country'?",
+          "options": [
+            "Goa",
+            "Kerala",
+            "Karnataka",
+            "Tamil Nadu"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_3_3",
+          "question": "India's southernmost point is?",
+          "options": [
+            "Kanyakumari",
+            "Indira Point",
+            "Rameshwaram",
+            "Cape Comorin"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_3_4",
+          "question": "Which river forms the boundary between Telangana and Maharashtra?",
+          "options": [
+            "Krishna",
+            "Tungabhadra",
+            "Godavari",
+            "Manjira"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_3_5",
+          "question": "The Khyber Pass connects India with?",
+          "options": [
+            "Pakistan and Afghanistan",
+            "Tibet and China",
+            "Nepal and Bhutan",
+            "Bangladesh and Myanmar"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ig_3_6",
+          "question": "Which city is known as the 'Silicon Valley of India'?",
+          "options": [
+            "Mumbai",
+            "Hyderabad",
+            "Chennai",
+            "Bengaluru"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ig_3_7",
+          "question": "The Andaman and Nicobar Islands are located in?",
+          "options": [
+            "Arabian Sea",
+            "Bay of Bengal",
+            "Indian Ocean",
+            "Pacific Ocean"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_3_8",
+          "question": "Which mountain pass connects Shimla to Spiti?",
+          "options": [
+            "Rohtang Pass",
+            "Baralacha Pass",
+            "Shipki La",
+            "Kunzum Pass"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ig_3_9",
+          "question": "The Kaziranga National Park is famous for?",
+          "options": [
+            "Bengal Tiger",
+            "Asiatic Lion",
+            "One-horned Rhinoceros",
+            "Snow Leopard"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_3_10",
+          "question": "Which state has the longest international border?",
+          "options": [
+            "Assam",
+            "West Bengal",
+            "Arunachal Pradesh",
+            "Jammu & Kashmir"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "ig_4_1",
+          "question": "The Palk Strait separates India from?",
+          "options": [
+            "Maldives",
+            "Sri Lanka",
+            "Bangladesh",
+            "Myanmar"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_4_2",
+          "question": "Which Indian state receives the highest rainfall?",
+          "options": [
+            "Kerala",
+            "Meghalaya",
+            "Assam",
+            "West Bengal"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_4_3",
+          "question": "The Vindhya Range separates?",
+          "options": [
+            "North and South India",
+            "East and West India",
+            "India and Pakistan",
+            "Deccan and Gangetic plains"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ig_4_4",
+          "question": "Mawsynram, the wettest place on Earth, is in which state?",
+          "options": [
+            "Assam",
+            "Arunachal Pradesh",
+            "Meghalaya",
+            "Nagaland"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_4_5",
+          "question": "The Indus river originates from?",
+          "options": [
+            "Himalayas in India",
+            "Mansarovar Lake, Tibet",
+            "Hindu Kush mountains",
+            "Karakoram range"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_4_6",
+          "question": "Which Indian state has no international border?",
+          "options": [
+            "Rajasthan",
+            "Himachal Pradesh",
+            "Chhattisgarh",
+            "Assam"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_4_7",
+          "question": "The Rann of Kutch is primarily in which state?",
+          "options": [
+            "Rajasthan",
+            "Gujarat",
+            "Maharashtra",
+            "Madhya Pradesh"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_4_8",
+          "question": "Which is the largest delta in the world formed by Indian rivers?",
+          "options": [
+            "Mahanadi delta",
+            "Kaveri delta",
+            "Ganges-Brahmaputra delta",
+            "Godavari delta"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_4_9",
+          "question": "The Satpura mountain range is located in?",
+          "options": [
+            "Rajasthan and Gujarat",
+            "Maharashtra and Madhya Pradesh",
+            "Jharkhand and Odisha",
+            "Andhra Pradesh and Telangana"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_4_10",
+          "question": "Which river is called the 'Ganga of the South'?",
+          "options": [
+            "Krishna",
+            "Kaveri",
+            "Godavari",
+            "Tungabhadra"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "ig_5_1",
+          "question": "The Siachen Glacier is located in?",
+          "options": [
+            "Western Himalayas",
+            "Eastern Himalayas",
+            "Karakoram range",
+            "Zanskar range"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_5_2",
+          "question": "The Eastern Ghats are discontinuous ranges that run along which coast?",
+          "options": [
+            "West coast",
+            "East coast",
+            "North coast",
+            "South coast"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_5_3",
+          "question": "Which state is known as the 'Rice Bowl of India'?",
+          "options": [
+            "Punjab",
+            "Andhra Pradesh",
+            "Odisha",
+            "Chhattisgarh"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_5_4",
+          "question": "The Tehri Dam is built on which river?",
+          "options": [
+            "Ganga",
+            "Yamuna",
+            "Bhagirathi",
+            "Alaknanda"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_5_5",
+          "question": "Which is the deepest lake in India?",
+          "options": [
+            "Dal Lake",
+            "Manasbal Lake",
+            "Wular Lake",
+            "Lonar Lake"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_5_6",
+          "question": "Keoladeo National Park (Bharatpur Bird Sanctuary) is in?",
+          "options": [
+            "Madhya Pradesh",
+            "Rajasthan",
+            "Uttar Pradesh",
+            "Gujarat"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_5_7",
+          "question": "The Aravalli mountain range is one of the world's?",
+          "options": [
+            "Youngest mountain ranges",
+            "Highest mountain ranges",
+            "Oldest mountain ranges",
+            "Longest mountain ranges"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_5_8",
+          "question": "Which is the saltiest lake in India?",
+          "options": [
+            "Chilika Lake",
+            "Wular Lake",
+            "Sambhar Lake",
+            "Dal Lake"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_5_9",
+          "question": "The Konkan Coast lies along which states?",
+          "options": [
+            "Gujarat and Rajasthan",
+            "Maharashtra, Goa and Karnataka",
+            "Kerala and Tamil Nadu",
+            "Andhra Pradesh and Odisha"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_5_10",
+          "question": "Which Indian city is built on seven islands?",
+          "options": [
+            "Chennai",
+            "Kolkata",
+            "Mumbai",
+            "Kochi"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "ig_6_1",
+          "question": "The Shillong Plateau is in which state?",
+          "options": [
+            "Assam",
+            "Meghalaya",
+            "Nagaland",
+            "Manipur"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_6_2",
+          "question": "Gangotri Glacier is the source of which river?",
+          "options": [
+            "Yamuna",
+            "Ganga",
+            "Alaknanda",
+            "Bhagirathi"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ig_6_3",
+          "question": "The Majuli Island, largest river island in India, is in?",
+          "options": [
+            "West Bengal",
+            "Assam",
+            "Bihar",
+            "Odisha"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_6_4",
+          "question": "The Cardamom Hills are situated in?",
+          "options": [
+            "Tamil Nadu and Karnataka",
+            "Kerala and Tamil Nadu",
+            "Karnataka and Goa",
+            "Kerala and Karnataka"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_6_5",
+          "question": "Which is the only river in India that flows towards the west after Amarkantak?",
+          "options": [
+            "Tapti",
+            "Narmada",
+            "Mahanadi",
+            "Son"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_6_6",
+          "question": "The Dibang River is a tributary of?",
+          "options": [
+            "Ganga",
+            "Yamuna",
+            "Brahmaputra",
+            "Indus"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_6_7",
+          "question": "Nagarhole National Park is in which state?",
+          "options": [
+            "Tamil Nadu",
+            "Andhra Pradesh",
+            "Karnataka",
+            "Kerala"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_6_8",
+          "question": "The Lonar Crater Lake in Maharashtra was formed by?",
+          "options": [
+            "Volcanic activity",
+            "Meteorite impact",
+            "Tectonic movement",
+            "Glacial activity"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_6_9",
+          "question": "The Sundarbans mangrove forest covers parts of which two countries?",
+          "options": [
+            "India and Sri Lanka",
+            "India and Bangladesh",
+            "India and Myanmar",
+            "India and Pakistan"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_6_10",
+          "question": "Which plateau is known as the 'Roof of South India'?",
+          "options": [
+            "Malwa Plateau",
+            "Deccan Plateau",
+            "Chota Nagpur Plateau",
+            "Nilgiri Hills"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "ig_7_1",
+          "question": "The Barren Island, India's only active volcano, is in?",
+          "options": [
+            "Lakshadweep",
+            "Andaman and Nicobar Islands",
+            "Gulf of Kutch",
+            "Maldives"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_7_2",
+          "question": "Which river basin has the largest area in India?",
+          "options": [
+            "Brahmaputra basin",
+            "Indus basin",
+            "Ganga basin",
+            "Godavari basin"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_7_3",
+          "question": "The Zoji La Pass connects?",
+          "options": [
+            "Leh and Srinagar",
+            "Manali and Leh",
+            "Shimla and Spiti",
+            "Kullu and Spiti"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ig_7_4",
+          "question": "The Nanda Devi Biosphere Reserve is in?",
+          "options": [
+            "Himachal Pradesh",
+            "Uttarakhand",
+            "Jammu and Kashmir",
+            "Sikkim"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_7_5",
+          "question": "Which Indian state has the highest per capita income?",
+          "options": [
+            "Maharashtra",
+            "Karnataka",
+            "Goa",
+            "Delhi"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_7_6",
+          "question": "The Pulicat Lake is shared by which two states?",
+          "options": [
+            "Kerala and Tamil Nadu",
+            "Andhra Pradesh and Tamil Nadu",
+            "Odisha and West Bengal",
+            "Andhra Pradesh and Odisha"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_7_7",
+          "question": "The Nallamala Hills are a part of which mountain range?",
+          "options": [
+            "Western Ghats",
+            "Eastern Ghats",
+            "Vindhya Range",
+            "Satpura Range"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_7_8",
+          "question": "Which is the highest dam in India?",
+          "options": [
+            "Bhakra Nangal Dam",
+            "Tehri Dam",
+            "Hirakud Dam",
+            "Nagarjuna Sagar Dam"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_7_9",
+          "question": "The Malabar Coast lies along which state?",
+          "options": [
+            "Goa",
+            "Maharashtra",
+            "Karnataka",
+            "Kerala"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ig_7_10",
+          "question": "The Anai Mudi peak is in which mountain range?",
+          "options": [
+            "Vindhyas",
+            "Nilgiris",
+            "Anamalai Hills",
+            "Palani Hills"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "ig_8_1",
+          "question": "The Lateral Moraine is a feature associated with?",
+          "options": [
+            "River erosion",
+            "Glacial deposition",
+            "Wind action",
+            "Wave action"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_8_2",
+          "question": "The Makran Coast is part of which country's territory touching India?",
+          "options": [
+            "Iran",
+            "Pakistan",
+            "Afghanistan",
+            "Oman"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_8_3",
+          "question": "The Tsangpo river in Tibet becomes which Indian river after entering Arunachal Pradesh?",
+          "options": [
+            "Teesta",
+            "Subansiri",
+            "Brahmaputra",
+            "Dibang"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_8_4",
+          "question": "The Konkan Railway line passes through how many states?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_8_5",
+          "question": "Which is the oldest oilfield in Asia, located in Assam?",
+          "options": [
+            "Naharkatiya",
+            "Digboi",
+            "Moran",
+            "Rudrasagar"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_8_6",
+          "question": "The Great Rann of Kutch is primarily a?",
+          "options": [
+            "Desert",
+            "Marshy land / salt flats",
+            "Plateau",
+            "River delta"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_8_7",
+          "question": "The Dachigam National Park is a sanctuary for?",
+          "options": [
+            "Snow leopard",
+            "Hangul (Kashmir stag)",
+            "Asiatic black bear",
+            "Himalayan musk deer"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_8_8",
+          "question": "The Ten Degree Channel separates?",
+          "options": [
+            "Andaman and Nicobar Islands",
+            "Lakshadweep and Maldives",
+            "Andaman Islands and Car Nicobar",
+            "India and Sri Lanka"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ig_8_9",
+          "question": "The Ranganathittu Bird Sanctuary is on the banks of which river?",
+          "options": [
+            "Kaveri",
+            "Krishna",
+            "Tungabhadra",
+            "Godavari"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ig_8_10",
+          "question": "Dudhwa National Park, famous for tigers and barasingha, is in?",
+          "options": [
+            "Madhya Pradesh",
+            "Rajasthan",
+            "Uttar Pradesh",
+            "Uttarakhand"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "ig_9_1",
+          "question": "The Barak Valley in Assam is drained by which river?",
+          "options": [
+            "Brahmaputra",
+            "Barak",
+            "Subansiri",
+            "Teesta"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_9_2",
+          "question": "The Nilgiri Biosphere Reserve was established in which year?",
+          "options": [
+            "1979",
+            "1982",
+            "1986",
+            "1992"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_9_3",
+          "question": "The Peninsular India is bounded by which three water bodies?",
+          "options": [
+            "Bay of Bengal, Arabian Sea, Indian Ocean",
+            "Bay of Bengal, Arabian Sea, Pacific Ocean",
+            "Arabian Sea, Indian Ocean, Red Sea",
+            "Bay of Bengal, Indian Ocean, Southern Ocean"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ig_9_4",
+          "question": "The Amarkantak plateau is the source of which rivers?",
+          "options": [
+            "Narmada and Son",
+            "Narmada and Tapti",
+            "Son and Betwa",
+            "Godavari and Mahanadi"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ig_9_5",
+          "question": "The Jog Falls is on which river?",
+          "options": [
+            "Krishna",
+            "Kaveri",
+            "Sharavathi",
+            "Tungabhadra"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_9_6",
+          "question": "The Radhanagari Wildlife Sanctuary is in which state?",
+          "options": [
+            "Maharashtra",
+            "Goa",
+            "Karnataka",
+            "Andhra Pradesh"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ig_9_7",
+          "question": "The Chotanagpur Plateau is drained mainly by?",
+          "options": [
+            "Ganga and its tributaries",
+            "Mahanadi and its tributaries",
+            "Damodar, Brahmani and Subarnarekha",
+            "Godavari and Krishna"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_9_8",
+          "question": "The Bandipur National Park is located at the tri-junction of?",
+          "options": [
+            "Karnataka, Tamil Nadu and Andhra Pradesh",
+            "Karnataka, Tamil Nadu and Kerala",
+            "Goa, Karnataka and Maharashtra",
+            "Maharashtra, Karnataka and Andhra Pradesh"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_9_9",
+          "question": "The Panna Tiger Reserve is in which state?",
+          "options": [
+            "Rajasthan",
+            "Uttarakhand",
+            "Madhya Pradesh",
+            "Maharashtra"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_9_10",
+          "question": "The Gandikota Gorge, called 'India's Grand Canyon', is in?",
+          "options": [
+            "Telangana",
+            "Andhra Pradesh",
+            "Karnataka",
+            "Tamil Nadu"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "ig_10_1",
+          "question": "The Nagarjunakonda is an island in which reservoir?",
+          "options": [
+            "Srisailam",
+            "Nagarjuna Sagar",
+            "Tungabhadra",
+            "Hirakud"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_10_2",
+          "question": "The Dhauladhar range is an extension of?",
+          "options": [
+            "Greater Himalayas",
+            "Lesser Himalayas (Himachal)",
+            "Shiwalik Hills",
+            "Zanskar range"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_10_3",
+          "question": "The Teesta River is a tributary of?",
+          "options": [
+            "Ganga",
+            "Brahmaputra",
+            "Meghna",
+            "Barak"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_10_4",
+          "question": "The Manas National Park is a UNESCO World Heritage site in?",
+          "options": [
+            "West Bengal",
+            "Assam",
+            "Arunachal Pradesh",
+            "Meghalaya"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_10_5",
+          "question": "Which is the highest plateau in India?",
+          "options": [
+            "Deccan Plateau",
+            "Chota Nagpur Plateau",
+            "Ladakh Plateau",
+            "Malwa Plateau"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_10_6",
+          "question": "The Shola forests are characteristic of which region?",
+          "options": [
+            "Terai region",
+            "Western Ghats high altitude grasslands",
+            "Mangrove zones",
+            "Thorn scrub forests"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_10_7",
+          "question": "The Banihal Pass connects which valleys?",
+          "options": [
+            "Srinagar and Jammu",
+            "Leh and Srinagar",
+            "Leh and Manali",
+            "Kullu and Spiti"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ig_10_8",
+          "question": "The Koyna Wildlife Sanctuary is in?",
+          "options": [
+            "Karnataka",
+            "Maharashtra",
+            "Goa",
+            "Kerala"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ig_10_9",
+          "question": "The Bhitarkanika Mangroves are in?",
+          "options": [
+            "West Bengal",
+            "Andhra Pradesh",
+            "Odisha",
+            "Kerala"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ig_10_10",
+          "question": "The Tungabhadra is a tributary of which river?",
+          "options": [
+            "Godavari",
+            "Mahanadi",
+            "Krishna",
+            "Kaveri"
+          ],
+          "correct": 2
+        }
+      ]
+    }
+  ]
+}
