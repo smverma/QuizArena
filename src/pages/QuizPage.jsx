@@ -21,6 +21,7 @@ const categoryModules = {
 };
 
 const QUESTION_TIME = 15;
+const QUESTIONS_PER_LEVEL = 10;
 
 export default function QuizPage() {
   const { user } = useAuth();
@@ -59,7 +60,7 @@ export default function QuizPage() {
   const goNext = useCallback(() => {
     setCurrentIndex(prev => {
       const next = prev + 1;
-      if (next >= 10) {
+      if (next >= QUESTIONS_PER_LEVEL) {
         soundManager.levelComplete();
         navigate('/level-complete');
         return prev;
@@ -211,7 +212,7 @@ export default function QuizPage() {
       </div>
 
       <div className="question-number">
-        Question {currentIndex + 1}/10
+        Question {currentIndex + 1}/{QUESTIONS_PER_LEVEL}
       </div>
 
       <Timer timeLeft={timeLeft} maxTime={QUESTION_TIME} />
