@@ -1,0 +1,1165 @@
+{
+  "category": "Cricket",
+  "levels": [
+    {
+      "level": 1,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "cr_1_1",
+          "question": "Who holds the record for the most Test centuries?",
+          "options": [
+            "Ricky Ponting",
+            "Jacques Kallis",
+            "Sachin Tendulkar",
+            "Brian Lara"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_1_2",
+          "question": "In which year did India win its first Cricket World Cup?",
+          "options": [
+            "1979",
+            "1983",
+            "1987",
+            "1992"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_1_3",
+          "question": "Who captained India in the 1983 World Cup?",
+          "options": [
+            "Sunil Gavaskar",
+            "Mohinder Amarnath",
+            "Kapil Dev",
+            "S. Venkataraghavan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_1_4",
+          "question": "What is the highest individual score in Test cricket?",
+          "options": [
+            "375",
+            "380",
+            "400",
+            "400*"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "cr_1_5",
+          "question": "Who scored the first double century in ODI cricket?",
+          "options": [
+            "Rohit Sharma",
+            "Sachin Tendulkar",
+            "Martin Guptill",
+            "Chris Gayle"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_1_6",
+          "question": "How many runs did Sachin Tendulkar score in his Test career?",
+          "options": [
+            "14,500",
+            "15,921",
+            "13,900",
+            "16,100"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_1_7",
+          "question": "In which year did India win the ICC T20 World Cup for the first time?",
+          "options": [
+            "2007",
+            "2009",
+            "2011",
+            "2014"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_1_8",
+          "question": "Who was the first Indian bowler to take 600 Test wickets?",
+          "options": [
+            "Kapil Dev",
+            "Harbhajan Singh",
+            "Anil Kumble",
+            "Zaheer Khan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_1_9",
+          "question": "Which country hosted the first Cricket World Cup in 1975?",
+          "options": [
+            "Australia",
+            "India",
+            "England",
+            "West Indies"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_1_10",
+          "question": "What is the maximum number of overs in a One Day International?",
+          "options": [
+            "40",
+            "45",
+            "50",
+            "55"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "cr_2_1",
+          "question": "Who scored 400* (not out) in a Test match against England?",
+          "options": [
+            "Sachin Tendulkar",
+            "Garfield Sobers",
+            "Don Bradman",
+            "Brian Lara"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "cr_2_2",
+          "question": "What is Don Bradman's Test batting average?",
+          "options": [
+            "92.44",
+            "96.48",
+            "99.94",
+            "88.56"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_2_3",
+          "question": "India won the 2011 ODI World Cup under whose captaincy?",
+          "options": [
+            "Sourav Ganguly",
+            "Rahul Dravid",
+            "M.S. Dhoni",
+            "Virat Kohli"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_2_4",
+          "question": "Which format of cricket did India win the inaugural ICC Championship in (2007)?",
+          "options": [
+            "Test cricket",
+            "ODI",
+            "T20 International",
+            "Champion's Trophy"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_2_5",
+          "question": "How many deliveries are in a cricket over?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "8"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_2_6",
+          "question": "Which team has won the most Cricket World Cups (ODI)?",
+          "options": [
+            "India",
+            "West Indies",
+            "Australia",
+            "Pakistan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_2_7",
+          "question": "What is the term for a batsman being dismissed for zero runs?",
+          "options": [
+            "Blob",
+            "Golden duck",
+            "Duck",
+            "Blob"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_2_8",
+          "question": "Who holds the record for the highest individual score in ODIs (264)?",
+          "options": [
+            "Sachin Tendulkar",
+            "Rohit Sharma",
+            "Martin Guptill",
+            "Chris Gayle"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_2_9",
+          "question": "The Ashes series is played between which two countries?",
+          "options": [
+            "India and Australia",
+            "England and Australia",
+            "England and New Zealand",
+            "Australia and South Africa"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_2_10",
+          "question": "Which bowler has taken the most wickets in Test cricket?",
+          "options": [
+            "Shane Warne",
+            "Muttiah Muralitharan",
+            "Anil Kumble",
+            "Glenn McGrath"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "cr_3_1",
+          "question": "Which cricketer is nicknamed 'The Wall'?",
+          "options": [
+            "Sachin Tendulkar",
+            "Rahul Dravid",
+            "V.V.S. Laxman",
+            "Sourav Ganguly"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_3_2",
+          "question": "Who is known as 'Boom Boom' in cricket?",
+          "options": [
+            "Shahid Afridi",
+            "Shoaib Akhtar",
+            "Andre Russell",
+            "Chris Gayle"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_3_3",
+          "question": "How many wickets does Kapil Dev have in Test cricket?",
+          "options": [
+            "400",
+            "434",
+            "450",
+            "500"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_3_4",
+          "question": "In cricket, what does 'LBW' stand for?",
+          "options": [
+            "Left Before Wicket",
+            "Leg Before Wicket",
+            "Lower Body Wicket",
+            "Lateral Ball Wide"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_3_5",
+          "question": "Which year was the ICC (International Cricket Council) founded?",
+          "options": [
+            "1904",
+            "1909",
+            "1920",
+            "1932"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_3_6",
+          "question": "Sachin Tendulkar played how many Test matches in his career?",
+          "options": [
+            "178",
+            "192",
+            "200",
+            "214"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_3_7",
+          "question": "Who scored 281 runs for India in a famous Test against Australia in Kolkata 2001?",
+          "options": [
+            "Sachin Tendulkar",
+            "Rahul Dravid",
+            "V.V.S. Laxman",
+            "Sourav Ganguly"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_3_8",
+          "question": "Which award is given to the best Test player of the year by ICC?",
+          "options": [
+            "Test Player of the Year",
+            "ICC Test Champion",
+            "Sir Garfield Sobers Trophy",
+            "Wisden Award"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_3_9",
+          "question": "The 'Chinaman' delivery in cricket is bowled by a?",
+          "options": [
+            "Right-arm leg-spinner",
+            "Left-arm orthodox spinner",
+            "Left-arm wrist spinner",
+            "Right-arm off-spinner"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_3_10",
+          "question": "Cricket was first played internationally between which two teams in 1844?",
+          "options": [
+            "England and Australia",
+            "USA and Canada",
+            "England and West Indies",
+            "India and England"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "cr_4_1",
+          "question": "Who took the hat-trick in the 1999 Cricket World Cup for Pakistan?",
+          "options": [
+            "Wasim Akram",
+            "Waqar Younis",
+            "Saqlain Mushtaq",
+            "Shoaib Akhtar"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_4_2",
+          "question": "Which batsman scored 501* in a first-class cricket match?",
+          "options": [
+            "Don Bradman",
+            "Brian Lara",
+            "Sachin Tendulkar",
+            "Hanif Mohammad"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_4_3",
+          "question": "India's victory in the 2002-03 Test series in Australia was known as?",
+          "options": [
+            "Miracle Down Under",
+            "Border-Gavaskar Trophy win",
+            "Kolkata Turnaround",
+            "Operation Laxman"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_4_4",
+          "question": "The famous 'Tied Test' in cricket history in 1960 was between?",
+          "options": [
+            "India and England",
+            "Australia and West Indies",
+            "England and South Africa",
+            "Pakistan and India"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_4_5",
+          "question": "Which player has the most ODI centuries?",
+          "options": [
+            "Ricky Ponting",
+            "Sourav Ganguly",
+            "Sachin Tendulkar",
+            "Virat Kohli"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_4_6",
+          "question": "Who took all 10 wickets in a Test innings against India?",
+          "options": [
+            "Jim Laker",
+            "Anil Kumble",
+            "Shane Warne",
+            "Muttiah Muralitharan"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_4_7",
+          "question": "What was special about Jim Laker's performance in the 1956 Ashes?",
+          "options": [
+            "He scored 200 runs",
+            "He took 19/90 in a single Test match",
+            "He took a hat-trick",
+            "He caught 10 catches"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_4_8",
+          "question": "Who is the only batsman to score a century in his very first Test ball?",
+          "options": [
+            "Charles Bannerman",
+            "Dave Gregory",
+            "Marcus Trescothick",
+            "No batsman has done this"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "cr_4_9",
+          "question": "In IPL, which team has won the most titles?",
+          "options": [
+            "Mumbai Indians",
+            "Chennai Super Kings",
+            "Kolkata Knight Riders",
+            "Rajasthan Royals"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_4_10",
+          "question": "Which cricketer holds the record for the most sixes in international cricket?",
+          "options": [
+            "Chris Gayle",
+            "Shahid Afridi",
+            "Rohit Sharma",
+            "MS Dhoni"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "cr_5_1",
+          "question": "The first Test match was played in which year?",
+          "options": [
+            "1870",
+            "1877",
+            "1880",
+            "1890"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_5_2",
+          "question": "Who has scored the most runs in a single IPL season?",
+          "options": [
+            "Virat Kohli",
+            "David Warner",
+            "Jos Buttler",
+            "Shane Watson"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_5_3",
+          "question": "Which country defeated West Indies in the 1983 World Cup Final?",
+          "options": [
+            "Australia",
+            "Pakistan",
+            "England",
+            "India"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "cr_5_4",
+          "question": "Who holds the record for the fastest century in ODI cricket?",
+          "options": [
+            "AB de Villiers",
+            "Shahid Afridi",
+            "Corey Anderson",
+            "Chris Gayle"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_5_5",
+          "question": "What is a 'Googly' in cricket?",
+          "options": [
+            "A wide delivery",
+            "Leg-break bowled with off-break action",
+            "A very fast delivery",
+            "A slower ball"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_5_6",
+          "question": "Which bowler has taken the most wickets in a Test career?",
+          "options": [
+            "Shane Warne (708)",
+            "Anil Kumble (619)",
+            "Muttiah Muralitharan (800)",
+            "Glenn McGrath (563)"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_5_7",
+          "question": "In Test cricket, what is the maximum number of days a match can last?",
+          "options": [
+            "4 days",
+            "5 days",
+            "6 days",
+            "7 days"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_5_8",
+          "question": "Who scored a 37-ball century in Test cricket (fastest)?",
+          "options": [
+            "Sachin Tendulkar",
+            "Adam Gilchrist",
+            "Brendon McCullum",
+            "Misbah-ul-Haq"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_5_9",
+          "question": "The 'Duckworth-Lewis Method' in cricket is used for?",
+          "options": [
+            "Calculating economy rate",
+            "Setting revised targets in rain-affected matches",
+            "Determining Man of the Match",
+            "Ranking Test teams"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_5_10",
+          "question": "Which Indian wicket-keeper has the most dismissals in Test cricket?",
+          "options": [
+            "M.S. Dhoni",
+            "Farokh Engineer",
+            "Syed Kirmani",
+            "Rishabh Pant"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "cr_6_1",
+          "question": "Charles Bannerman scored the first run in Test cricket history. What was his score?",
+          "options": [
+            "100",
+            "165 retired hurt",
+            "134",
+            "188"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_6_2",
+          "question": "In which year did South Africa return to Test cricket after apartheid boycott?",
+          "options": [
+            "1988",
+            "1990",
+            "1991",
+            "1994"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_6_3",
+          "question": "What is the 'Bodyline series' associated with in cricket?",
+          "options": [
+            "England's controversial leg theory bowling against Australia in 1932-33",
+            "India's pace attack in 1970s",
+            "West Indian intimidatory bowling in 1980s",
+            "Pakistan's ball-tampering scandal"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_6_4",
+          "question": "Which cricketer is nicknamed 'Captain Cool'?",
+          "options": [
+            "Virat Kohli",
+            "M.S. Dhoni",
+            "Sourav Ganguly",
+            "Rahul Dravid"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_6_5",
+          "question": "Who holds the record for the most ducks (0) in Test cricket?",
+          "options": [
+            "Courtney Walsh",
+            "Glenn McGrath",
+            "Muttiah Muralitharan",
+            "Anil Kumble"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_6_6",
+          "question": "In IPL 2016, Virat Kohli scored how many runs?",
+          "options": [
+            "851",
+            "921",
+            "973",
+            "1000"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_6_7",
+          "question": "The 'flipper' delivery in cricket was mastered by which bowler?",
+          "options": [
+            "Shane Warne",
+            "Bill O'Reilly",
+            "Clarrie Grimmett",
+            "Richie Benaud"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_6_8",
+          "question": "Which wicket-keeper holds the world record for most dismissals in ODIs?",
+          "options": [
+            "M.S. Dhoni",
+            "Adam Gilchrist",
+            "Mark Boucher",
+            "Kumar Sangakkara"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "cr_6_9",
+          "question": "The 'Beamer' in cricket is a delivery that?",
+          "options": [
+            "Bounces twice before reaching batsman",
+            "Reaches the batsman at head height without bouncing",
+            "Swings very late in the air",
+            "Is deliberately bowled wide"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_6_10",
+          "question": "Who made the fastest ODI fifty (8 balls)?",
+          "options": [
+            "AB de Villiers",
+            "Shahid Afridi",
+            "Yuvraj Singh",
+            "Glenn Maxwell"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "cr_7_1",
+          "question": "The first Test match was played between?",
+          "options": [
+            "England and South Africa",
+            "England and Australia",
+            "Australia and New Zealand",
+            "India and England"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_7_2",
+          "question": "Yuvraj Singh hit 6 sixes in an over against which bowler in T20 World Cup 2007?",
+          "options": [
+            "Dwayne Bravo",
+            "Stuart Broad",
+            "Kyle Maron",
+            "Andrew Flintoff"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_7_3",
+          "question": "Who has taken the most wickets in ODI cricket?",
+          "options": [
+            "Wasim Akram",
+            "Waqar Younis",
+            "Muttiah Muralitharan",
+            "Shaun Pollock"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_7_4",
+          "question": "The Ranji Trophy is named after which cricketer?",
+          "options": [
+            "Ranjitsinhji",
+            "C.K. Nayudu",
+            "Vijay Merchant",
+            "Lala Amarnath"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_7_5",
+          "question": "Which Indian player scored a century on his Test debut vs England in 1952?",
+          "options": [
+            "Vijay Hazare",
+            "Polly Umrigar",
+            "Vinoo Mankad",
+            "Pankaj Roy"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_7_6",
+          "question": "Who was the first Indian to score a Test century?",
+          "options": [
+            "Lala Amarnath",
+            "Vijay Merchant",
+            "C.K. Nayudu",
+            "Mushtaq Ali"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_7_7",
+          "question": "The 'Doosra' delivery is most associated with which bowler?",
+          "options": [
+            "Shane Warne",
+            "Harbhajan Singh",
+            "Saqlain Mushtaq",
+            "Muttiah Muralitharan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_7_8",
+          "question": "In T20I cricket, who has scored the most centuries?",
+          "options": [
+            "Chris Gayle",
+            "Rohit Sharma",
+            "Babar Azam",
+            "Martin Guptill"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_7_9",
+          "question": "Which Indian cricketer was the first to take a Test hat-trick?",
+          "options": [
+            "Kapil Dev",
+            "Harbhajan Singh",
+            "Irfan Pathan",
+            "Javagal Srinath"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_7_10",
+          "question": "The 'Varshney Award' in cricket is given to?",
+          "options": [
+            "Best umpire",
+            "Best batsman",
+            "Best bowler",
+            "The cricketer of the year"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "cr_8_1",
+          "question": "Who scored the first Test match century in cricket history?",
+          "options": [
+            "W.G. Grace",
+            "Charles Bannerman",
+            "Billy Murdoch",
+            "Tom Horan"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_8_2",
+          "question": "In the 2003 World Cup, Sachin Tendulkar scored how many runs?",
+          "options": [
+            "548",
+            "673",
+            "510",
+            "601"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_8_3",
+          "question": "The 'Mankad' dismissal in cricket is named after?",
+          "options": [
+            "Vijay Mankad",
+            "V.V.S. Laxman",
+            "Vinoo Mankad (same person)",
+            "Vinoo Mankad"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "cr_8_4",
+          "question": "What is the minimum number of fielders that must be in the outfield during a powerplay in ODIs?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_8_5",
+          "question": "Who was the ICC Cricketer of the Year for 2023?",
+          "options": [
+            "Virat Kohli",
+            "Ben Stokes",
+            "Pat Cummins",
+            "Travis Head"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_8_6",
+          "question": "In first-class cricket, how many sessions are normally played per day?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_8_7",
+          "question": "The term 'Corridor of Uncertainty' in cricket refers to?",
+          "options": [
+            "Area around off-stump that tests the batsman's judgment",
+            "Umpire's decision zone",
+            "The short-pitched delivery area",
+            "The zone behind the crease"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_8_8",
+          "question": "India's Test match record victory margin by innings and runs is against?",
+          "options": [
+            "Pakistan",
+            "Sri Lanka",
+            "Zimbabwe",
+            "Afghanistan"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "cr_8_9",
+          "question": "The 'Cruyff Turn' equivalent in cricket terms would be?",
+          "options": [
+            "The reverse sweep",
+            "The switch hit",
+            "The ramp shot",
+            "The scoop shot"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_8_10",
+          "question": "What is the 'Powerplay' structure in T20 cricket?",
+          "options": [
+            "First 4 overs - only 2 fielders outside circle",
+            "First 6 overs - only 2 fielders outside circle",
+            "First 5 overs - no fielders outside circle",
+            "First 6 overs - only 3 fielders outside circle"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "cr_9_1",
+          "question": "Who is the highest run scorer in Ranji Trophy history?",
+          "options": [
+            "Wasim Jaffer",
+            "V.V.S. Laxman",
+            "Amol Muzumdar",
+            "Rajinder Goel"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_9_2",
+          "question": "The WTC (World Test Championship) Final 2021 was won by?",
+          "options": [
+            "India",
+            "Australia",
+            "New Zealand",
+            "England"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_9_3",
+          "question": "Which country has beaten every Test-playing nation in Test cricket?",
+          "options": [
+            "India",
+            "Australia",
+            "England",
+            "South Africa"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_9_4",
+          "question": "What was Sachin Tendulkar's jersey number in ODIs?",
+          "options": [
+            "10",
+            "14",
+            "18",
+            "22"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_9_5",
+          "question": "Who took 8 wickets in an innings for India vs Pakistan in a Test?",
+          "options": [
+            "Kapil Dev",
+            "Subhash Gupte",
+            "Narendra Hirwani",
+            "Anil Kumble"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "cr_9_6",
+          "question": "The BCCI was founded in which year?",
+          "options": [
+            "1920",
+            "1928",
+            "1929",
+            "1935"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_9_7",
+          "question": "Who was the first player to take 300 wickets and score 3000 runs in Tests?",
+          "options": [
+            "Ian Botham",
+            "Kapil Dev",
+            "Richard Hadlee",
+            "Jacques Kallis"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_9_8",
+          "question": "The first day-night Test match was played in which year?",
+          "options": [
+            "2013",
+            "2015",
+            "2016",
+            "2017"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_9_9",
+          "question": "Which bowler delivered the 'Ball of the Century' to Mike Gatting in 1993 Ashes?",
+          "options": [
+            "Merv Hughes",
+            "Craig McDermott",
+            "Shane Warne",
+            "Tim May"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_9_10",
+          "question": "Vinoo Mankad's record partnership of 413 runs for the first wicket was made with?",
+          "options": [
+            "Pankaj Roy",
+            "Vijay Hazare",
+            "Polly Umrigar",
+            "Lala Amarnath"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "cr_10_1",
+          "question": "Who was the first wicket-keeper to take 100 catches in Test cricket?",
+          "options": [
+            "Alan Knott",
+            "Godfrey Evans",
+            "Rodney Marsh",
+            "Bert Oldfield"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_10_2",
+          "question": "The first official Women's Cricket World Cup was held in?",
+          "options": [
+            "1968",
+            "1973",
+            "1978",
+            "1982"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_10_3",
+          "question": "What is the record for the highest team total in Test cricket?",
+          "options": [
+            "903/7d (England vs Australia, 1938)",
+            "952/6d (Sri Lanka vs India, 1997)",
+            "849 all out (England vs West Indies, 1930)",
+            "800/9d (Pakistan vs India, 2006)"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_10_4",
+          "question": "The 'Sticky Dog' refers to which pitch condition in cricket?",
+          "options": [
+            "A very fast pitch",
+            "A damp or sticky pitch after rain causing erratic bounce",
+            "A pitch with excessive spin",
+            "A flat pitch that doesn't deteriorate"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_10_5",
+          "question": "Who was the first batsman to be given out 'Handled the ball' in Test cricket?",
+          "options": [
+            "Len Hutton",
+            "Graham Gooch",
+            "W.G. Grace",
+            "Don Bradman"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "cr_10_6",
+          "question": "Australia's highest innings total in ODIs was scored against?",
+          "options": [
+            "Afghanistan",
+            "Scotland",
+            "Netherlands",
+            "Ireland"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "cr_10_7",
+          "question": "The term 'Jaffa' in cricket slang refers to?",
+          "options": [
+            "A very bad shot",
+            "An unplayable delivery",
+            "An easy catch",
+            "A wide ball"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_10_8",
+          "question": "Highest partnership for any wicket in Test cricket is?",
+          "options": [
+            "576 (1st wicket, Sri Lanka)",
+            "624 (3rd wicket, Sri Lanka)",
+            "665 (3rd wicket)",
+            "624 (3rd wicket, Sri Lanka vs S Africa)"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "cr_10_9",
+          "question": "Who took a hat-trick in the 1999 World Cup Super Six stage against Pakistan?",
+          "options": [
+            "Wasim Akram",
+            "Waqar Younis",
+            "Shoaib Akhtar",
+            "Saqlain Mushtaq"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "cr_10_10",
+          "question": "In Test cricket, the 'follow-on' is enforced when the lead is at least?",
+          "options": [
+            "150 runs",
+            "200 runs",
+            "150 or 200 depending on match length",
+            "100 runs"
+          ],
+          "correct": 2
+        }
+      ]
+    }
+  ]
+}

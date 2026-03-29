@@ -1,0 +1,1165 @@
+{
+  "category": "Mixed GK",
+  "levels": [
+    {
+      "level": 1,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "mg_1_1",
+          "question": "Who invented the telephone?",
+          "options": [
+            "Thomas Edison",
+            "Nikola Tesla",
+            "Alexander Graham Bell",
+            "Guglielmo Marconi"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_1_2",
+          "question": "What is the chemical symbol for gold?",
+          "options": [
+            "Gd",
+            "Go",
+            "Au",
+            "Ag"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_1_3",
+          "question": "Which planet is known as the Red Planet?",
+          "options": [
+            "Venus",
+            "Jupiter",
+            "Saturn",
+            "Mars"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_1_4",
+          "question": "Who wrote 'The Origin of Species'?",
+          "options": [
+            "Gregor Mendel",
+            "Louis Pasteur",
+            "Charles Darwin",
+            "Alfred Russell Wallace"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_1_5",
+          "question": "The Eiffel Tower is located in which city?",
+          "options": [
+            "London",
+            "Berlin",
+            "Rome",
+            "Paris"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_1_6",
+          "question": "What is the chemical formula for water?",
+          "options": [
+            "HO2",
+            "H2O",
+            "H2O2",
+            "OH2"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_1_7",
+          "question": "Who painted the Mona Lisa?",
+          "options": [
+            "Michelangelo",
+            "Raphael",
+            "Leonardo da Vinci",
+            "Donatello"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_1_8",
+          "question": "The speed of light is approximately?",
+          "options": [
+            "3 \u00d7 10^6 m/s",
+            "3 \u00d7 10^7 m/s",
+            "3 \u00d7 10^8 m/s",
+            "3 \u00d7 10^9 m/s"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_1_9",
+          "question": "What is the largest planet in our solar system?",
+          "options": [
+            "Saturn",
+            "Neptune",
+            "Uranus",
+            "Jupiter"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_1_10",
+          "question": "What is the powerhouse of the cell?",
+          "options": [
+            "Nucleus",
+            "Ribosome",
+            "Mitochondria",
+            "Chloroplast"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "mg_2_1",
+          "question": "How many bones are in the adult human body?",
+          "options": [
+            "196",
+            "206",
+            "216",
+            "226"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_2_2",
+          "question": "What is the hardest natural substance on Earth?",
+          "options": [
+            "Platinum",
+            "Gold",
+            "Diamond",
+            "Corundum"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_2_3",
+          "question": "What is the chemical symbol for iron?",
+          "options": [
+            "Ir",
+            "Fe",
+            "In",
+            "Io"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_2_4",
+          "question": "The Great Wall of China was built to?",
+          "options": [
+            "Mark Chinese territory",
+            "Protect against northern invasions",
+            "Show Chinese power",
+            "Control trade routes"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_2_5",
+          "question": "What is the smallest planet in our solar system?",
+          "options": [
+            "Pluto",
+            "Mars",
+            "Mercury",
+            "Venus"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_2_6",
+          "question": "How many sides does a hexagon have?",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_2_7",
+          "question": "Which organ produces insulin?",
+          "options": [
+            "Liver",
+            "Kidney",
+            "Spleen",
+            "Pancreas"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_2_8",
+          "question": "What does 'WWW' stand for?",
+          "options": [
+            "World Wide Web",
+            "World War Web",
+            "Wide World Web",
+            "Web World Wide"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_2_9",
+          "question": "What is the largest mammal in the world?",
+          "options": [
+            "African elephant",
+            "Blue whale",
+            "Sperm whale",
+            "Polar bear"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_2_10",
+          "question": "The first Nobel Prizes were awarded in which year?",
+          "options": [
+            "1898",
+            "1900",
+            "1901",
+            "1905"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "mg_3_1",
+          "question": "How many elements are in the periodic table (as of 2024)?",
+          "options": [
+            "108",
+            "112",
+            "118",
+            "120"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_3_2",
+          "question": "The Pythagorean theorem states a\u00b2 + b\u00b2 equals?",
+          "options": [
+            "c",
+            "c\u00b2",
+            "2c",
+            "c\u00b3"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_3_3",
+          "question": "Which gas makes up most of Earth's atmosphere?",
+          "options": [
+            "Oxygen",
+            "Carbon dioxide",
+            "Argon",
+            "Nitrogen"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_3_4",
+          "question": "The inventor of the World Wide Web is?",
+          "options": [
+            "Bill Gates",
+            "Steve Jobs",
+            "Tim Berners-Lee",
+            "Vint Cerf"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_3_5",
+          "question": "What is the freezing point of water in Celsius?",
+          "options": [
+            "-10\u00b0C",
+            "0\u00b0C",
+            "4\u00b0C",
+            "32\u00b0C"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_3_6",
+          "question": "Which country is the world's largest producer of coffee?",
+          "options": [
+            "Colombia",
+            "Vietnam",
+            "Ethiopia",
+            "Brazil"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_3_7",
+          "question": "How many planets are in our solar system?",
+          "options": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_3_8",
+          "question": "The first artificial satellite sent to space was?",
+          "options": [
+            "Explorer 1",
+            "Vanguard 1",
+            "Sputnik 1",
+            "Luna 1"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_3_9",
+          "question": "What is the national currency of the European Union?",
+          "options": [
+            "Pound",
+            "Frank",
+            "Dollar",
+            "Euro"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_3_10",
+          "question": "Who was the first human to travel to space?",
+          "options": [
+            "Neil Armstrong",
+            "Buzz Aldrin",
+            "Alan Shepard",
+            "Yuri Gagarin"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "mg_4_1",
+          "question": "The theory of relativity was proposed by?",
+          "options": [
+            "Isaac Newton",
+            "Max Planck",
+            "Albert Einstein",
+            "Niels Bohr"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_4_2",
+          "question": "What does DNA stand for?",
+          "options": [
+            "Deoxyribonucleic acid",
+            "Deoxyribose nucleic acid",
+            "Deoxyribonucleic antigen",
+            "Diribonucleic acid"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_4_3",
+          "question": "Which country has won the most FIFA World Cups?",
+          "options": [
+            "Germany",
+            "Argentina",
+            "Italy",
+            "Brazil"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_4_4",
+          "question": "The International Space Station was launched in?",
+          "options": [
+            "1995",
+            "1996",
+            "1998",
+            "2000"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_4_5",
+          "question": "What is the SI unit of electric current?",
+          "options": [
+            "Volt",
+            "Ohm",
+            "Watt",
+            "Ampere"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_4_6",
+          "question": "The Great Barrier Reef is located in?",
+          "options": [
+            "Pacific Ocean",
+            "Coral Sea (off Australia)",
+            "Indian Ocean",
+            "Caribbean Sea"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_4_7",
+          "question": "Which blood type is the universal donor?",
+          "options": [
+            "A",
+            "B",
+            "AB",
+            "O negative"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_4_8",
+          "question": "The Hubble Space Telescope was launched in?",
+          "options": [
+            "1988",
+            "1990",
+            "1992",
+            "1995"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_4_9",
+          "question": "Which element has the atomic number 1?",
+          "options": [
+            "Helium",
+            "Carbon",
+            "Oxygen",
+            "Hydrogen"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_4_10",
+          "question": "What is the longest bone in the human body?",
+          "options": [
+            "Tibia",
+            "Spine",
+            "Femur",
+            "Humerus"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "mg_5_1",
+          "question": "Which country invented paper?",
+          "options": [
+            "Egypt",
+            "Mesopotamia",
+            "India",
+            "China"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_5_2",
+          "question": "What is the currency of Japan?",
+          "options": [
+            "Won",
+            "Yuan",
+            "Ringgit",
+            "Yen"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_5_3",
+          "question": "The 2020 Nobel Peace Prize was awarded to?",
+          "options": [
+            "UNICEF",
+            "Doctors Without Borders",
+            "World Food Programme",
+            "WHO"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_5_4",
+          "question": "What is the pH of pure water?",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_5_5",
+          "question": "Which is the fastest bird in the world?",
+          "options": [
+            "Ostrich",
+            "Falcon (Peregrine)",
+            "Eagle",
+            "Swift"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_5_6",
+          "question": "What does 'URL' stand for?",
+          "options": [
+            "Universal Resource Link",
+            "Unified Resource Locator",
+            "Uniform Resource Locator",
+            "Universal Routing Link"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_5_7",
+          "question": "The Nobel Prize for Physics in 2023 was awarded for work on?",
+          "options": [
+            "Quantum computing",
+            "Attosecond pulses of light",
+            "Black holes",
+            "Gravitational waves"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_5_8",
+          "question": "Which vitamin is produced when skin is exposed to sunlight?",
+          "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin E"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_5_9",
+          "question": "Which is the most abundant metal in Earth's crust?",
+          "options": [
+            "Iron",
+            "Calcium",
+            "Silicon",
+            "Aluminum"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_5_10",
+          "question": "The Andromeda Galaxy is the nearest spiral galaxy to the Milky Way. Its approximate distance is?",
+          "options": [
+            "1 million light-years",
+            "2.5 million light-years",
+            "5 million light-years",
+            "10 million light-years"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "mg_6_1",
+          "question": "What is the most spoken language in the world (by native speakers)?",
+          "options": [
+            "English",
+            "Spanish",
+            "Mandarin Chinese",
+            "Hindi"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_6_2",
+          "question": "What is the Square root of 144?",
+          "options": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_6_3",
+          "question": "Which organ in the human body is responsible for filtering blood?",
+          "options": [
+            "Liver",
+            "Heart",
+            "Kidneys",
+            "Spleen"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_6_4",
+          "question": "In which year was the first iPhone launched?",
+          "options": [
+            "2005",
+            "2006",
+            "2007",
+            "2008"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_6_5",
+          "question": "The Amazon rainforest is often called the 'Lungs of the Earth' because?",
+          "options": [
+            "It produces most of Earth's oxygen",
+            "It breathes in CO2 and breathes out O2 like lungs",
+            "Both A and B",
+            "Neither, it is a misconception"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_6_6",
+          "question": "What is the chemical symbol for silver?",
+          "options": [
+            "Si",
+            "Sl",
+            "Ag",
+            "Sr"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_6_7",
+          "question": "Which country is the largest producer of oil in the world (2023)?",
+          "options": [
+            "Saudi Arabia",
+            "Russia",
+            "USA",
+            "Iran"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_6_8",
+          "question": "What does 'AI' stand for in technology?",
+          "options": [
+            "Automatic Intelligence",
+            "Artificial Intelligence",
+            "Advanced Intelligence",
+            "Algorithmic Intelligence"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_6_9",
+          "question": "The boiling point of water at sea level is?",
+          "options": [
+            "90\u00b0C",
+            "95\u00b0C",
+            "100\u00b0C",
+            "105\u00b0C"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_6_10",
+          "question": "Which gas is most responsible for the greenhouse effect?",
+          "options": [
+            "Methane",
+            "Ozone",
+            "Carbon dioxide",
+            "Nitrous oxide"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "mg_7_1",
+          "question": "The tallest building in the world (as of 2024) is?",
+          "options": [
+            "Shanghai Tower",
+            "Abraj Al-Bait Clock Tower",
+            "Burj Khalifa",
+            "One World Trade Center"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_7_2",
+          "question": "What is the formula for force in physics?",
+          "options": [
+            "F = ma",
+            "F = mv",
+            "F = m/a",
+            "F = m\u00b2a"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_7_3",
+          "question": "What is the study of earthquakes called?",
+          "options": [
+            "Vulcanology",
+            "Tectonics",
+            "Seismology",
+            "Geology"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_7_4",
+          "question": "Which two scientists discovered the double helix structure of DNA?",
+          "options": [
+            "Crick and Franklin",
+            "Watson and Crick",
+            "Mendel and Morgan",
+            "Pauling and Wilkins"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_7_5",
+          "question": "What is the name of the first cloned sheep?",
+          "options": [
+            "Sally",
+            "Mary",
+            "Daisy",
+            "Dolly"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "mg_7_6",
+          "question": "In computer science, what does 'CPU' stand for?",
+          "options": [
+            "Central Processing Unit",
+            "Computer Processing Utility",
+            "Core Processing Unit",
+            "Central Power Unit"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_7_7",
+          "question": "Which planet has the most moons (as of 2024)?",
+          "options": [
+            "Jupiter",
+            "Saturn",
+            "Uranus",
+            "Neptune"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_7_8",
+          "question": "The average human brain weighs approximately?",
+          "options": [
+            "1 kg",
+            "1.4 kg",
+            "2 kg",
+            "0.5 kg"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_7_9",
+          "question": "Which scientist proposed the three laws of motion?",
+          "options": [
+            "Galileo Galilei",
+            "Albert Einstein",
+            "Isaac Newton",
+            "Gottfried Leibniz"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_7_10",
+          "question": "What is the most common blood type in the world?",
+          "options": [
+            "A positive",
+            "B positive",
+            "O positive",
+            "AB positive"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "mg_8_1",
+          "question": "What is the value of Planck's constant?",
+          "options": [
+            "6.626 \u00d7 10^-34 J\u00b7s",
+            "6.626 \u00d7 10^-32 J\u00b7s",
+            "9.109 \u00d7 10^-31 J\u00b7s",
+            "1.602 \u00d7 10^-19 J"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_8_2",
+          "question": "Which mathematical constant appears in Euler's identity (e^(i\u03c0) + 1 = 0)?",
+          "options": [
+            "e, i, and \u03c0",
+            "e and \u03c0 only",
+            "All mathematical constants",
+            "e and i only"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_8_3",
+          "question": "The CRISPR-Cas9 gene editing technology was developed by?",
+          "options": [
+            "Jennifer Doudna and Emmanuelle Charpentier",
+            "Francis Collins and Craig Venter",
+            "James Watson and Francis Crick",
+            "George Church and David Liu"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_8_4",
+          "question": "Which award did Har Gobind Khorana, Subrahmanyan Chandrasekhar, and Amartya Sen all win?",
+          "options": [
+            "Padma Vibhushan",
+            "Nobel Prize",
+            "Bharat Ratna",
+            "Ramon Magsaysay Award"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_8_5",
+          "question": "The Turing Test is used to evaluate?",
+          "options": [
+            "Computer processing speed",
+            "Machine intelligence mimicking humans",
+            "Computer memory capacity",
+            "Network security"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_8_6",
+          "question": "What is the Chandrasekhar Limit?",
+          "options": [
+            "Maximum mass of a white dwarf (~1.4 solar masses)",
+            "Minimum mass for a star",
+            "Speed of light limit near black holes",
+            "Quantum tunneling threshold"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_8_7",
+          "question": "The Fermat's Last Theorem was proved in 1995 by?",
+          "options": [
+            "Andrew Wiles",
+            "Pierre de Fermat",
+            "John Conway",
+            "Grigori Perelman"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_8_8",
+          "question": "What phenomenon did Heinrich Hertz discover in 1887?",
+          "options": [
+            "Radio waves",
+            "Photoelectric effect",
+            "X-rays",
+            "Electromagnetic induction"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_8_9",
+          "question": "The Boltzmann constant (k_B) relates temperature to?",
+          "options": [
+            "Energy at the molecular level",
+            "Electrical resistance",
+            "Gravitational force",
+            "Magnetic field strength"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_8_10",
+          "question": "Which country launched the first moon lander to soft-land on the lunar south pole (2023)?",
+          "options": [
+            "China",
+            "USA",
+            "Russia",
+            "India"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "mg_9_1",
+          "question": "The 'double-slit experiment' in quantum physics demonstrates?",
+          "options": [
+            "Wave-particle duality of matter",
+            "Speed of light",
+            "Heisenberg Uncertainty Principle only",
+            "Gravity effects on light"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_9_2",
+          "question": "The concept of 'half-life' in nuclear physics refers to?",
+          "options": [
+            "Time for a sample to double",
+            "Time for half the nuclei in a sample to decay",
+            "Time for a reaction to complete",
+            "Half the energy of a particle"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_9_3",
+          "question": "Which element was named after India?",
+          "options": [
+            "Germanium",
+            "Gallium",
+            "Indium",
+            "Francium"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_9_4",
+          "question": "The Hardy-Weinberg principle in genetics states that?",
+          "options": [
+            "Mutations always increase fitness",
+            "Allele frequencies in a population remain constant in absence of evolution",
+            "Natural selection always leads to speciation",
+            "Gene flow decreases genetic diversity"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_9_5",
+          "question": "What is the name for the boundary around a black hole beyond which nothing can escape?",
+          "options": [
+            "Photon sphere",
+            "Singularity",
+            "Event horizon",
+            "Ergosphere"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_9_6",
+          "question": "The 'Riemann Hypothesis' is one of the Millennium Prize Problems. It concerns?",
+          "options": [
+            "Prime number distribution and Riemann zeta function",
+            "Topology of 3D space",
+            "Equation of fluid dynamics",
+            "Geometric shapes"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_9_7",
+          "question": "Who won the Nobel Prize in Chemistry 2023?",
+          "options": [
+            "Svante P\u00e4\u00e4bo",
+            "Katalin Karik\u00f3 and Drew Weissman",
+            "Moungi Bawendi, Louis Brus and Alexei Ekimov",
+            "Barry Sharpless"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_9_8",
+          "question": "The James Webb Space Telescope (JWST) primarily observes in which wavelength?",
+          "options": [
+            "Visible light",
+            "Ultraviolet",
+            "Infrared",
+            "Radio waves"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_9_9",
+          "question": "What is the P vs NP problem in computer science?",
+          "options": [
+            "Whether every problem whose solution can be quickly verified can also be quickly solved",
+            "Parallel processing vs non-parallel",
+            "Program vs non-program problems",
+            "Polynomial vs non-polynomial storage"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "mg_9_10",
+          "question": "The 'Krebs Cycle' in cellular metabolism is also known as?",
+          "options": [
+            "Glycolysis",
+            "Citric acid cycle",
+            "Electron transport chain",
+            "Calvin cycle"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "mg_10_1",
+          "question": "The Higgs boson was discovered at which particle accelerator?",
+          "options": [
+            "Fermilab (USA)",
+            "SLAC (USA)",
+            "CERN LHC (Switzerland/France)",
+            "KEK (Japan)"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_10_2",
+          "question": "G\u00f6del's Incompleteness Theorems state that?",
+          "options": [
+            "Mathematics is complete and consistent",
+            "In any consistent formal system, there are truths that cannot be proved within that system",
+            "All mathematical statements are decidable",
+            "Logic is insufficient for mathematics"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_10_3",
+          "question": "The Schr\u00f6dinger equation in quantum mechanics describes?",
+          "options": [
+            "Position of a particle at a given time",
+            "How the quantum state of a physical system evolves over time",
+            "The speed of electrons in orbit",
+            "Nuclear binding energy"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_10_4",
+          "question": "The Navier-Stokes equations describe which physical phenomenon?",
+          "options": [
+            "Electromagnetic waves",
+            "Fluid dynamics (motion of viscous fluids)",
+            "Gravitational fields",
+            "Heat transfer"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_10_5",
+          "question": "C.V. Raman received the Nobel Prize for?",
+          "options": [
+            "Discovery of neutron",
+            "Theory of crystal growth",
+            "Raman scattering / Raman Effect (light scattering)",
+            "Quantum mechanics"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_10_6",
+          "question": "Which mathematical concept did George Cantor introduce regarding infinity?",
+          "options": [
+            "Infinite series convergence",
+            "Multiple sizes of infinity / cardinality of infinite sets",
+            "The concept of limits",
+            "Fractal geometry"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_10_7",
+          "question": "The 'Many-Worlds Interpretation' is a theory in?",
+          "options": [
+            "Cosmology",
+            "Quantum mechanics",
+            "String theory",
+            "Classical mechanics"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_10_8",
+          "question": "Which was the first protein to have its 3D structure determined by X-ray crystallography?",
+          "options": [
+            "Insulin",
+            "Hemoglobin",
+            "Myoglobin",
+            "Collagen"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "mg_10_9",
+          "question": "The concept of 'Nash Equilibrium' in game theory was developed by?",
+          "options": [
+            "John von Neumann",
+            "John Nash",
+            "Oskar Morgenstern",
+            "Robert Aumann"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "mg_10_10",
+          "question": "The 'Central Dogma of Molecular Biology' states that genetic information flows from?",
+          "options": [
+            "Protein \u2192 RNA \u2192 DNA",
+            "RNA \u2192 DNA \u2192 Protein",
+            "DNA \u2192 RNA \u2192 Protein",
+            "DNA \u2192 Protein \u2192 RNA"
+          ],
+          "correct": 2
+        }
+      ]
+    }
+  ]
+}

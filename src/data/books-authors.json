@@ -1,0 +1,1165 @@
+{
+  "category": "Books & Authors",
+  "levels": [
+    {
+      "level": 1,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "ba_1_1",
+          "question": "Who wrote 'The God of Small Things'?",
+          "options": [
+            "Jhumpa Lahiri",
+            "Arundhati Roy",
+            "Anita Desai",
+            "Kiran Desai"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_1_2",
+          "question": "Who wrote 'Midnight's Children'?",
+          "options": [
+            "V.S. Naipaul",
+            "Amitav Ghosh",
+            "Salman Rushdie",
+            "Vikram Seth"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_1_3",
+          "question": "Who is the author of 'Wings of Fire'?",
+          "options": [
+            "Amartya Sen",
+            "Manmohan Singh",
+            "A.P.J. Abdul Kalam",
+            "Narendra Modi"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_1_4",
+          "question": "The novel 'To Kill a Mockingbird' was written by?",
+          "options": [
+            "John Steinbeck",
+            "Ernest Hemingway",
+            "F. Scott Fitzgerald",
+            "Harper Lee"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ba_1_5",
+          "question": "Who wrote '1984'?",
+          "options": [
+            "Aldous Huxley",
+            "George Orwell",
+            "Ray Bradbury",
+            "H.G. Wells"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_1_6",
+          "question": "Which author wrote the Harry Potter series?",
+          "options": [
+            "Roald Dahl",
+            "C.S. Lewis",
+            "J.R.R. Tolkien",
+            "J.K. Rowling"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ba_1_7",
+          "question": "Who wrote 'Pride and Prejudice'?",
+          "options": [
+            "Charlotte Bronte",
+            "Emily Bronte",
+            "Jane Austen",
+            "George Eliot"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_1_8",
+          "question": "Who wrote 'The Alchemist'?",
+          "options": [
+            "Gabriel Garc\u00eda M\u00e1rquez",
+            "Paulo Coelho",
+            "Jorge Luis Borges",
+            "Mario Vargas Llosa"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_1_9",
+          "question": "Who wrote 'Gitanjali', which won the Nobel Prize in Literature?",
+          "options": [
+            "Bankimchandra Chatterjee",
+            "Sarat Chandra Chattopadhyay",
+            "Rabindranath Tagore",
+            "Munshi Premchand"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_1_10",
+          "question": "Who wrote 'The Da Vinci Code'?",
+          "options": [
+            "John Grisham",
+            "Sidney Sheldon",
+            "Dan Brown",
+            "Tom Clancy"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "ba_2_1",
+          "question": "Who wrote 'Romeo and Juliet'?",
+          "options": [
+            "Christopher Marlowe",
+            "Ben Jonson",
+            "William Shakespeare",
+            "John Milton"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_2_2",
+          "question": "Who is the author of 'Don Quixote'?",
+          "options": [
+            "Miguel de Cervantes",
+            "Gabriel Garc\u00eda M\u00e1rquez",
+            "Mario Vargas Llosa",
+            "Federico Garc\u00eda Lorca"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ba_2_3",
+          "question": "Who wrote 'The Diary of a Young Girl' (Anne Frank's Diary)?",
+          "options": [
+            "Sylvia Plath",
+            "Anne Frank",
+            "Simone de Beauvoir",
+            "Virginia Woolf"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_2_4",
+          "question": "Who wrote 'Adventures of Huckleberry Finn'?",
+          "options": [
+            "Charles Dickens",
+            "Mark Twain",
+            "Ernest Hemingway",
+            "John Steinbeck"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_2_5",
+          "question": "Who wrote 'The Old Man and the Sea'?",
+          "options": [
+            "F. Scott Fitzgerald",
+            "John Steinbeck",
+            "Ernest Hemingway",
+            "William Faulkner"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_2_6",
+          "question": "Who wrote 'Wuthering Heights'?",
+          "options": [
+            "Jane Austen",
+            "Charlotte Bronte",
+            "Emily Bronte",
+            "George Eliot"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_2_7",
+          "question": "Who wrote 'The Great Gatsby'?",
+          "options": [
+            "Ernest Hemingway",
+            "F. Scott Fitzgerald",
+            "John Steinbeck",
+            "Theodore Dreiser"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_2_8",
+          "question": "Sherlock Holmes was created by which author?",
+          "options": [
+            "Agatha Christie",
+            "Arthur Conan Doyle",
+            "G.K. Chesterton",
+            "P.G. Wodehouse"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_2_9",
+          "question": "Who wrote 'War and Peace'?",
+          "options": [
+            "Fyodor Dostoevsky",
+            "Ivan Turgenev",
+            "Anton Chekhov",
+            "Leo Tolstoy"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ba_2_10",
+          "question": "Who wrote 'Brave New World'?",
+          "options": [
+            "George Orwell",
+            "Aldous Huxley",
+            "Ray Bradbury",
+            "Arthur C. Clarke"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "ba_3_1",
+          "question": "Who wrote 'The Lord of the Rings'?",
+          "options": [
+            "C.S. Lewis",
+            "J.R.R. Tolkien",
+            "George R.R. Martin",
+            "Terry Pratchett"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_3_2",
+          "question": "Agatha Christie is best known for which character?",
+          "options": [
+            "Miss Marple and Hercule Poirot",
+            "Sherlock Holmes",
+            "Philip Marlowe",
+            "Sam Spade"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ba_3_3",
+          "question": "Who wrote 'Oliver Twist'?",
+          "options": [
+            "Thomas Hardy",
+            "William Thackeray",
+            "Charles Dickens",
+            "Anthony Trollope"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_3_4",
+          "question": "Who wrote 'A Brief History of Time'?",
+          "options": [
+            "Richard Feynman",
+            "Carl Sagan",
+            "Stephen Hawking",
+            "Neil deGrasse Tyson"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_3_5",
+          "question": "Who wrote 'Anna Karenina'?",
+          "options": [
+            "Fyodor Dostoevsky",
+            "Anton Chekhov",
+            "Ivan Turgenev",
+            "Leo Tolstoy"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ba_3_6",
+          "question": "Who wrote 'The Jungle Book'?",
+          "options": [
+            "Rudyard Kipling",
+            "Jack London",
+            "Thomas Hardy",
+            "Robert Louis Stevenson"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ba_3_7",
+          "question": "Who wrote 'The Grapes of Wrath'?",
+          "options": [
+            "Ernest Hemingway",
+            "William Faulkner",
+            "John Steinbeck",
+            "Theodore Dreiser"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_3_8",
+          "question": "Who wrote 'Crime and Punishment'?",
+          "options": [
+            "Leo Tolstoy",
+            "Ivan Turgenev",
+            "Anton Chekhov",
+            "Fyodor Dostoevsky"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ba_3_9",
+          "question": "Who wrote 'A Passage to India'?",
+          "options": [
+            "Rudyard Kipling",
+            "E.M. Forster",
+            "George Orwell",
+            "W. Somerset Maugham"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_3_10",
+          "question": "Who wrote 'Gulliver's Travels'?",
+          "options": [
+            "Daniel Defoe",
+            "Jonathan Swift",
+            "Henry Fielding",
+            "Samuel Richardson"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "ba_4_1",
+          "question": "Which Indian author won the Booker Prize in 1997 for 'The God of Small Things'?",
+          "options": [
+            "Salman Rushdie",
+            "Amitav Ghosh",
+            "Arundhati Roy",
+            "Vikram Seth"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_4_2",
+          "question": "Who wrote 'The Namesake'?",
+          "options": [
+            "Arundhati Roy",
+            "Chitra Banerjee Divakaruni",
+            "Jhumpa Lahiri",
+            "Bharati Mukherjee"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_4_3",
+          "question": "Gabriel Garc\u00eda M\u00e1rquez was from which country?",
+          "options": [
+            "Argentina",
+            "Brazil",
+            "Colombia",
+            "Mexico"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_4_4",
+          "question": "Who wrote 'In Cold Blood', a pioneering work of narrative nonfiction?",
+          "options": [
+            "Tom Wolfe",
+            "Hunter S. Thompson",
+            "Truman Capote",
+            "Norman Mailer"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_4_5",
+          "question": "Who wrote 'One Hundred Years of Solitude'?",
+          "options": [
+            "Jorge Luis Borges",
+            "Pablo Neruda",
+            "Mario Vargas Llosa",
+            "Gabriel Garc\u00eda M\u00e1rquez"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ba_4_6",
+          "question": "The Nobel Prize in Literature 2023 was awarded to?",
+          "options": [
+            "Annie Ernaux",
+            "Abdulrazak Gurnah",
+            "Jon Fosse",
+            "Peter Handke"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_4_7",
+          "question": "Who wrote 'Invisible Man'?",
+          "options": [
+            "James Baldwin",
+            "Toni Morrison",
+            "Ralph Ellison",
+            "Richard Wright"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_4_8",
+          "question": "Which book is subtitled 'The Modern Prometheus'?",
+          "options": [
+            "Dracula",
+            "Frankenstein",
+            "The Strange Case of Dr Jekyll and Mr Hyde",
+            "The Picture of Dorian Gray"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_4_9",
+          "question": "Who wrote 'Beloved', which won the Pulitzer Prize?",
+          "options": [
+            "Alice Walker",
+            "Toni Morrison",
+            "Maya Angelou",
+            "Zora Neale Hurston"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_4_10",
+          "question": "Who wrote 'Sophie's World', a philosophical novel?",
+          "options": [
+            "Stieg Larsson",
+            "Lars Saabye Christensen",
+            "Jostein Gaarder",
+            "Henrik Ibsen"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "ba_5_1",
+          "question": "Who wrote 'Swami and Friends' and 'Malgudi Days'?",
+          "options": [
+            "Mulk Raj Anand",
+            "R.K. Narayan",
+            "Raja Rao",
+            "Khushwant Singh"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_5_2",
+          "question": "Who wrote 'The White Tiger', which won the Booker Prize in 2008?",
+          "options": [
+            "Kiran Desai",
+            "Aravind Adiga",
+            "Salman Rushdie",
+            "Amitav Ghosh"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_5_3",
+          "question": "Who wrote 'The Tin Drum'?",
+          "options": [
+            "Thomas Mann",
+            "Bertolt Brecht",
+            "G\u00fcnter Grass",
+            "Heinrich B\u00f6ll"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_5_4",
+          "question": "Which novel begins 'It was a bright cold day in April, and the clocks were striking thirteen'?",
+          "options": [
+            "Brave New World",
+            "1984",
+            "Fahrenheit 451",
+            "We"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_5_5",
+          "question": "Who wrote 'Interpreter of Maladies', a Pulitzer Prize-winning collection of short stories?",
+          "options": [
+            "Bharati Mukherjee",
+            "Arundhati Roy",
+            "Jhumpa Lahiri",
+            "Chitra Banerjee Divakaruni"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_5_6",
+          "question": "Who wrote 'The Remains of the Day'?",
+          "options": [
+            "Ian McEwan",
+            "Martin Amis",
+            "Kazuo Ishiguro",
+            "Julian Barnes"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_5_7",
+          "question": "Which Indian novelist wrote 'A Suitable Boy'?",
+          "options": [
+            "Amitav Ghosh",
+            "Vikram Seth",
+            "Salman Rushdie",
+            "Arundhati Roy"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_5_8",
+          "question": "Who wrote 'The Kite Runner'?",
+          "options": [
+            "Orhan Pamuk",
+            "Khaled Hosseini",
+            "Mohsin Hamid",
+            "Kamila Shamsie"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_5_9",
+          "question": "Who wrote 'The Trial' and 'The Metamorphosis'?",
+          "options": [
+            "Albert Camus",
+            "Jean-Paul Sartre",
+            "Franz Kafka",
+            "Milan Kundera"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_5_10",
+          "question": "Who wrote 'Shantaram'?",
+          "options": [
+            "Peter Carey",
+            "David Malouf",
+            "Gregory David Roberts",
+            "Tim Winton"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "ba_6_1",
+          "question": "Sarojini Naidu was known as the 'Nightingale of India' for her?",
+          "options": [
+            "Music",
+            "Poetry",
+            "Dancing",
+            "Painting"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_6_2",
+          "question": "Who wrote 'The Shadow Lines'?",
+          "options": [
+            "Vikram Seth",
+            "Salman Rushdie",
+            "Amitav Ghosh",
+            "Arundhati Roy"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_6_3",
+          "question": "Who wrote 'A Fine Balance'?",
+          "options": [
+            "Anita Desai",
+            "Kiran Desai",
+            "Rohinton Mistry",
+            "Jhumpa Lahiri"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_6_4",
+          "question": "Who wrote 'The Stranger' (L'\u00c9tranger)?",
+          "options": [
+            "Jean-Paul Sartre",
+            "Albert Camus",
+            "Simone de Beauvoir",
+            "Andr\u00e9 Gide"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_6_5",
+          "question": "Who wrote 'Midnight in the Garden of Good and Evil'?",
+          "options": [
+            "John Berendt",
+            "Tom Wolfe",
+            "Gay Talese",
+            "Jon Krakauer"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ba_6_6",
+          "question": "Who wrote 'The Hitchhiker's Guide to the Galaxy'?",
+          "options": [
+            "Terry Pratchett",
+            "Douglas Adams",
+            "Neil Gaiman",
+            "Iain Banks"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_6_7",
+          "question": "Who was the first Indian to win the Nobel Prize for Literature?",
+          "options": [
+            "Mulk Raj Anand",
+            "R.K. Narayan",
+            "Rabindranath Tagore",
+            "Raja Rao"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_6_8",
+          "question": "Who wrote 'Lolita'?",
+          "options": [
+            "Henry Miller",
+            "Vladimir Nabokov",
+            "John Updike",
+            "Philip Roth"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_6_9",
+          "question": "Who wrote 'The Road' and 'No Country for Old Men'?",
+          "options": [
+            "Philip Roth",
+            "Don DeLillo",
+            "Cormac McCarthy",
+            "Thomas Pynchon"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_6_10",
+          "question": "Who wrote 'Things Fall Apart'?",
+          "options": [
+            "Wole Soyinka",
+            "Chinua Achebe",
+            "Ngugi wa Thiong'o",
+            "Ben Okri"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "ba_7_1",
+          "question": "Who wrote 'Catch-22'?",
+          "options": [
+            "Joseph Heller",
+            "Kurt Vonnegut",
+            "Tom Wolfe",
+            "Philip Roth"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ba_7_2",
+          "question": "Which Booker Prize winner wrote 'Life of Pi'?",
+          "options": [
+            "Ian McEwan",
+            "Peter Carey",
+            "Yann Martel",
+            "Kiran Desai"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_7_3",
+          "question": "Who wrote 'The Brothers Karamazov'?",
+          "options": [
+            "Leo Tolstoy",
+            "Ivan Turgenev",
+            "Anton Chekhov",
+            "Fyodor Dostoevsky"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ba_7_4",
+          "question": "Who wrote 'The Catcher in the Rye'?",
+          "options": [
+            "Jack Kerouac",
+            "J.D. Salinger",
+            "William Burroughs",
+            "Allen Ginsberg"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_7_5",
+          "question": "Who wrote 'Beloved' and 'Song of Solomon'?",
+          "options": [
+            "Alice Walker",
+            "Maya Angelou",
+            "Toni Morrison",
+            "Zora Neale Hurston"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_7_6",
+          "question": "Which novel begins with 'It was the best of times, it was the worst of times'?",
+          "options": [
+            "Bleak House",
+            "David Copperfield",
+            "Oliver Twist",
+            "A Tale of Two Cities"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ba_7_7",
+          "question": "Who wrote 'The Master and Margarita'?",
+          "options": [
+            "Boris Pasternak",
+            "Mikhail Bulgakov",
+            "Aleksandr Solzhenitsyn",
+            "Ivan Turgenev"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_7_8",
+          "question": "Who wrote 'Siddhartha'?",
+          "options": [
+            "Thomas Mann",
+            "Hermann Hesse",
+            "Stefan Zweig",
+            "Rainer Maria Rilke"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_7_9",
+          "question": "Who wrote 'The Left Hand of Darkness'?",
+          "options": [
+            "Octavia Butler",
+            "Ursula K. Le Guin",
+            "Isaac Asimov",
+            "Arthur C. Clarke"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_7_10",
+          "question": "The 'Booker Prize' was founded in which year?",
+          "options": [
+            "1962",
+            "1965",
+            "1969",
+            "1975"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "ba_8_1",
+          "question": "Who wrote 'The Tin Drum', 'Dog Years', and 'Cat and Mouse'?",
+          "options": [
+            "Thomas Mann",
+            "Heinrich B\u00f6ll",
+            "G\u00fcnter Grass",
+            "Peter Handke"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_8_2",
+          "question": "Who wrote 'The Cairo Trilogy' (Naguib Mahfouz)?",
+          "options": [
+            "Naguib Mahfouz",
+            "Yusuf Idris",
+            "Taha Hussein",
+            "Abd al-Rahman al-Sharqawi"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ba_8_3",
+          "question": "Which author wrote 'The House of the Spirits'?",
+          "options": [
+            "Gabriel Garc\u00eda M\u00e1rquez",
+            "Pablo Neruda",
+            "Isabel Allende",
+            "Jorge Amado"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_8_4",
+          "question": "Who wrote 'The Unbearable Lightness of Being'?",
+          "options": [
+            "Vaclav Havel",
+            "Milan Kundera",
+            "Bohumil Hrabal",
+            "Jaroslav Hasek"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_8_5",
+          "question": "Who wrote 'The Wind-Up Bird Chronicle' and 'Norwegian Wood'?",
+          "options": [
+            "Yukio Mishima",
+            "Kenzaburo Oe",
+            "Haruki Murakami",
+            "Yasunari Kawabata"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_8_6",
+          "question": "Who wrote 'If on a winter's night a traveler'?",
+          "options": [
+            "Umberto Eco",
+            "Italo Calvino",
+            "Alberto Moravia",
+            "Cesare Pavese"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_8_7",
+          "question": "Who wrote 'The Name of the Rose'?",
+          "options": [
+            "Italo Calvino",
+            "Umberto Eco",
+            "Alberto Moravia",
+            "Leonardo Sciascia"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_8_8",
+          "question": "Mulk Raj Anand's 'Untouchable' was written in which year?",
+          "options": [
+            "1928",
+            "1932",
+            "1935",
+            "1940"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_8_9",
+          "question": "Who wrote 'The Periodic Table'?",
+          "options": [
+            "Elias Canetti",
+            "Primo Levi",
+            "Paul Celan",
+            "Jean Am\u00e9ry"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_8_10",
+          "question": "Who wrote 'The Magic Mountain'?",
+          "options": [
+            "Hermann Hesse",
+            "Stefan Zweig",
+            "Thomas Mann",
+            "Robert Musil"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "ba_9_1",
+          "question": "Orhan Pamuk is a Nobel Prize winner from which country?",
+          "options": [
+            "Greece",
+            "Turkey",
+            "Azerbaijan",
+            "Georgia"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_9_2",
+          "question": "Who wrote 'Austerlitz'?",
+          "options": [
+            "Peter Handke",
+            "W.G. Sebald",
+            "Christoph Ransmayr",
+            "Stefan Zweig"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_9_3",
+          "question": "Who wrote 'Blood Meridian'?",
+          "options": [
+            "Don DeLillo",
+            "Thomas Pynchon",
+            "Cormac McCarthy",
+            "Philip Roth"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_9_4",
+          "question": "Which book begins 'Last night I dreamt I went to Manderley again'?",
+          "options": [
+            "Wuthering Heights",
+            "Jane Eyre",
+            "Rebecca",
+            "The Woman in White"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_9_5",
+          "question": "Who wrote 'The Waves' and 'Mrs Dalloway'?",
+          "options": [
+            "Katherine Mansfield",
+            "Doris Lessing",
+            "Virginia Woolf",
+            "Elizabeth Bowen"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_9_6",
+          "question": "Who wrote the 'Mahabharata'?",
+          "options": [
+            "Valmiki",
+            "Vyasa (Krishna Dwaipayana)",
+            "Tulsidas",
+            "Kalidasa"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_9_7",
+          "question": "Who wrote 'The Sound and the Fury'?",
+          "options": [
+            "Ernest Hemingway",
+            "F. Scott Fitzgerald",
+            "John Dos Passos",
+            "William Faulkner"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ba_9_8",
+          "question": "Who wrote 'Midnight's Children', 'The Satanic Verses', and 'The Moor's Last Sigh'?",
+          "options": [
+            "Vikram Seth",
+            "Amitav Ghosh",
+            "Salman Rushdie",
+            "Rohinton Mistry"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_9_9",
+          "question": "Who wrote 'The Year of the Death of Ricardo Reis'?",
+          "options": [
+            "Fernando Pessoa",
+            "Jose Saramago",
+            "Miguel Torga",
+            "Eca de Queiros"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_9_10",
+          "question": "Which author's pen name was 'Mark Twain'?",
+          "options": [
+            "Samuel Langhorne Clemens",
+            "William Sydney Porter",
+            "Eric Arthur Blair",
+            "Charles Lutwidge Dodgson"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "ba_10_1",
+          "question": "Who wrote 'Independent People' (Sj\u00e1lfst\u00e6tt f\u00f3lk)?",
+          "options": [
+            "Halldor Laxness",
+            "Sigrid Undset",
+            "Knut Hamsun",
+            "Gunnar Gunnarsson"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ba_10_2",
+          "question": "Who wrote 'The Savage Detectives' and '2666'?",
+          "options": [
+            "Carlos Fuentes",
+            "Julio Cortazar",
+            "Roberto Bolano",
+            "Jorge Amado"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_10_3",
+          "question": "The Whitbread Prize (Costa Book Award) is awarded for literature in which country?",
+          "options": [
+            "USA",
+            "Canada",
+            "Australia",
+            "United Kingdom"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ba_10_4",
+          "question": "Who wrote 'Pedro P\u00e1ramo'?",
+          "options": [
+            "Octavio Paz",
+            "Juan Rulfo",
+            "Elena Poniatowska",
+            "Carlos Monsiv\u00e1is"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_10_5",
+          "question": "Who wrote 'Season of Migration to the North'?",
+          "options": [
+            "Tayeb Salih",
+            "Naguib Mahfouz",
+            "Ahdaf Soueif",
+            "Sun'allah Ibrahim"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "ba_10_6",
+          "question": "Which Nobel laureate wrote 'The Tin Drum', 'Cat and Mouse', and 'Dog Years'?",
+          "options": [
+            "Heinrich B\u00f6ll",
+            "G\u00fcnter Grass",
+            "Elias Canetti",
+            "Peter Handke"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "ba_10_7",
+          "question": "Who wrote 'Zorba the Greek'?",
+          "options": [
+            "Constantine Cavafy",
+            "Giorgos Seferis",
+            "Nikos Kazantzakis",
+            "Odysseas Elytis"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_10_8",
+          "question": "Yasunari Kawabata won the Nobel Prize for Literature in which year?",
+          "options": [
+            "1964",
+            "1966",
+            "1968",
+            "1970"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "ba_10_9",
+          "question": "Who wrote 'The Famished Road'?",
+          "options": [
+            "Chinua Achebe",
+            "Wole Soyinka",
+            "Ngugi wa Thiong'o",
+            "Ben Okri"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "ba_10_10",
+          "question": "Who translated the 'Ramayana' into Tamil as 'Ramavataram'?",
+          "options": [
+            "Thiruvalluvar",
+            "Kamban",
+            "Avvaiyar",
+            "Subramania Bharati"
+          ],
+          "correct": 1
+        }
+      ]
+    }
+  ]
+}

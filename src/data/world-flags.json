@@ -1,0 +1,1165 @@
+{
+  "category": "World Flags",
+  "levels": [
+    {
+      "level": 1,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "wf_1_1",
+          "question": "Which country's flag features a maple leaf?",
+          "options": [
+            "Australia",
+            "New Zealand",
+            "Canada",
+            "Ireland"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_1_2",
+          "question": "The flag of Japan features what symbol?",
+          "options": [
+            "Rising sun rays",
+            "A red circle (sun) on white background",
+            "Cherry blossom",
+            "Mount Fuji"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_1_3",
+          "question": "Which country's flag has a cedar tree?",
+          "options": [
+            "Cyprus",
+            "Saudi Arabia",
+            "Lebanon",
+            "Jordan"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_1_4",
+          "question": "The Union Jack is the flag of?",
+          "options": [
+            "Ireland",
+            "Australia",
+            "United Kingdom",
+            "New Zealand"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_1_5",
+          "question": "Which country has a flag with only one star (five-pointed) on red background?",
+          "options": [
+            "Cuba",
+            "China",
+            "Vietnam",
+            "North Korea"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_1_6",
+          "question": "The flag of India has how many colors?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_1_7",
+          "question": "Which country's flag has a crescent moon and star?",
+          "options": [
+            "Iran",
+            "Saudi Arabia",
+            "Turkey",
+            "Egypt"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_1_8",
+          "question": "The flag of France has which three colors?",
+          "options": [
+            "Red, white, green",
+            "Blue, white, red",
+            "Red, yellow, black",
+            "Blue, white, yellow"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_1_9",
+          "question": "Which country's flag features a bald eagle?",
+          "options": [
+            "Mexico",
+            "Guatemala",
+            "Ecuador",
+            "Bolivia"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_1_10",
+          "question": "The flag of Brazil has what color background?",
+          "options": [
+            "Blue",
+            "Yellow and green",
+            "Red and white",
+            "Green with yellow diamond"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "wf_2_1",
+          "question": "Which country's flag has a dragon on it?",
+          "options": [
+            "China",
+            "Japan",
+            "Bhutan",
+            "Vietnam"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_2_2",
+          "question": "The Star of David appears on which country's flag?",
+          "options": [
+            "Palestine",
+            "Jordan",
+            "Israel",
+            "Lebanon"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_2_3",
+          "question": "Which country's flag is all red?",
+          "options": [
+            "Turkey",
+            "China",
+            "Japan",
+            "Bangladesh"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_2_4",
+          "question": "The flag of Australia features which symbol?",
+          "options": [
+            "Kangaroo",
+            "Southern Cross and Union Jack",
+            "Boomerang",
+            "Crocodile"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_2_5",
+          "question": "Which country's flag has a sun with a human face?",
+          "options": [
+            "Argentina",
+            "Uruguay",
+            "Bolivia",
+            "Chile"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_2_6",
+          "question": "The flag of Germany has which three horizontal stripes?",
+          "options": [
+            "Red, white, blue",
+            "Black, red, yellow (gold)",
+            "Blue, white, red",
+            "Black, white, red"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_2_7",
+          "question": "Which flag has a white cross on red background (Switzerland's neighbour, Denmark)?",
+          "options": [
+            "Sweden",
+            "Norway",
+            "Denmark",
+            "Finland"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_2_8",
+          "question": "The flag of South Africa has how many colors?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_2_9",
+          "question": "Which country's flag is green with a crescent and star (but it is not Turkey)?",
+          "options": [
+            "Saudi Arabia",
+            "Iran",
+            "Pakistan",
+            "Libya"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_2_10",
+          "question": "The flag of the USA has how many stripes?",
+          "options": [
+            "12",
+            "13",
+            "14",
+            "15"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "difficulty": "easy",
+      "questions": [
+        {
+          "id": "wf_3_1",
+          "question": "Which country has a flag that is not rectangular (non-quadrilateral)?",
+          "options": [
+            "Switzerland",
+            "Bhutan",
+            "Nepal",
+            "Sri Lanka"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_3_2",
+          "question": "The flag of Italy has which three vertical stripes?",
+          "options": [
+            "Red, white, blue",
+            "Green, white, red",
+            "Blue, white, red",
+            "Red, green, white"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_3_3",
+          "question": "Which country's flag has the image of the Ashoka Chakra?",
+          "options": [
+            "Pakistan",
+            "Bangladesh",
+            "India",
+            "Sri Lanka"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_3_4",
+          "question": "The flag of China has how many stars?",
+          "options": [
+            "1 large and 3 small",
+            "1 large and 4 small",
+            "2 large and 3 small",
+            "5 stars of equal size"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_3_5",
+          "question": "Which country's flag features an AK-47 rifle?",
+          "options": [
+            "Zimbabwe",
+            "Angola",
+            "Mozambique",
+            "Ethiopia"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_3_6",
+          "question": "The flag of Norway has which colors?",
+          "options": [
+            "Blue cross on white with red",
+            "Red with blue and white cross",
+            "Blue, red, and white stripes",
+            "White with red cross"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_3_7",
+          "question": "Which country's flag features a white cross on red background (square flag)?",
+          "options": [
+            "Denmark",
+            "Malta",
+            "Switzerland",
+            "Georgia"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_3_8",
+          "question": "The flag of Saudi Arabia has which color?",
+          "options": [
+            "Red and white",
+            "Green",
+            "Black",
+            "Blue and white"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_3_9",
+          "question": "Which country's flag has a sun rising over mountains and sea?",
+          "options": [
+            "Taiwan",
+            "Philippines",
+            "South Korea",
+            "Japan"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_3_10",
+          "question": "The flag of Greece has how many stripes?",
+          "options": [
+            "7",
+            "9",
+            "11",
+            "13"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "wf_4_1",
+          "question": "The flag of Kenya features what animal?",
+          "options": [
+            "Lion",
+            "Elephant",
+            "Maasai shield and crossed spears",
+            "Eagle"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_4_2",
+          "question": "Which two countries have identical flags (before adding their coats of arms)?",
+          "options": [
+            "Romania and Chad",
+            "Indonesia and Monaco",
+            "Both of the above are correct",
+            "Ivory Coast and Ireland"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_4_3",
+          "question": "The flag of Mexico has which symbol at its center?",
+          "options": [
+            "Cactus and eagle",
+            "Eagle devouring a snake on a cactus",
+            "Aztec calendar",
+            "Corn (maize)"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_4_4",
+          "question": "The flag of Belize features what unique element?",
+          "options": [
+            "Two humans (a mestizo and a Creole)",
+            "Jaguar",
+            "Toucan",
+            "Maya ruin"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_4_5",
+          "question": "The flag of Bangladesh is?",
+          "options": [
+            "Green with a red disc",
+            "Red with a crescent",
+            "White with green disc",
+            "Green with white crescent"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_4_6",
+          "question": "Which country's flag has the Southern Cross constellation without the Union Jack?",
+          "options": [
+            "Australia",
+            "New Zealand",
+            "Papua New Guinea",
+            "Solomon Islands"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_4_7",
+          "question": "The flag of Georgia (country) features?",
+          "options": [
+            "Single cross",
+            "Star",
+            "Five crosses",
+            "Crescent"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_4_8",
+          "question": "Which African country has the only non-rectangular national flag among UN members?",
+          "options": [
+            "All African flags are rectangular",
+            "Nepal (but it's in Asia)",
+            "No African country has non-rectangular flag",
+            "Ethiopia"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_4_9",
+          "question": "The flag of North Korea features?",
+          "options": [
+            "Red star on yellow background",
+            "Blue and red with white band and red star",
+            "Red with hammer and sickle",
+            "Yellow star on red background"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_4_10",
+          "question": "The flag of South Korea (Taegukgi) has what symbol in the center?",
+          "options": [
+            "Dragon",
+            "Taeguk (yin-yang symbol)",
+            "Sun",
+            "Chrysanthemum"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "wf_5_1",
+          "question": "The flag of Cambodia features which ancient monument?",
+          "options": [
+            "Bayon temple",
+            "Angkor Wat",
+            "Ta Prohm",
+            "Preah Vihear"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_5_2",
+          "question": "Which country uses the only non-rectangular national flag among all UN members?",
+          "options": [
+            "Bhutan",
+            "Nepal",
+            "Switzerland",
+            "Vatican"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_5_3",
+          "question": "The flag of Venezuela features how many stars?",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wf_5_4",
+          "question": "Which country's flag features a conch shell (Triton's trumpet)?",
+          "options": [
+            "Maldives",
+            "Sri Lanka",
+            "Trinidad and Tobago",
+            "Bahamas"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wf_5_5",
+          "question": "The flag of Libya is currently?",
+          "options": [
+            "All green",
+            "Red, black, green with white crescent",
+            "Green with crescent and star",
+            "Tricolor with crescent"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_5_6",
+          "question": "Which is the only country whose flag has the face of its national hero on it?",
+          "options": [
+            "Bolivia",
+            "Mozambique",
+            "Uruguay",
+            "No country does this"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wf_5_7",
+          "question": "The flag of Portugal features a sphere (armillary sphere). What does it represent?",
+          "options": [
+            "The sun",
+            "Portugal's age of exploration",
+            "The Earth",
+            "The universe"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_5_8",
+          "question": "Which country's flag features a black bird of paradise?",
+          "options": [
+            "Fiji",
+            "Papua New Guinea",
+            "Solomon Islands",
+            "Vanuatu"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_5_9",
+          "question": "The flag of Lebanon has a green cedar tree. What do the two red stripes represent?",
+          "options": [
+            "Blood of martyrs and the sea",
+            "Cedar blood and sky",
+            "Purity and sacrifice",
+            "Two historical eras"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_5_10",
+          "question": "Which country has the tallest national flag pole?",
+          "options": [
+            "Saudi Arabia",
+            "North Korea",
+            "Tajikistan",
+            "Canada"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "wf_6_1",
+          "question": "The flag of Ecuador features which animal?",
+          "options": [
+            "Condor",
+            "Llama",
+            "Jaguar",
+            "Galapagos tortoise"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_6_2",
+          "question": "Which European country has a flag with a holy (religious cross) of all four arms of equal length?",
+          "options": [
+            "Malta",
+            "Spain",
+            "Greece",
+            "Switzerland"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wf_6_3",
+          "question": "The flag of Kiribati features a frigate bird above rising sun. What does it represent?",
+          "options": [
+            "Command of air and sea",
+            "Freedom",
+            "Sunrise over Pacific",
+            "Fishing culture"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_6_4",
+          "question": "Which country's flag is divided diagonally into black and red halves?",
+          "options": [
+            "Angola",
+            "Papua New Guinea",
+            "Trinidad and Tobago",
+            "Antigua and Barbuda"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_6_5",
+          "question": "The flag of Jamaica has a cross of?",
+          "options": [
+            "Red",
+            "Yellow (gold)",
+            "Black",
+            "White"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_6_6",
+          "question": "How many stars are on the Chinese national flag?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_6_7",
+          "question": "The flag of Barbados features Neptune's trident. What does the broken shaft represent?",
+          "options": [
+            "Break with colonialism",
+            "Freedom of the seas",
+            "Caribbean independence",
+            "Strength of spirit"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_6_8",
+          "question": "The flag of Namibia features a sun with how many rays?",
+          "options": [
+            "8",
+            "10",
+            "12",
+            "16"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_6_9",
+          "question": "Which country's flag is entirely blue with yellow stars forming an 'O' shape?",
+          "options": [
+            "Sweden",
+            "EU Flag",
+            "Finland",
+            "Iceland"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_6_10",
+          "question": "The flag of Bhutan features what animal?",
+          "options": [
+            "Snow leopard",
+            "Yak",
+            "Dragon",
+            "Tiger"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "difficulty": "medium",
+      "questions": [
+        {
+          "id": "wf_7_1",
+          "question": "Which country's flag has a white outline of the island itself?",
+          "options": [
+            "Cyprus",
+            "Malta",
+            "Maldives",
+            "Sri Lanka"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_7_2",
+          "question": "The flag of the Maldives features?",
+          "options": [
+            "Blue background with white crescent",
+            "Green background with white crescent on red panel",
+            "Blue with crescent",
+            "Green background with red disc"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_7_3",
+          "question": "Which is the only flag with a different design on each side?",
+          "options": [
+            "Saudi Arabia",
+            "Iran",
+            "Paraguay",
+            "Oman"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_7_4",
+          "question": "The Tricolor of Ireland (green, white, orange) represents?",
+          "options": [
+            "Ireland's geography, purity, and sun",
+            "Irish Catholics, peace, and Irish Protestants",
+            "Ireland's three provinces",
+            "Nature, peace, and hope"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_7_5",
+          "question": "The flag of Zambia is green with an eagle and which other colors?",
+          "options": [
+            "Red, black, orange",
+            "Black, red, orange",
+            "Yellow, orange, red",
+            "Red, white, black"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_7_6",
+          "question": "Which country's flag features a skull and crossbones?",
+          "options": [
+            "Piracy has no flag in current UN",
+            "No recognized country uses skull on flag",
+            "Jolly Roger is not a country flag",
+            "None of the above"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wf_7_7",
+          "question": "The flag of Philippines has a sun with how many rays?",
+          "options": [
+            "5",
+            "6",
+            "8",
+            "10"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_7_8",
+          "question": "Which is the only country whose flag has a purple background?",
+          "options": [
+            "Monaco",
+            "Nicaragua",
+            "Nicaragua (historically)",
+            "None, but Nicaragua has purple in coat of arms"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wf_7_9",
+          "question": "The flag of Albania features a double-headed eagle on which background?",
+          "options": [
+            "Blue",
+            "Red",
+            "Black",
+            "White"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_7_10",
+          "question": "Which country uses a flag with the yin-yang symbol?",
+          "options": [
+            "China",
+            "Japan",
+            "Vietnam",
+            "South Korea"
+          ],
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "wf_8_1",
+          "question": "The flag of Kazakhstan features the sun and a steppe eagle. What color is the background?",
+          "options": [
+            "Green",
+            "Blue (light blue)",
+            "Gold",
+            "White"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_8_2",
+          "question": "Which country's flag has the Southern Cross with five stars of four different sizes?",
+          "options": [
+            "Australia",
+            "New Zealand",
+            "Brazil",
+            "Papua New Guinea"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_8_3",
+          "question": "The flag of Swaziland (Eswatini) features a central shield of what color?",
+          "options": [
+            "White and black",
+            "Red and black",
+            "Black and white with red",
+            "Blue and white"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_8_4",
+          "question": "The current flag of Myanmar (Burma) has which three colors in horizontal stripes?",
+          "options": [
+            "Red, white, blue with star",
+            "Yellow, green, red with white star",
+            "Green, yellow, red",
+            "Blue, white, red with peacock"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_8_5",
+          "question": "Which country's flag features a Dhow (traditional boat)?",
+          "options": [
+            "Oman",
+            "Bahrain",
+            "Kuwait",
+            "Qatar"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_8_6",
+          "question": "The flag of Vanuatu features a boar's tusk and?",
+          "options": [
+            "Palm tree",
+            "Breadfruit leaf",
+            "Crossed ferns",
+            "Hibiscus flower"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_8_7",
+          "question": "Which flag has a representation of the dead sea scrolls?",
+          "options": [
+            "Jordan",
+            "Palestine",
+            "Israel",
+            "None of them"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wf_8_8",
+          "question": "The coat of arms on the Spanish flag includes how many castles?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_8_9",
+          "question": "The flag of Tanzania is divided diagonally from?",
+          "options": [
+            "Bottom-left to top-right",
+            "Top-left to bottom-right",
+            "Top-right to bottom-left",
+            "It is not divided diagonally"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_8_10",
+          "question": "Which Pacific island nation's flag features a British ensign with 24 stars in a circle?",
+          "options": [
+            "Fiji",
+            "Tuvalu",
+            "Kiribati",
+            "Marshall Islands"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "wf_9_1",
+          "question": "The flag of Palau features a golden disc on?",
+          "options": [
+            "White background",
+            "Green background",
+            "Light blue background",
+            "Yellow background"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_9_2",
+          "question": "Which country's flag features the map of Africa?",
+          "options": [
+            "Cameroon",
+            "Rwanda",
+            "Republic of Congo",
+            "None of these"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "wf_9_3",
+          "question": "The flag of Comoros has four stars and a crescent. The stars represent?",
+          "options": [
+            "Four founding principles",
+            "Four islands of the archipelago",
+            "Four directions of the compass",
+            "Four religions"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_9_4",
+          "question": "Which country's flag is the oldest unchanged national flag in the world?",
+          "options": [
+            "UK",
+            "France",
+            "Denmark",
+            "Netherlands"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_9_5",
+          "question": "The flag of Djibouti features a red triangle. What does the red star within it represent?",
+          "options": [
+            "Blood of martyrs",
+            "Unity of the people",
+            "Blood shed for independence",
+            "Islamic faith"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_9_6",
+          "question": "The 'Pan-African colors' (red, black, green) were adopted from which country's flag?",
+          "options": [
+            "Nigeria",
+            "Ghana",
+            "Ethiopia",
+            "Kenya"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_9_7",
+          "question": "The flag of Eritrea features an olive branch. Where is this symbol derived from?",
+          "options": [
+            "EPLF (liberation front) flag",
+            "Egyptian symbolism",
+            "UN symbolism",
+            "Neighboring Ethiopia"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_9_8",
+          "question": "Which country changed its flag most recently among UN member states?",
+          "options": [
+            "Libya (2011)",
+            "Myanmar (2010)",
+            "Malawi (2012)",
+            "Fiji (2016 proposed)"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_9_9",
+          "question": "The flag of Kosovo features the map of Kosovo and 6 stars. What do the 6 stars represent?",
+          "options": [
+            "6 districts",
+            "6 major ethnic groups",
+            "6 founding municipalities",
+            "6 bordering regions"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_9_10",
+          "question": "The flag of Croatia features the historic coat of arms with a checkerboard in?",
+          "options": [
+            "Red and white",
+            "Blue and white",
+            "Gold and red",
+            "Red and gold"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "difficulty": "hard",
+      "questions": [
+        {
+          "id": "wf_10_1",
+          "question": "Which landlocked African country's flag has vertical stripes of blue, white, and green?",
+          "options": [
+            "Botswana",
+            "Lesotho",
+            "Malawi",
+            "Zambia"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_10_2",
+          "question": "The flag of Greenland (Danish territory) features a horizontally divided field of white and red with a circle. The circle in the Greenlandic flag is called?",
+          "options": [
+            "Erfalasorput",
+            "Merkorsugassat",
+            "Nalinginnaasumik",
+            "Avataq"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_10_3",
+          "question": "The flag of Mozambique includes a Kalashnikov rifle. This makes it unique because?",
+          "options": [
+            "It's the only flag with a weapon",
+            "It's the only flag with an AK-47",
+            "Both a weapon and a book on the same flag",
+            "It is oldest flag with a weapon"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_10_4",
+          "question": "Which country's flag is horizontally divided into three equal stripes of red, white, and black?",
+          "options": [
+            "Jordan",
+            "Yemen",
+            "Sudan",
+            "Both Yemen and others"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_10_5",
+          "question": "The flag of Antigua and Barbuda has a rising sun with how many rays?",
+          "options": [
+            "5",
+            "7",
+            "9",
+            "11"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "wf_10_6",
+          "question": "Which flag is the oldest in continuous use by an independent nation?",
+          "options": [
+            "UK",
+            "France",
+            "Denmark",
+            "Austria"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_10_7",
+          "question": "The Olympic flag has five rings representing five inhabited continents. What color is NOT present?",
+          "options": [
+            "Red",
+            "Green",
+            "Purple",
+            "Blue"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_10_8",
+          "question": "The flag of East Timor (Timor-Leste) has a black triangle. What does it represent?",
+          "options": [
+            "The dark colonial past",
+            "The mountains of Timor",
+            "Colonialism that must be overcome",
+            "The oceanic heritage"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "wf_10_9",
+          "question": "Which country's flag features a dhow (boat), a khanjar (dagger), and two crossed swords?",
+          "options": [
+            "UAE",
+            "Saudi Arabia",
+            "Oman",
+            "Qatar"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "wf_10_10",
+          "question": "The 'Nordic Cross' design appears in how many national flags?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "correct": 1
+        }
+      ]
+    }
+  ]
+}
