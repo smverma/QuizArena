@@ -218,6 +218,7 @@ export default function QuizPage() {
       <Timer timeLeft={timeLeft} maxTime={QUESTION_TIME} />
 
       <QuestionCard
+        key={currentIndex}
         question={currentQ}
         visibleOptions={visibleOptions}
         selectedOption={selectedOption}
