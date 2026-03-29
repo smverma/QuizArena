@@ -15,7 +15,7 @@ export default function LifelineButtons({ lifelines, onUse, disabled }) {
           disabled={lifelines[btn.key] || disabled}
           title={btn.label}
         >
-          {btn.icon} {btn.label}
+          {btn.label} {btn.icon}
         </button>
       ))}
     </div>
