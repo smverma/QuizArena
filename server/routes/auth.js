@@ -5,7 +5,7 @@ import { signToken } from '../middleware/auth.js';
 import { authLimiter } from '../index.js';
 
 const router = Router();
-const BCRYPT_ROUNDS = 12;
+const BCRYPT_ROUNDS = Number(process.env.BCRYPT_ROUNDS) || 12;
 
 // ── Validation helpers ────────────────────────────────────────────────────────
 const USERNAME_RE = /^[a-zA-Z0-9_\-.]{3,30}$/;

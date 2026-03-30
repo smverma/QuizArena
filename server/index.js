@@ -47,6 +47,14 @@ export const scoreLimiter = rateLimit({
   message: { error: 'Too many requests, please try again later.' },
 });
 
+export const progressLimiter = rateLimit({
+  windowMs: 60 * 1000, // 1 minute
+  max: 30,             // 30 progress reads/writes per minute per IP
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: 'Too many requests, please try again later.' },
+});
+
 // ── Health endpoint ───────────────────────────────────────────────────────────
 app.get('/health', (_req, res) => res.json({ ok: true }));
 

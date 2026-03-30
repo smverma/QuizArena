@@ -24,7 +24,10 @@ export default function LeaderboardPage() {
       <div className="leaderboard-card">
         <button className="btn-back" onClick={() => navigate('/categories')}>← Back</button>
         <h2>🏅 Leaderboard</h2>
-        {rank > 0 && <p className="user-rank">Your rank: #{rank}</p>}
+        {rank > 0
+          ? <p className="user-rank">Your rank: #{rank}</p>
+          : !loading && <p className="user-rank">Your rank: not yet ranked — play to earn points!</p>
+        }
         {loading && <p className="no-data">Loading…</p>}
         {error && <p className="error">{error}</p>}
         <div className="leaderboard-list">

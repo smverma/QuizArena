@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { getFirestore } from '../db/firestore.js';
 import { requireAuth } from '../middleware/auth.js';
+import { progressLimiter } from '../index.js';
 
 const router = Router();
 
@@ -14,7 +15,7 @@ const router = Router();
  *   ...
  * ]
  */
-router.get('/', requireAuth, async (req, res, next) => {
+router.get('/', progressLimiter, requireAuth, async (req, res, next) => {
   try {
     const db = getFirestore();
     const snap = await db
@@ -39,7 +40,7 @@ router.get('/', requireAuth, async (req, res, next) => {
  * Request:  { "category": "cricket", "level": 3, "score": 90 }
  * Response: { "ok": true }
  */
-router.post('/', requireAuth, async (req, res, next) => {
+router.post('/', progressLimiter, requireAuth, async (req, res, next) => {
   try {
     const { category, level, score } = req.body ?? {};
 

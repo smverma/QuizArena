@@ -5,6 +5,11 @@ import { scoreLimiter } from '../index.js';
 
 const router = Router();
 
+const VALID_CATEGORIES = new Set([
+  'india-politics', 'indian-geography', 'bollywood', 'cricket',
+  'world-map', 'books-authors', 'world-history', 'world-flags', 'mixed-gk',
+]);
+
 // Maximum score per level is 10 questions × 10 pts = 100.
 // Maximum total across 9 categories × 10 levels = 9,000 pts.
 // We add a generous upper bound to allow for future expansion.
@@ -22,7 +27,7 @@ const MIN_SCORE = 0;
  * For stronger anti-cheat, issue a server-side game-session token and
  * validate it here. See docs/gcp-deployment.md for guidance.
  */
-router.post('/', requireAuth, scoreLimiter, async (req, res, next) => {
+router.post('/', scoreLimiter, requireAuth, async (req, res, next) => {
   try {
     const { score, category, level } = req.body ?? {};
     const userId = req.user.id;
@@ -37,6 +42,19 @@ router.post('/', requireAuth, scoreLimiter, async (req, res, next) => {
       return res.status(400).json({
         error: `score must be a number between ${MIN_SCORE} and ${MAX_SCORE_PER_SUBMISSION}`,
       });
+    }
+
+    // Validate optional category and level fields
+    if (category !== undefined && category !== null) {
+      if (!VALID_CATEGORIES.has(category)) {
+        return res.status(400).json({ error: 'Invalid category' });
+      }
+    }
+    if (level !== undefined && level !== null) {
+      const numLevel = Number(level);
+      if (!Number.isFinite(numLevel) || numLevel < 1 || numLevel > 10) {
+        return res.status(400).json({ error: 'level must be between 1 and 10' });
+      }
     }
 
     const db = getFirestore();

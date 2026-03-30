@@ -22,11 +22,15 @@ export default function CategoryPage() {
   const { startGame, resetGame } = useGame();
   const navigate = useNavigate();
   const [allProgress, setAllProgress] = useState([]);
+  const [progressError, setProgressError] = useState('');
 
   useEffect(() => {
     fetchProgress()
       .then(data => setAllProgress(data))
-      .catch(err => console.error('Failed to load progress:', err));
+      .catch(err => {
+        console.error('Failed to load progress:', err);
+        setProgressError('Could not load progress. Your progress may not be shown.');
+      });
   }, []);
 
   const getProgress = (categoryId) =>
@@ -51,6 +55,7 @@ export default function CategoryPage() {
         </div>
       </header>
       <h2 className="section-title">Choose a Category</h2>
+      {progressError && <p className="error" style={{ textAlign: 'center', marginBottom: '1rem' }}>{progressError}</p>}
       <div className="categories-grid">
         {CATEGORIES.map(cat => (
           <CategoryCard

@@ -55,7 +55,14 @@ async function request(path, options = {}) {
     headers,
   });
 
-  const data = await res.json().catch(() => ({}));
+  let data;
+  const contentType = res.headers.get('content-type') || '';
+  if (contentType.includes('application/json')) {
+    data = await res.json();
+  } else {
+    // Non-JSON response (e.g. nginx error page); use status text as error message
+    data = { error: `Server error (${res.status} ${res.statusText})` };
+  }
 
   if (!res.ok) {
     throw new Error(data.error || `Request failed (${res.status})`);
