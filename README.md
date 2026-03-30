@@ -1,6 +1,6 @@
 # 🏆 QuizArena
 
-A multi-category quiz game built with React + Vite. Fully frontend, compatible with GitHub Pages.
+A multi-category quiz game built with React + Vite, backed by a Node.js API on **Google Cloud Run** with **Firestore** for persistent leaderboard, user accounts, and progress.
 
 ## 🎮 Features
 
@@ -9,120 +9,163 @@ A multi-category quiz game built with React + Vite. Fully frontend, compatible w
 - **Difficulty Progression**: Easy (1–3), Medium (4–7), Hard (8–10)
 - **3 Lifelines per Level**: 50-50, Double Choice, Swap Question
 - **15-second Timer** per question
-- **User Accounts**: Username + 4-digit PIN, persisted in localStorage
-- **Leaderboard**: Top 10 global scores
+- **User Accounts**: Username + 4-digit PIN (PIN stored as bcrypt hash server-side, never in browser)
+- **Leaderboard**: Top 50 global scores persisted in Firestore (works across browsers/devices)
 - **Sound Effects**: Web Audio API (no files needed)
 - **Mobile Responsive**: Works on phones and desktops
 
-## 🚀 Setup & Run Locally
+## 🏗️ Architecture
 
-### Prerequisites
-- Node.js 18+ and npm
-
-### Steps
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/smverma/QuizArena.git
-cd QuizArena
-
-# 2. Install dependencies
-npm install
-
-# 3. Start development server
-npm run dev
+```
+Browser (React SPA + Vite)
+        │  HTTPS
+        ▼
+ Cloud Run (Node.js / Express API)  ◄── Secret Manager (JWT_SECRET)
+        │
+        ▼
+   Firestore (NoSQL)
 ```
 
-Open [http://localhost:5173/QuizArena/](http://localhost:5173/QuizArena/) in your browser.
+- **Frontend**: React 19 + Vite, served as a static SPA (nginx / Firebase Hosting / Cloud Run)
+- **Backend**: Node.js + Express in `server/`, deployed to Cloud Run
+- **Database**: Firestore (collections: `users`, `users/{id}/progress`, `scores`)
+- **Auth**: Username + 4-digit PIN → bcrypt hash server-side → JWT access token (short-lived, sessionStorage)
+- **Alternative DB**: Cloud SQL (Postgres) — see [`docs/cloud-sql-alternative.md`](docs/cloud-sql-alternative.md)
+
+## 🚀 Local Development
+
+### Prerequisites
+- Node.js 20+ and npm
+- A GCP project with Firestore enabled (or the Firestore emulator)
+
+### 1. Clone and install
+
+```bash
+git clone https://github.com/smverma/QuizArena.git
+cd QuizArena
+npm install        # frontend deps
+cd server && npm install  # backend deps
+```
+
+### 2. Configure the backend
+
+```bash
+cp server/.env.example server/.env
+# Edit server/.env — at minimum set JWT_SECRET
+```
+
+### 3. Authenticate with GCP (to use real Firestore)
+
+```bash
+gcloud auth application-default login
+```
+
+Or use the Firestore emulator (no GCP account needed):
+
+```bash
+npm install -g firebase-tools
+firebase emulators:start --only firestore
+# Add FIRESTORE_EMULATOR_HOST=localhost:8080 to server/.env
+```
+
+### 4. Start the backend
+
+```bash
+cd server && npm start
+# API running at http://localhost:3001
+```
+
+### 5. Start the frontend
+
+```bash
+# In the repo root
+npm run dev
+# Open http://localhost:5173
+```
+
+The frontend reads the API URL from (in priority order):
+1. `window.__API_BASE_URL__` (set in `public/config.js` at runtime)
+2. `VITE_API_URL` env var (baked in at build time)
+3. `http://localhost:3001` (default for local development)
+
+## ☁️ GCP Deployment
+
+See [`docs/gcp-deployment.md`](docs/gcp-deployment.md) for the full step-by-step guide covering:
+- Enabling Firestore, Artifact Registry, Secret Manager
+- Storing `JWT_SECRET` securely in Secret Manager
+- Building and deploying the backend to Cloud Run
+- Configuring the frontend API URL
+- CI/CD with Cloud Build
+- Rate limiting and anti-cheat guidance
 
 ## 🏗️ Build for Production
 
 ```bash
-npm run build
+# Frontend
+npm run build           # → dist/
+VITE_API_URL=https://your-api.run.app npm run build  # with API URL
+
+# Backend Docker image
+cd server && docker build -t quizarena-api .
 ```
-
-The built files will be in the `dist/` folder.
-
-## 🌐 Deploy to GitHub Pages
-
-### Option 1: Manual Deploy
-
-```bash
-# Build the project
-npm run build
-
-# Deploy the dist/ folder to GitHub Pages
-# (using gh-pages package or manual upload)
-npm install -g gh-pages
-gh-pages -d dist
-```
-
-### Option 2: GitHub Actions (Recommended)
-
-Create `.github/workflows/deploy.yml`:
-
-```yaml
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [main]
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-      - run: npm install
-      - run: npm run build
-      - uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-```
-
-Then enable GitHub Pages in your repo Settings → Pages → Source: `gh-pages` branch.
-
-### Option 3: GitHub Pages via Settings
-
-1. Build the project: `npm run build`
-2. Go to Settings → Pages
-3. Set Source to "Deploy from a branch"
-4. Push the `dist/` folder contents to a `gh-pages` branch
-
-After deployment, the app will be available at:
-`https://smverma.github.io/QuizArena/`
 
 ## 📁 Project Structure
 
 ```
-src/
-├── data/                  # Question JSON files (9 categories × 100 questions)
-├── context/
-│   ├── AuthContext.jsx    # User authentication state
-│   └── GameContext.jsx    # Game state (score, level, category)
-├── db/
-│   └── database.js        # Simulated in-memory DB with localStorage persistence
-├── pages/
-│   ├── LoginPage.jsx      # Username + PIN login/register
-│   ├── CategoryPage.jsx   # 3×3 category grid
-│   ├── QuizPage.jsx       # Quiz with timer, lifelines, lives
-│   ├── LevelCompletePage.jsx
-│   ├── GameOverPage.jsx
-│   └── LeaderboardPage.jsx
-├── components/
-│   ├── Timer.jsx
-│   ├── ProgressBar.jsx
-│   ├── LifelineButtons.jsx
-│   ├── QuestionCard.jsx
-│   └── CategoryCard.jsx
-└── utils/
-    ├── soundManager.js    # Web Audio API sound effects
-    └── quizEngine.js      # Lifeline logic helpers
+QuizArena/
+├── src/                        # React frontend
+│   ├── api/
+│   │   └── client.js           # API client (fetch wrapper + token helpers)
+│   ├── config.js               # API base URL resolution
+│   ├── context/
+│   │   ├── AuthContext.jsx     # Auth state (login/register via API, JWT in sessionStorage)
+│   │   └── GameContext.jsx     # Game state (score, level, category)
+│   ├── data/                   # Question JSON files (9 categories × 100 questions)
+│   ├── pages/
+│   │   ├── LoginPage.jsx       # Username + PIN login/register (calls API)
+│   │   ├── CategoryPage.jsx    # Category grid (loads progress from API)
+│   │   ├── QuizPage.jsx        # Quiz with timer, lifelines, lives
+│   │   ├── LevelCompletePage.jsx  # Submits score + progress to API
+│   │   ├── GameOverPage.jsx
+│   │   └── LeaderboardPage.jsx # Fetches leaderboard from API
+│   ├── components/             # Timer, ProgressBar, LifelineButtons, etc.
+│   └── utils/                  # soundManager, quizEngine
+├── server/                     # Node.js backend
+│   ├── index.js                # Express app entry point
+│   ├── middleware/
+│   │   └── auth.js             # JWT verification middleware
+│   ├── routes/
+│   │   ├── auth.js             # POST /auth/pin, GET /auth/check
+│   │   ├── scores.js           # POST /scores
+│   │   ├── leaderboard.js      # GET /leaderboard
+│   │   └── progress.js         # GET /progress, POST /progress
+│   ├── db/
+│   │   └── firestore.js        # Firestore client singleton
+│   ├── firestore.indexes.json  # Firestore index definitions
+│   ├── Dockerfile              # Cloud Run image for the API
+│   └── .env.example            # Environment variable template
+├── public/
+│   └── config.js               # Runtime API URL override (no rebuild needed)
+├── docs/
+│   ├── gcp-deployment.md       # Full GCP deployment guide
+│   └── cloud-sql-alternative.md  # Cloud SQL (Postgres) alternative
+├── Dockerfile                  # Cloud Run image for the frontend (nginx)
+└── cloudbuild.yaml             # Cloud Build CI/CD pipeline
 ```
+
+## 🔒 Security
+
+| Concern | Implementation |
+|---|---|
+| PIN storage | bcrypt hash (12 rounds), never stored in plain text |
+| Token storage | JWT in `sessionStorage` (cleared on tab close) |
+| PIN on client | Never stored — sent once over HTTPS, immediately discarded |
+| Rate limiting | In-app (express-rate-limit): 20 login/15 min, 10 scores/min per IP |
+| Score validation | Server-side range check (0–200 per submission) |
+| CORS | Configured via `ALLOWED_ORIGINS` env var |
+| Secrets | `JWT_SECRET` via Secret Manager (Cloud Run) |
+
+For production hardening (Cloud Armor, signed game sessions, etc.) see [`docs/gcp-deployment.md`](docs/gcp-deployment.md).
 
 ## 🧩 Adding More Questions
 

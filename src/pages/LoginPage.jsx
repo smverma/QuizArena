@@ -9,30 +9,44 @@ export default function LoginPage() {
   const [step, setStep] = useState('username');
   const [isNewUser, setIsNewUser] = useState(false);
   const [error, setError] = useState('');
-  const { login, register, userExists } = useAuth();
+  const [loading, setLoading] = useState(false);
+  const { authenticate, userExists } = useAuth();
   const navigate = useNavigate();
 
-  const handleUsernameSubmit = (e) => {
+  const handleUsernameSubmit = async (e) => {
     e.preventDefault();
     if (!username.trim()) { setError('Please enter a username'); return; }
-    const exists = userExists(username.trim());
-    setIsNewUser(!exists);
-    setStep(exists ? 'pin' : 'register');
+    setLoading(true);
     setError('');
+    try {
+      const exists = await userExists(username.trim());
+      setIsNewUser(!exists);
+      setStep(exists ? 'pin' : 'register');
+    } catch {
+      setError('Unable to reach server. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    const result = login(username.trim(), pin);
+    setLoading(true);
+    setError('');
+    const result = await authenticate(username.trim(), pin);
+    setLoading(false);
     if (result.success) navigate('/categories');
     else setError(result.error);
   };
 
-  const handleRegister = (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
     if (pin.length !== 4 || !/^\d+$/.test(pin)) { setError('PIN must be 4 digits'); return; }
     if (pin !== confirmPin) { setError('PINs do not match'); return; }
-    const result = register(username.trim(), pin);
+    setLoading(true);
+    setError('');
+    const result = await authenticate(username.trim(), pin);
+    setLoading(false);
     if (result.success) navigate('/categories');
     else setError(result.error);
   };
@@ -51,9 +65,12 @@ export default function LoginPage() {
               value={username}
               onChange={e => setUsername(e.target.value)}
               autoFocus
+              disabled={loading}
             />
             {error && <p className="error">{error}</p>}
-            <button type="submit" className="btn-primary">Continue</button>
+            <button type="submit" className="btn-primary" disabled={loading}>
+              {loading ? 'Checking…' : 'Continue'}
+            </button>
           </form>
         )}
 
@@ -67,10 +84,13 @@ export default function LoginPage() {
               onChange={e => setPin(e.target.value)}
               maxLength={4}
               autoFocus
+              disabled={loading}
             />
             {error && <p className="error">{error}</p>}
-            <button type="submit" className="btn-primary">Login</button>
-            <button type="button" className="btn-secondary" onClick={() => { setStep('username'); setPin(''); setError(''); }}>Back</button>
+            <button type="submit" className="btn-primary" disabled={loading}>
+              {loading ? 'Logging in…' : 'Login'}
+            </button>
+            <button type="button" className="btn-secondary" disabled={loading} onClick={() => { setStep('username'); setPin(''); setError(''); }}>Back</button>
           </form>
         )}
 
@@ -84,6 +104,7 @@ export default function LoginPage() {
               onChange={e => setPin(e.target.value)}
               maxLength={4}
               autoFocus
+              disabled={loading}
             />
             <input
               type="password"
@@ -91,10 +112,13 @@ export default function LoginPage() {
               value={confirmPin}
               onChange={e => setConfirmPin(e.target.value)}
               maxLength={4}
+              disabled={loading}
             />
             {error && <p className="error">{error}</p>}
-            <button type="submit" className="btn-primary">Register</button>
-            <button type="button" className="btn-secondary" onClick={() => { setStep('username'); setPin(''); setConfirmPin(''); setError(''); }}>Back</button>
+            <button type="submit" className="btn-primary" disabled={loading}>
+              {loading ? 'Creating account…' : 'Register'}
+            </button>
+            <button type="button" className="btn-secondary" disabled={loading} onClick={() => { setStep('username'); setPin(''); setConfirmPin(''); setError(''); }}>Back</button>
           </form>
         )}
       </div>

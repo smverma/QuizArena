@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useGame } from '../context/GameContext';
-import { getAllProgress } from '../db/database';
+import { fetchProgress } from '../api/client';
+import { useState, useEffect } from 'react';
 import CategoryCard from '../components/CategoryCard';
 
 const CATEGORIES = [
@@ -20,7 +21,13 @@ export default function CategoryPage() {
   const { user, logout } = useAuth();
   const { startGame, resetGame } = useGame();
   const navigate = useNavigate();
-  const allProgress = getAllProgress(user.username);
+  const [allProgress, setAllProgress] = useState([]);
+
+  useEffect(() => {
+    fetchProgress()
+      .then(data => setAllProgress(data))
+      .catch(err => console.error('Failed to load progress:', err));
+  }, []);
 
   const getProgress = (categoryId) =>
     allProgress.find(p => p.category === categoryId);
