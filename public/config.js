@@ -16,4 +16,7 @@
  *   container (or use sed/envsubst in a Cloud Build step before docker build):
  *   window.__API_BASE_URL__ = 'https://your-cloud-run-api-url.run.app';
  */
-// window.__API_BASE_URL__ = 'https://your-cloud-run-api-url.run.app';
+
+// Production default: points to the deployed backend on Cloud Run.
+// Override VITE_API_URL at build time or change this value to switch environments.
+window.__API_BASE_URL__ = 'https://quizarena-git-671240376666.europe-west1.run.app';
