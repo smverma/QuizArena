@@ -113,6 +113,17 @@ See [`docs/gcp-deployment.md`](docs/gcp-deployment.md) for the full step-by-step
 - CI/CD with Cloud Build
 - Rate limiting and anti-cheat guidance
 
+### Cloud Run port binding
+
+Cloud Run injects a `PORT` environment variable (default `8080`) and requires the container to listen on that port within the startup timeout.
+
+The runtime image uses **Nginx + Express**:
+- `docker-entrypoint.sh` reads `$PORT` (defaulting to `8080`), runs `envsubst` to write the final Nginx config, starts Express internally on port `3001`, and then starts Nginx in the foreground on `$PORT`.
+- Nginx proxies `/health` and API routes (`/auth`, `/scores`, `/leaderboard`, `/progress`) to Express on `127.0.0.1:3001` and serves the React SPA for all other paths.
+- The `/health` endpoint is reachable on the external port (e.g. `https://<service-url>/health`).
+
+No extra Cloud Run flags are needed — the container will bind to port `8080` automatically.
+
 ## 🏗️ Build for Production
 
 ```bash
