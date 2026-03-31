@@ -10,6 +10,10 @@ import progressRoutes from './routes/progress.js';
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// Trust the Nginx reverse proxy so req.ip reflects the real client IP
+// (used by rate limiters). '1' means trust one hop.
+app.set('trust proxy', 1);
+
 // CORS – allow configured origins (comma-separated list)
 const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:5173').split(',').map(o => o.trim());
 
