@@ -1,6 +1,6 @@
-# GCP Deployment Guide – QuizArena Backend
+# GCP Deployment Guide – QuizArena
 
-This guide walks through deploying the QuizArena backend (Cloud Run + Firestore) step by step.
+This guide walks through deploying QuizArena (frontend + backend) to Cloud Run with Firestore.
 
 ---
 
@@ -129,30 +129,42 @@ gcloud run deploy quizarena-api \
 
 Note the deployed URL — you will need it for the frontend configuration.
 
+> **CORS**: The `ALLOWED_ORIGINS` env var must be set to your frontend Cloud Run URL
+> (e.g., `https://quizarena-abc123-uc.a.run.app`). Without this the browser will
+> block API requests from the frontend with a CORS error.
+
 ---
 
 ## 7. Configure the frontend to call the backend
 
-### Option A: Vite build-time env var (recommended for CI/CD)
+The frontend determines the backend URL in this priority order:
+1. `window.__API_BASE_URL__` (set in `public/config.js` at runtime)
+2. `VITE_API_URL` env var (baked in at Vite build time — **recommended for CI/CD**)
+3. `http://localhost:3001` (local dev fallback only — not usable in production)
+
+### Option A: Cloud Build substitution variable (recommended)
+
+Set the `_API_URL` substitution when creating/editing your Cloud Build trigger:
+
+```
+_API_URL = https://quizarena-api-abc123-uc.a.run.app
+```
+
+The `cloudbuild.yaml` already passes this as `--build-arg VITE_API_URL=${_API_URL}`
+to the Docker build so Vite bakes the URL in. No manual file editing needed.
+
+### Option B: Vite build-time env var (local / manual builds)
 
 ```bash
 VITE_API_URL=https://YOUR_CLOUD_RUN_URL npm run build
 ```
 
-### Option B: Runtime config (no rebuild required)
+### Option C: Runtime config (no rebuild required)
 
-Edit `public/config.js` before serving (or use `sed` in your deployment pipeline):
+Uncomment and edit `public/config.js` before building the Docker image:
 
 ```js
 window.__API_BASE_URL__ = 'https://YOUR_CLOUD_RUN_URL';
-```
-
-Using Cloud Build:
-
-```yaml
-- name: 'bash'
-  script: |
-    sed -i "s|// window.__API_BASE_URL__.*|window.__API_BASE_URL__ = '${_API_URL}';|" public/config.js
 ```
 
 ---
@@ -197,8 +209,17 @@ gcloud builds triggers create github \
   --repo-name=QuizArena \
   --repo-owner=smverma \
   --branch-pattern="^main$" \
-  --build-config=cloudbuild.yaml
+  --build-config=cloudbuild.yaml \
+  --substitutions "_API_URL=https://YOUR_BACKEND_CLOUD_RUN_URL"
 ```
+
+> **Required**: The `_API_URL` substitution must be set to your backend Cloud Run URL
+> so the frontend knows where to send API requests. Without it the app will try to
+> call `http://localhost:3001` (the local dev default) and all logins/registrations
+> will fail with "Failed to fetch".
+>
+> You can also set substitutions via the Cloud Console:
+> Cloud Build → Triggers → Edit trigger → Substitution variables → add `_API_URL`.
 
 The existing `cloudbuild.yaml` builds and deploys the **frontend**. You can extend it to also build and deploy the backend.
 
