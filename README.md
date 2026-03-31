@@ -84,9 +84,24 @@ npm run dev
 ```
 
 The frontend reads the API URL from (in priority order):
-1. `window.__API_BASE_URL__` (set in `public/config.js` at runtime)
+1. `window.__API_BASE_URL__` (set in `public/config.js` at runtime — **no rebuild needed**)
 2. `VITE_API_URL` env var (baked in at build time)
 3. `http://localhost:3001` (default for local development)
+
+### Configuring the API URL for production
+
+**Runtime (recommended — change `public/config.js` and redeploy the container):**
+```js
+// public/config.js
+window.__API_BASE_URL__ = 'https://quizarena-git-671240376666.europe-west1.run.app';
+```
+
+**Build-time (baked into the JS bundle):**
+```bash
+VITE_API_URL=https://quizarena-git-671240376666.europe-west1.run.app npm run build
+```
+
+> Local development uses `http://localhost:3001` by default — no changes needed.
 
 ## ☁️ GCP Deployment
 
