@@ -15,8 +15,8 @@ RUN npm run build
 # Runtime stage – serves the React frontend via Nginx and the Express API side-by-side
 FROM node:20-alpine
 
-# Install Nginx
-RUN apk add --no-cache nginx && mkdir -p /run/nginx
+# Install Nginx and gettext (for envsubst – used to template nginx.conf at startup)
+RUN apk add --no-cache nginx gettext && mkdir -p /run/nginx
 
 # ── Install Express backend ───────────────────────────────────────────────────
 WORKDIR /app/server
@@ -28,7 +28,8 @@ COPY server/ .
 COPY --from=build /app/dist /usr/share/nginx/html
 
 # ── Nginx configuration ───────────────────────────────────────────────────────
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Stored as a template; docker-entrypoint.sh substitutes ${PORT} at startup
+COPY nginx.conf /etc/nginx/conf.d/default.conf.template
 
 # ── Entrypoint: start Express then Nginx ──────────────────────────────────────
 COPY docker-entrypoint.sh /docker-entrypoint.sh
