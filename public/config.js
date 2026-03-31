@@ -5,10 +5,15 @@
  * Override window.__API_BASE_URL__ here to point the frontend at your backend
  * WITHOUT rebuilding the app – ideal for Docker images shared across environments.
  *
- * In production, your CI/CD pipeline (or Cloud Build) should replace this file
- * or inject the correct URL via sed/envsubst before serving.
+ * Preferred approach (CI/CD build-time):
+ *   Pass VITE_API_URL as a Docker build argument in cloudbuild.yaml via the
+ *   _API_URL substitution variable. The Vite build will bake the URL in.
+ *   Example in Cloud Build trigger settings:
+ *     _API_URL = https://quizarena-api-abc123-uc.a.run.app
  *
- * Example (Cloud Build step):
- *   sed -i "s|__REPLACE_API_URL__|https://api.example.com|g" public/config.js
+ * Alternative (runtime injection, no rebuild):
+ *   Uncomment the line below and set the correct URL, then redeploy the nginx
+ *   container (or use sed/envsubst in a Cloud Build step before docker build):
+ *   window.__API_BASE_URL__ = 'https://your-cloud-run-api-url.run.app';
  */
-// window.__API_BASE_URL__ = 'https://your-cloud-run-url.run.app';
+// window.__API_BASE_URL__ = 'https://your-cloud-run-api-url.run.app';

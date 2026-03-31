@@ -3,6 +3,7 @@ steps:
     args:
       [
         'build',
+        '--build-arg', 'VITE_API_URL=${_API_URL}',
         '-t',
         '${_REGION}-docker.pkg.dev/$PROJECT_ID/${_AR_REPO}/${_SERVICE}:$COMMIT_SHA',
         '.',
@@ -37,6 +38,10 @@ substitutions:
   _REGION: us-central1
   _AR_REPO: quizarena
   _SERVICE: quizarena
+  # Set _API_URL to your backend Cloud Run URL when triggering this build.
+  # Example: https://quizarena-api-abc123-uc.a.run.app
+  # Without this the frontend will fall back to http://localhost:3001 (dev only).
+  _API_URL: ''
 
 options:
   logging: CLOUD_LOGGING_ONLY

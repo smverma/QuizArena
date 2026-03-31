@@ -79,6 +79,8 @@ export default function LoginPage() {
             <p className="welcome-text">Welcome back, <strong>{username}</strong>!</p>
             <input
               type="password"
+              inputMode="numeric"
+              autoComplete="off"
               placeholder="Enter 4-digit PIN"
               value={pin}
               onChange={e => setPin(e.target.value)}
@@ -99,6 +101,8 @@ export default function LoginPage() {
             <p className="welcome-text">New user: <strong>{username}</strong></p>
             <input
               type="password"
+              inputMode="numeric"
+              autoComplete="new-password"
               placeholder="Choose 4-digit PIN"
               value={pin}
               onChange={e => setPin(e.target.value)}
@@ -108,6 +112,8 @@ export default function LoginPage() {
             />
             <input
               type="password"
+              inputMode="numeric"
+              autoComplete="new-password"
               placeholder="Confirm PIN"
               value={confirmPin}
               onChange={e => setConfirmPin(e.target.value)}

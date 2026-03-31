@@ -40,15 +40,12 @@ export function AuthProvider({ children }) {
 
   /**
    * Check if a username is already registered (async).
+   * Throws on network/server errors so the caller can display an error message.
    * @returns {Promise<boolean>}
    */
   const userExists = async (username) => {
-    try {
-      const { exists } = await checkUser(username);
-      return exists;
-    } catch {
-      return false;
-    }
+    const { exists } = await checkUser(username);
+    return exists;
   };
 
   const logout = () => {

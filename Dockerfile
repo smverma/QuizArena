@@ -7,6 +7,9 @@ RUN npm ci
 
 COPY . .
 ENV VITE_BASE=/
+# Optional: backend API URL (set via --build-arg VITE_API_URL=https://... in CI/CD)
+ARG VITE_API_URL
+ENV VITE_API_URL=${VITE_API_URL}
 RUN npm run build
 
 # Runtime stage
