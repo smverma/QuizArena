@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useGame } from '../context/GameContext';
-import { updateProgress } from '../db/database';
+import { submitScore, updateProgress } from '../api/client';
 import { useEffect, useRef } from 'react';
 
 export default function LevelCompletePage() {
@@ -11,9 +11,14 @@ export default function LevelCompletePage() {
   const savedRef = useRef(false);
 
   useEffect(() => {
-    if (!currentCategory || savedRef.current) return;
+    if (!currentCategory || savedRef.current || !user) return;
     savedRef.current = true;
-    updateProgress(user.username, currentCategory.id, currentLevel, levelScore);
+
+    // Submit score and progress to the server in parallel
+    Promise.all([
+      submitScore(levelScore, currentCategory.id, currentLevel),
+      updateProgress(currentCategory.id, currentLevel, levelScore),
+    ]).catch(err => console.error('Failed to save progress:', err));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

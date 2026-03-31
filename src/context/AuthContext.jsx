@@ -1,41 +1,63 @@
 import { createContext, useContext, useState, useEffect } from 'react';
-import { loginUser, registerUser, userExists } from '../db/database';
+import {
+  authPin,
+  checkUser,
+  getStoredUser,
+  storeUser,
+  setToken,
+  clearSession,
+} from '../api/client';
 
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
 
+  // Restore session from sessionStorage on mount
   useEffect(() => {
-    const stored = sessionStorage.getItem('quizArenaUser');
-    if (stored) setUser(JSON.parse(stored));
+    const stored = getStoredUser();
+    if (stored) setUser(stored);
   }, []);
 
-  const login = (username, pin) => {
-    const result = loginUser(username, pin);
-    if (result.success) {
-      setUser({ username });
-      sessionStorage.setItem('quizArenaUser', JSON.stringify({ username }));
+  /**
+   * Login or register via the backend API.
+   * The server decides based on whether the username exists.
+   * PIN is sent only once and never stored client-side.
+   *
+   * @returns {Promise<{ success: boolean, error?: string }>}
+   */
+  const authenticate = async (username, pin) => {
+    try {
+      const { token, user: apiUser } = await authPin(username, pin);
+      setToken(token);
+      storeUser(apiUser);
+      setUser(apiUser);
+      return { success: true };
+    } catch (err) {
+      return { success: false, error: err.message };
     }
-    return result;
   };
 
-  const register = (username, pin) => {
-    const result = registerUser(username, pin);
-    if (result.success) {
-      setUser({ username });
-      sessionStorage.setItem('quizArenaUser', JSON.stringify({ username }));
+  /**
+   * Check if a username is already registered (async).
+   * @returns {Promise<boolean>}
+   */
+  const userExists = async (username) => {
+    try {
+      const { exists } = await checkUser(username);
+      return exists;
+    } catch {
+      return false;
     }
-    return result;
   };
 
   const logout = () => {
     setUser(null);
-    sessionStorage.removeItem('quizArenaUser');
+    clearSession();
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, register, logout, userExists }}>
+    <AuthContext.Provider value={{ user, authenticate, logout, userExists }}>
       {children}
     </AuthContext.Provider>
   );
