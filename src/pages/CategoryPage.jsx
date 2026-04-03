@@ -25,7 +25,7 @@ export default function CategoryPage() {
   const [progressError, setProgressError] = useState('');
 
   useEffect(() => {
-    fetchProgress()
+    fetchProgress(user.username, user.pin)
       .then(data => setAllProgress(data))
       .catch(err => {
         console.error('Failed to load progress:', err);

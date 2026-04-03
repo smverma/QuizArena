@@ -1,6 +1,5 @@
 import { Router } from 'express';
 import { getFirestore } from '../db/firestore.js';
-import { requireAuth } from '../middleware/auth.js';
 import { scoreLimiter } from '../index.js';
 
 const router = Router();
@@ -18,19 +17,20 @@ const MIN_SCORE = 0;
 
 /**
  * POST /scores
- * Authenticated. Records the score delta earned in a level.
+ * Verifies username + PIN, then records the score earned in a level.
  *
- * Request:  { "score": 80, "category": "cricket", "level": 3 }
- * Response: { "ok": true, "totalScore": 320 }
- *
- * Server-side sanity check: score must be in [0, 100] range.
- * For stronger anti-cheat, issue a server-side game-session token and
- * validate it here. See docs/gcp-deployment.md for guidance.
+ * Request:  { "username": "alice", "pin": "1234", "score": 80, "category": "cricket", "level": 3 }
+ * Response: { "ok": true, "username": "alice", "score": 80, "category": "cricket", "level": 3, "totalScore": 320 }
  */
-router.post('/', scoreLimiter, requireAuth, async (req, res, next) => {
+router.post('/', scoreLimiter, async (req, res, next) => {
   try {
-    const { score, category, level } = req.body ?? {};
-    const userId = req.user.id;
+    const { username: rawUsername, pin, score, category, level } = req.body ?? {};
+    const username = (rawUsername || '').trim();
+    const usernameLower = username.toLowerCase();
+
+    if (!username || !pin) {
+      return res.status(400).json({ error: 'username and pin are required' });
+    }
 
     // Validate score value
     const numScore = Number(score);
@@ -58,11 +58,25 @@ router.post('/', scoreLimiter, requireAuth, async (req, res, next) => {
     }
 
     const db = getFirestore();
+    const snap = await db
+      .collection('users')
+      .where('usernameLower', '==', usernameLower)
+      .limit(1)
+      .get();
+
+    if (snap.empty) {
+      return res.status(401).json({ error: 'User not found' });
+    }
+    const doc = snap.docs[0];
+    const data = doc.data();
+    if (data.pin !== pin) {
+      return res.status(401).json({ error: 'Invalid credentials' });
+    }
 
     // Record score entry
     await db.collection('scores').add({
-      userId,
-      usernameSnapshot: req.user.username,
+      userId: doc.id,
+      usernameSnapshot: data.username,
       score: numScore,
       category: category || null,
       level: level != null ? Number(level) : null,
@@ -70,7 +84,7 @@ router.post('/', scoreLimiter, requireAuth, async (req, res, next) => {
     });
 
     // Update user's totalScore
-    const userRef = db.collection('users').doc(userId);
+    const userRef = doc.ref;
     await db.runTransaction(async (tx) => {
       const userDoc = await tx.get(userRef);
       if (!userDoc.exists) throw new Error('User not found');
@@ -79,7 +93,16 @@ router.post('/', scoreLimiter, requireAuth, async (req, res, next) => {
     });
 
     const updatedUser = await userRef.get();
-    res.json({ ok: true, totalScore: updatedUser.data().totalScore });
+    const totalScore = updatedUser.data().totalScore;
+
+    res.json({
+      ok: true,
+      username: data.username,
+      score: numScore,
+      category: category || null,
+      level: level != null ? Number(level) : null,
+      totalScore,
+    });
   } catch (err) {
     next(err);
   }

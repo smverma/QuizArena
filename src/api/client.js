@@ -1,59 +1,31 @@
-/**
- * QuizArena API client.
- * All requests go through here so the base URL is configured in one place.
- *
- * Token storage:
- *   - The JWT access token is stored in sessionStorage (cleared when the tab
- *     closes, not persisted across sessions).
- *   - Tradeoff: users must log in again when they reopen the browser.
- *     For "remember me" behaviour you could move to localStorage, but that
- *     exposes the token to XSS for a longer window.
- *   - The PIN is NEVER stored client-side at any point.
- */
-
 import API_BASE_URL from '../config.js';
 
-const TOKEN_KEY = 'quizArenaToken';
-const USER_KEY = 'quizArenaUser';
+const SESSION_KEY = 'quizArenaSession';
 
-// ── Token helpers ─────────────────────────────────────────────────────────────
+// ── Session helpers ───────────────────────────────────────────────────────────
 
-export function getToken() {
-  return sessionStorage.getItem(TOKEN_KEY);
-}
-
-export function setToken(token) {
-  sessionStorage.setItem(TOKEN_KEY, token);
-}
-
-export function clearSession() {
-  sessionStorage.removeItem(TOKEN_KEY);
-  sessionStorage.removeItem(USER_KEY);
-}
-
-export function getStoredUser() {
-  const raw = sessionStorage.getItem(USER_KEY);
+export function getSession() {
+  const raw = sessionStorage.getItem(SESSION_KEY);
   return raw ? JSON.parse(raw) : null;
 }
 
-export function storeUser(user) {
-  sessionStorage.setItem(USER_KEY, JSON.stringify(user));
+export function setSession(session) {
+  sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
+}
+
+export function clearSession() {
+  sessionStorage.removeItem(SESSION_KEY);
 }
 
 // ── Fetch wrapper ─────────────────────────────────────────────────────────────
 
 async function request(path, options = {}) {
-  const token = getToken();
   const headers = {
     'Content-Type': 'application/json',
-    ...(token ? { Authorization: `Bearer ${token}` } : {}),
     ...(options.headers || {}),
   };
 
-  const res = await fetch(`${API_BASE_URL}${path}`, {
-    ...options,
-    headers,
-  });
+  const res = await fetch(`${API_BASE_URL}${path}`, { ...options, headers });
 
   let data;
   const contentType = res.headers.get('content-type') || '';
@@ -70,25 +42,17 @@ async function request(path, options = {}) {
   return data;
 }
 
-// ── Auth endpoints ────────────────────────────────────────────────────────────
-
-/**
- * Check whether a username is already registered.
- * @param {string} username
- * @returns {Promise<{ exists: boolean }>}
- */
-export async function checkUser(username) {
-  return request(`/auth/check?username=${encodeURIComponent(username)}`);
-}
+// ── Auth ──────────────────────────────────────────────────────────────────────
 
 /**
  * Login or register with username + PIN.
+ * Server creates the account automatically if the username is new.
  * @param {string} username
- * @param {string} pin  4-digit string – NEVER stored after this call
- * @returns {Promise<{ token: string, user: { id: string, username: string } }>}
+ * @param {string} pin  4-digit string
+ * @returns {Promise<{ ok: boolean, user?: { username: string, totalScore: number }, error?: string }>}
  */
-export async function authPin(username, pin) {
-  return request('/auth/pin', {
+export async function login(username, pin) {
+  return request('/auth', {
     method: 'POST',
     body: JSON.stringify({ username, pin }),
   });
@@ -108,38 +72,32 @@ export async function fetchLeaderboard(limit = 50) {
 
 /**
  * Submit the score earned in a completed level.
- * @param {number} score
- * @param {string} category
- * @param {number} level
- * @returns {Promise<{ ok: boolean, totalScore: number }>}
+ * @returns {Promise<{ ok: boolean, username: string, score: number, category: string, level: number, totalScore: number }>}
  */
-export async function submitScore(score, category, level) {
+export async function submitScore(username, pin, score, category, level) {
   return request('/scores', {
     method: 'POST',
-    body: JSON.stringify({ score, category, level }),
+    body: JSON.stringify({ username, pin, score, category, level }),
   });
 }
 
 // ── Progress ──────────────────────────────────────────────────────────────────
 
 /**
- * Fetch all category progress for the authenticated user.
+ * Fetch all category progress for the user.
  * @returns {Promise<Array<{ category: string, level: number, score: number }>>}
  */
-export async function fetchProgress() {
-  return request('/progress');
+export async function fetchProgress(username, pin) {
+  return request(`/progress?username=${encodeURIComponent(username)}&pin=${encodeURIComponent(pin)}`);
 }
 
 /**
  * Update progress after completing a level.
- * @param {string} category
- * @param {number} level
- * @param {number} score
  * @returns {Promise<{ ok: boolean }>}
  */
-export async function updateProgress(category, level, score) {
+export async function updateProgress(username, pin, category, level, score) {
   return request('/progress', {
     method: 'POST',
-    body: JSON.stringify({ category, level, score }),
+    body: JSON.stringify({ username, pin, category, level, score }),
   });
 }

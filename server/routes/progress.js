@@ -1,13 +1,24 @@
 import { Router } from 'express';
 import { getFirestore } from '../db/firestore.js';
-import { requireAuth } from '../middleware/auth.js';
 import { progressLimiter } from '../index.js';
 
 const router = Router();
 
+async function verifyUser(db, username, pin) {
+  const snap = await db
+    .collection('users')
+    .where('usernameLower', '==', username.toLowerCase())
+    .limit(1)
+    .get();
+  if (snap.empty) return null;
+  const doc = snap.docs[0];
+  if (doc.data().pin !== pin) return null;
+  return doc;
+}
+
 /**
- * GET /progress
- * Returns all category progress records for the authenticated user.
+ * GET /progress?username=alice&pin=1234
+ * Returns all category progress records for the user.
  *
  * Response:
  * [
@@ -15,17 +26,20 @@ const router = Router();
  *   ...
  * ]
  */
-router.get('/', progressLimiter, requireAuth, async (req, res, next) => {
+router.get('/', progressLimiter, async (req, res, next) => {
   try {
+    const username = (req.query.username || '').trim();
+    const pin = (req.query.pin || '').trim();
+    if (!username || !pin) {
+      return res.status(400).json({ error: 'username and pin are required' });
+    }
     const db = getFirestore();
-    const snap = await db
-      .collection('users')
-      .doc(req.user.id)
-      .collection('progress')
-      .get();
-
-    const progress = snap.docs.map(doc => doc.data());
-    res.json(progress);
+    const doc = await verifyUser(db, username, pin);
+    if (!doc) {
+      return res.status(401).json({ error: 'Invalid credentials' });
+    }
+    const snap = await db.collection('users').doc(doc.id).collection('progress').get();
+    res.json(snap.docs.map(d => d.data()));
   } catch (err) {
     next(err);
   }
@@ -37,13 +51,17 @@ router.get('/', progressLimiter, requireAuth, async (req, res, next) => {
  * Only advances level if the submitted level is higher than stored.
  * Score is cumulative.
  *
- * Request:  { "category": "cricket", "level": 3, "score": 90 }
+ * Request:  { "username": "alice", "pin": "1234", "category": "cricket", "level": 3, "score": 90 }
  * Response: { "ok": true }
  */
-router.post('/', progressLimiter, requireAuth, async (req, res, next) => {
+router.post('/', progressLimiter, async (req, res, next) => {
   try {
-    const { category, level, score } = req.body ?? {};
+    const { username: rawUsername, pin, category, level, score } = req.body ?? {};
+    const username = (rawUsername || '').trim();
 
+    if (!username || !pin) {
+      return res.status(400).json({ error: 'username and pin are required' });
+    }
     if (!category || typeof category !== 'string') {
       return res.status(400).json({ error: 'category is required' });
     }
@@ -57,26 +75,27 @@ router.post('/', progressLimiter, requireAuth, async (req, res, next) => {
     }
 
     const db = getFirestore();
+    const doc = await verifyUser(db, username, pin);
+    if (!doc) {
+      return res.status(401).json({ error: 'Invalid credentials' });
+    }
+
     const progressRef = db
       .collection('users')
-      .doc(req.user.id)
+      .doc(doc.id)
       .collection('progress')
       .doc(category);
 
     await db.runTransaction(async (tx) => {
-      const doc = await tx.get(progressRef);
-      if (doc.exists) {
-        const existing = doc.data();
+      const existing = await tx.get(progressRef);
+      if (existing.exists) {
+        const d = existing.data();
         tx.update(progressRef, {
-          level: Math.max(existing.level || 0, numLevel),
-          score: (existing.score || 0) + numScore,
+          level: Math.max(d.level || 0, numLevel),
+          score: (d.score || 0) + numScore,
         });
       } else {
-        tx.set(progressRef, {
-          category,
-          level: numLevel,
-          score: numScore,
-        });
+        tx.set(progressRef, { category, level: numLevel, score: numScore });
       }
     });
 
