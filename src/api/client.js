@@ -85,10 +85,14 @@ export async function submitScore(username, pin, score, category, level) {
 
 /**
  * Fetch all category progress for the user.
+ * Credentials are sent in the request body (not query params).
  * @returns {Promise<Array<{ category: string, level: number, score: number }>>}
  */
 export async function fetchProgress(username, pin) {
-  return request(`/progress?username=${encodeURIComponent(username)}&pin=${encodeURIComponent(pin)}`);
+  return request('/progress/fetch', {
+    method: 'POST',
+    body: JSON.stringify({ username, pin }),
+  });
 }
 
 /**

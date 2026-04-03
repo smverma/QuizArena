@@ -1,8 +1,16 @@
 import { Router } from 'express';
+import { timingSafeEqual } from 'crypto';
 import { getFirestore } from '../db/firestore.js';
 import { progressLimiter } from '../index.js';
 
 const router = Router();
+
+function safeComparePin(a, b) {
+  const bufA = Buffer.from(String(a));
+  const bufB = Buffer.from(String(b));
+  if (bufA.length !== bufB.length) return false;
+  return timingSafeEqual(bufA, bufB);
+}
 
 async function verifyUser(db, username, pin) {
   const snap = await db
@@ -12,24 +20,22 @@ async function verifyUser(db, username, pin) {
     .get();
   if (snap.empty) return null;
   const doc = snap.docs[0];
-  if (doc.data().pin !== pin) return null;
+  if (!safeComparePin(doc.data().pin, pin)) return null;
   return doc;
 }
 
 /**
- * GET /progress?username=alice&pin=1234
+ * POST /progress/fetch
  * Returns all category progress records for the user.
+ * Credentials are sent in the request body to avoid exposing the PIN in URLs.
  *
- * Response:
- * [
- *   { "category": "cricket", "level": 3, "score": 270 },
- *   ...
- * ]
+ * Request:  { "username": "alice", "pin": "1234" }
+ * Response: [ { "category": "cricket", "level": 3, "score": 270 }, ... ]
  */
-router.get('/', progressLimiter, async (req, res, next) => {
+router.post('/fetch', progressLimiter, async (req, res, next) => {
   try {
-    const username = (req.query.username || '').trim();
-    const pin = (req.query.pin || '').trim();
+    const username = (req.body?.username || '').trim();
+    const pin = req.body?.pin || '';
     if (!username || !pin) {
       return res.status(400).json({ error: 'username and pin are required' });
     }

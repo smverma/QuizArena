@@ -1,8 +1,16 @@
 import { Router } from 'express';
+import { timingSafeEqual } from 'crypto';
 import { getFirestore } from '../db/firestore.js';
 import { scoreLimiter } from '../index.js';
 
 const router = Router();
+
+function safeComparePin(a, b) {
+  const bufA = Buffer.from(String(a));
+  const bufB = Buffer.from(String(b));
+  if (bufA.length !== bufB.length) return false;
+  return timingSafeEqual(bufA, bufB);
+}
 
 const VALID_CATEGORIES = new Set([
   'india-politics', 'indian-geography', 'bollywood', 'cricket',
@@ -69,7 +77,7 @@ router.post('/', scoreLimiter, async (req, res, next) => {
     }
     const doc = snap.docs[0];
     const data = doc.data();
-    if (data.pin !== pin) {
+    if (!safeComparePin(data.pin, pin)) {
       return res.status(401).json({ error: 'Invalid credentials' });
     }
 
