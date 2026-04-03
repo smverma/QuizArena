@@ -16,7 +16,8 @@ RUN npm run build
 FROM node:20-alpine
 
 # Install Nginx and gettext (for envsubst – used to template nginx.conf at startup)
-RUN apk add --no-cache nginx gettext && mkdir -p /run/nginx
+# Remove the default Alpine nginx site so it does not conflict with our config
+RUN apk add --no-cache nginx gettext && mkdir -p /run/nginx && rm -f /etc/nginx/http.d/default.conf
 
 # ── Install Express backend ───────────────────────────────────────────────────
 WORKDIR /app/server
@@ -28,8 +29,9 @@ COPY server/ .
 COPY --from=build /app/dist /usr/share/nginx/html
 
 # ── Nginx configuration ───────────────────────────────────────────────────────
-# Stored as a template; docker-entrypoint.sh substitutes ${PORT} at startup
-COPY nginx.conf /etc/nginx/conf.d/default.conf.template
+# Stored as a template; docker-entrypoint.sh substitutes ${PORT} at startup.
+# Alpine 3.17+ nginx reads from http.d/, not conf.d/
+COPY nginx.conf /etc/nginx/http.d/default.conf.template
 
 # ── Entrypoint: start Express then Nginx ──────────────────────────────────────
 COPY docker-entrypoint.sh /docker-entrypoint.sh
