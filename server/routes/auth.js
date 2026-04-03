@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { getFirestore } from '../db/firestore.js';
-import { authLimiter } from '../index.js';
+import { authLimiter } from '../middleware/limiters.js';
 
 const router = Router();
 
