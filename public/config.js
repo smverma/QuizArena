@@ -5,18 +5,14 @@
  * Override window.__API_BASE_URL__ here to point the frontend at your backend
  * WITHOUT rebuilding the app – ideal for Docker images shared across environments.
  *
- * Preferred approach (CI/CD build-time):
- *   Pass VITE_API_URL as a Docker build argument in cloudbuild.yaml via the
- *   _API_URL substitution variable. The Vite build will bake the URL in.
- *   Example in Cloud Build trigger settings:
- *     _API_URL = https://quizarena-api-abc123-uc.a.run.app
+ * In the Docker / Cloud Run deployment nginx serves both the static frontend
+ * and proxies the API routes (/auth, /scores, /leaderboard, /progress, /health)
+ * to the Express backend running on port 3001 inside the same container.
+ * Using window.location.origin ensures that API calls always go to the same
+ * host that served the page, so the app works at any Cloud Run URL without
+ * having to hard-code the service address.
  *
- * Alternative (runtime injection, no rebuild):
- *   Uncomment the line below and set the correct URL, then redeploy the nginx
- *   container (or use sed/envsubst in a Cloud Build step before docker build):
- *   window.__API_BASE_URL__ = 'https://your-cloud-run-api-url.run.app';
+ * For local development the Vite dev server proxy (vite.config.js) forwards
+ * these same paths to the Express server running on http://localhost:3001.
  */
-
-// Production default: points to the deployed backend on Cloud Run.
-// Override VITE_API_URL at build time or change this value to switch environments.
-window.__API_BASE_URL__ = 'https://quizarena-git-671240376666.europe-west1.run.app';
+window.__API_BASE_URL__ = window.location.origin;
