@@ -2,13 +2,14 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useGame } from '../context/GameContext';
 import { submitScore, updateProgress } from '../api/client';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function LevelCompletePage() {
   const { user } = useAuth();
   const { currentCategory, currentLevel, levelScore, score, setCurrentLevel, resetLevel } = useGame();
   const navigate = useNavigate();
   const savedRef = useRef(false);
+  const [totalScore, setTotalScore] = useState(score);
 
   useEffect(() => {
     if (!currentCategory || savedRef.current || !user) return;
@@ -16,9 +17,13 @@ export default function LevelCompletePage() {
 
     // Submit score and progress to the server in parallel
     Promise.all([
-      submitScore(levelScore, currentCategory.id, currentLevel),
-      updateProgress(currentCategory.id, currentLevel, levelScore),
-    ]).catch(err => console.error('Failed to save progress:', err));
+      submitScore(user.username, user.pin, levelScore, currentCategory.id, currentLevel),
+      updateProgress(user.username, user.pin, currentCategory.id, currentLevel, levelScore),
+    ])
+      .then(([scoreResult]) => {
+        if (scoreResult?.totalScore != null) setTotalScore(scoreResult.totalScore);
+      })
+      .catch(err => console.error('Failed to save progress:', err));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -39,19 +44,26 @@ export default function LevelCompletePage() {
       <div className="result-card">
         <div className="result-icon">🎉</div>
         <h2>Level Complete!</h2>
-        <p className="result-category">{currentCategory.icon} {currentCategory.name}</p>
         <div className="result-stats">
+          <div className="stat">
+            <span className="stat-label">Player</span>
+            <span className="stat-value">{user?.username}</span>
+          </div>
+          <div className="stat">
+            <span className="stat-label">Category</span>
+            <span className="stat-value">{currentCategory.icon} {currentCategory.name}</span>
+          </div>
+          <div className="stat">
+            <span className="stat-label">Level</span>
+            <span className="stat-value">{currentLevel}/10</span>
+          </div>
           <div className="stat">
             <span className="stat-label">Level Score</span>
             <span className="stat-value">+{levelScore}</span>
           </div>
           <div className="stat">
             <span className="stat-label">Total Score</span>
-            <span className="stat-value">{score}</span>
-          </div>
-          <div className="stat">
-            <span className="stat-label">Level</span>
-            <span className="stat-value">{currentLevel}/10</span>
+            <span className="stat-value">{totalScore}</span>
           </div>
         </div>
         <div className="result-actions">
