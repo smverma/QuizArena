@@ -20,8 +20,8 @@ RUN apk add --no-cache nginx gettext && mkdir -p /run/nginx
 
 # ── Install Express backend ───────────────────────────────────────────────────
 WORKDIR /app/server
-COPY server/package.json ./
-RUN npm install --omit=dev
+COPY server/package.json server/package-lock.json ./
+RUN npm ci --omit=dev
 COPY server/ .
 
 # ── Copy built frontend to Nginx web root ─────────────────────────────────────
