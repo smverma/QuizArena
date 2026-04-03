@@ -12,6 +12,12 @@
  * host that served the page, so the app works at any Cloud Run URL without
  * having to hard-code the service address.
  *
+ * For static-only deployments (e.g. GitHub Pages) the backend lives on a
+ * different host. Set the VITE_API_URL repository variable in GitHub Actions
+ * (Settings → Variables → Actions) to the backend URL instead of relying on
+ * this file. VITE_API_URL is evaluated first in src/config.js and will take
+ * precedence over window.__API_BASE_URL__ set here.
+ *
  * For local development the Vite dev server proxy (vite.config.js) forwards
  * these same paths to the Express server running on http://localhost:3001.
  */
