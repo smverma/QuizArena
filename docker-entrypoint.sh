@@ -7,7 +7,7 @@ export PORT
 
 # Template the nginx config so it listens on the correct port.
 # Only ${PORT} is substituted; nginx variables like $host are left intact.
-envsubst '${PORT}' < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf
+envsubst '${PORT}' < /etc/nginx/http.d/default.conf.template > /etc/nginx/http.d/default.conf
 
 # Start the Express API server on port 3001 (proxied internally by Nginx)
 PORT=3001 node /app/server/index.js &
