@@ -5,7 +5,6 @@ import authRoutes from './routes/auth.js';
 import scoresRoutes from './routes/scores.js';
 import leaderboardRoutes from './routes/leaderboard.js';
 import progressRoutes from './routes/progress.js';
-import { authLimiter, scoreLimiter, progressLimiter } from './middleware/limiters.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
