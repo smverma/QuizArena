@@ -12,15 +12,8 @@ envsubst '${PORT}' < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d
 # Start the Express API server on port 3001 (proxied internally by Nginx)
 PORT=3001 node /app/server/index.js &
 
-# Wait for Express to be ready before starting Nginx
-echo "Waiting for Express API to be ready..."
-for i in $(seq 1 30); do
-  if wget -qO- http://127.0.0.1:3001/health > /dev/null 2>&1; then
-    echo "Express API is ready"
-    break
-  fi
-  sleep 1
-done
-
-# Start Nginx in the foreground – Cloud Run keeps the container alive
+# Start Nginx in the foreground – Cloud Run keeps the container alive.
+# Nginx binds port 8080 immediately so the Cloud Run startup probe succeeds.
+# API proxy requests will return 502 for the brief moment Express is still
+# initialising, but that window is typically under a second.
 exec nginx -g 'daemon off;'

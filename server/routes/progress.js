@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { timingSafeEqual } from 'crypto';
 import { getFirestore } from '../db/firestore.js';
-import { progressLimiter } from '../index.js';
+import { progressLimiter } from '../middleware/limiters.js';
 
 const router = Router();
 
