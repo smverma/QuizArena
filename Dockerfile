@@ -29,7 +29,7 @@ COPY --from=build /app/dist /usr/share/nginx/html
 
 # ── Nginx configuration ───────────────────────────────────────────────────────
 # Stored as a template; docker-entrypoint.sh substitutes ${PORT} at startup
-COPY nginx.conf /etc/nginx/conf.d/default.conf.template
+COPY nginx.conf /etc/nginx/http.d/default.conf.template
 
 # ── Entrypoint: start Express then Nginx ──────────────────────────────────────
 COPY docker-entrypoint.sh /docker-entrypoint.sh
