@@ -1,12 +1,5 @@
 import { createContext, useContext, useState, useEffect } from 'react';
-import {
-  authPin,
-  checkUser,
-  getStoredUser,
-  storeUser,
-  setToken,
-  clearSession,
-} from '../api/client';
+import { login, getSession, setSession, clearSession } from '../api/client';
 
 const AuthContext = createContext();
 
@@ -15,37 +8,30 @@ export function AuthProvider({ children }) {
 
   // Restore session from sessionStorage on mount
   useEffect(() => {
-    const stored = getStoredUser();
+    const stored = getSession();
     if (stored) setUser(stored);
   }, []);
 
   /**
    * Login or register via the backend API.
-   * The server decides based on whether the username exists.
-   * PIN is sent only once and never stored client-side.
+   * The server creates a new account if the username doesn't exist yet.
+   * On success, { username, pin, totalScore } is stored in session.
    *
    * @returns {Promise<{ success: boolean, error?: string }>}
    */
   const authenticate = async (username, pin) => {
     try {
-      const { token, user: apiUser } = await authPin(username, pin);
-      setToken(token);
-      storeUser(apiUser);
-      setUser(apiUser);
+      const data = await login(username, pin);
+      if (!data.ok) {
+        return { success: false, error: data.error };
+      }
+      const session = { username: data.user.username, pin, totalScore: data.user.totalScore };
+      setSession(session);
+      setUser(session);
       return { success: true };
     } catch (err) {
       return { success: false, error: err.message };
     }
-  };
-
-  /**
-   * Check if a username is already registered (async).
-   * Throws on network/server errors so the caller can display an error message.
-   * @returns {Promise<boolean>}
-   */
-  const userExists = async (username) => {
-    const { exists } = await checkUser(username);
-    return exists;
   };
 
   const logout = () => {
@@ -54,7 +40,7 @@ export function AuthProvider({ children }) {
   };
 
   return (
-    <AuthContext.Provider value={{ user, authenticate, logout, userExists }}>
+    <AuthContext.Provider value={{ user, authenticate, logout }}>
       {children}
     </AuthContext.Provider>
   );

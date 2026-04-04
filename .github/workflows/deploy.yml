@@ -31,7 +31,13 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: VITE_BASE=/QuizArena/ npm run build
+        run: npm run build
+        env:
+          VITE_BASE: /QuizArena/
+          # Point the frontend at the separately-deployed Express backend.
+          # Set VITE_API_URL as a GitHub repository variable (Settings → Variables)
+          # to the Cloud Run (or other) backend URL, e.g. https://api.example.com
+          VITE_API_URL: ${{ vars.VITE_API_URL }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

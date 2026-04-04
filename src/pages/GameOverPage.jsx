@@ -1,7 +1,9 @@
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import { useGame } from '../context/GameContext';
 
 export default function GameOverPage() {
+  const { user } = useAuth();
   const { currentCategory, currentLevel, score, resetLevel, startGame } = useGame();
   const navigate = useNavigate();
 
@@ -20,10 +22,25 @@ export default function GameOverPage() {
       <div className="result-card gameover">
         <div className="result-icon">💔</div>
         <h2>Game Over</h2>
-        {currentCategory && (
-          <p className="result-category">{currentCategory.icon} {currentCategory.name} - Level {currentLevel}</p>
-        )}
         <div className="result-stats">
+          {user && (
+            <div className="stat">
+              <span className="stat-label">Player</span>
+              <span className="stat-value">{user.username}</span>
+            </div>
+          )}
+          {currentCategory && (
+            <div className="stat">
+              <span className="stat-label">Category</span>
+              <span className="stat-value">{currentCategory.icon} {currentCategory.name}</span>
+            </div>
+          )}
+          {currentCategory && (
+            <div className="stat">
+              <span className="stat-label">Level</span>
+              <span className="stat-value">{currentLevel}</span>
+            </div>
+          )}
           <div className="stat">
             <span className="stat-label">Final Score</span>
             <span className="stat-value">{score}</span>
