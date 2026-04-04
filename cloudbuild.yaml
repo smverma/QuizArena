@@ -47,10 +47,8 @@ substitutions:
   # Example: https://quizarena-api-abc123-uc.a.run.app
   # Without this the frontend will fall back to http://localhost:3001 (dev only).
   _API_URL: ''
-  # Firestore database ID – leave blank to use the "(default)" database.
-  # Set to your named database ID if created via:
-  #   gcloud firestore databases create --database=mydb
-  _FIRESTORE_DATABASE_ID: ''
+  # Firestore database ID for the named database created in this project.
+  _FIRESTORE_DATABASE_ID: 'quiz-free-tier'
   # Comma-separated list of allowed CORS origins (frontend URL).
   # Example: https://quizarena-abc123-uc.a.run.app
   _ALLOWED_ORIGINS: ''
