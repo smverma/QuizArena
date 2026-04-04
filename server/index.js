@@ -44,9 +44,10 @@ app.use((err, _req, res, _next) => {
   console.error(err);
 
   // gRPC NOT_FOUND (5): the Firestore database does not exist in this project.
+  // gRPC UNAVAILABLE (14): Firestore is temporarily unreachable.
   // Return 503 so callers know the service is temporarily unavailable rather
   // than treating it as a generic 500 (which suggests an application bug).
-  if (err.code === 5) {
+  if (err.code === 5 || err.code === 14) {
     return res.status(503).json({
       error: 'Service temporarily unavailable. Please try again shortly.',
     });
@@ -54,6 +55,7 @@ app.use((err, _req, res, _next) => {
 
   res.status(err.status || 500).json({ error: err.message || 'Internal server error' });
 });
+
 
 app.listen(PORT, () => {
   console.log(`QuizArena API listening on port ${PORT}`);
