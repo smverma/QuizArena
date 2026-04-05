@@ -41,9 +41,13 @@ export async function checkFirestoreConnectivity() {
     if (err.code === 5) {
       // gRPC NOT_FOUND – the Firestore database does not exist in this project.
       console.error(
-        'Firestore database not found (gRPC 5 NOT_FOUND). ' +
-          'Create it with: gcloud firestore databases create --location=YOUR_REGION --type=firestore-native\n' +
-          'If you are using a named database, set the FIRESTORE_DATABASE_ID environment variable.'
+        'Firestore database "%s" not found (gRPC 5 NOT_FOUND). ' +
+          'Ensure the FIRESTORE_DATABASE_ID environment variable matches the ' +
+          'database ID shown in the Firebase/GCP console (e.g. "quiz-free-tier"), ' +
+          'and that GCP_PROJECT_ID points to the correct project.\n' +
+          'Create a named database with: ' +
+          'gcloud firestore databases create --database=YOUR_DATABASE_ID --location=YOUR_REGION --type=firestore-native',
+        firestoreDb.databaseId
       );
     } else {
       console.error('Firestore connectivity check failed (code %s): %s', err.code, err.message);

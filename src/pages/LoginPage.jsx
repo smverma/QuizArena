@@ -73,6 +73,13 @@ export default function LoginPage() {
             {loading ? 'Please wait…' : 'Play →'}
           </button>
         </form>
+        <div className="guest-divider">
+          <span>or</span>
+        </div>
+        <button type="button" className="btn-guest" onClick={handlePlayAsGuest}>
+          Play as Guest (no account needed)
+        </button>
+        <p className="guest-note">Guest scores and progress won't be saved.</p>
       </div>
     </div>
   );

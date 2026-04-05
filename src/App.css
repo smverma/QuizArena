@@ -103,6 +103,43 @@
 }
 .btn-secondary:hover { border-color: #e94560; color: #e94560; }
 
+.btn-guest {
+  width: 100%;
+  padding: 0.9rem;
+  background: transparent;
+  color: #aaa;
+  border: 2px dashed #0f3460;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 0.25rem;
+}
+.btn-guest:hover { border-color: #e94560; color: #e94560; }
+
+.guest-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0 0.75rem;
+  color: #555;
+  font-size: 0.85rem;
+}
+.guest-divider::before,
+.guest-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #0f3460;
+}
+
+.guest-note {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #555;
+  margin: 0.25rem 0 0;
+}
+
 .btn-outline {
   padding: 0.5rem 1rem;
   background: transparent;
