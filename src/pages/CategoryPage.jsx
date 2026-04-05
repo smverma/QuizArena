@@ -25,6 +25,7 @@ export default function CategoryPage() {
   const [progressError, setProgressError] = useState('');
 
   useEffect(() => {
+    if (!user || user.isGuest) return;
     fetchProgress(user.username, user.pin)
       .then(data => setAllProgress(data))
       .catch(err => {
@@ -55,6 +56,11 @@ export default function CategoryPage() {
         </div>
       </header>
       <h2 className="section-title">Choose a Category</h2>
+      {user.isGuest && (
+        <p className="error" style={{ textAlign: 'center', marginBottom: '1rem' }}>
+          ⚠️ You are playing as a guest – scores and progress won't be saved.
+        </p>
+      )}
       {progressError && <p className="error" style={{ textAlign: 'center', marginBottom: '1rem' }}>{progressError}</p>}
       <div className="categories-grid">
         {CATEGORIES.map(cat => (

@@ -6,8 +6,9 @@ export default function LoginPage() {
   const [username, setUsername] = useState('');
   const [pin, setPin] = useState('');
   const [error, setError] = useState('');
+  const [serverError, setServerError] = useState(false);
   const [loading, setLoading] = useState(false);
-  const { authenticate } = useAuth();
+  const { authenticate, loginAsGuest } = useAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -16,10 +17,21 @@ export default function LoginPage() {
     if (pin.length !== 4 || !/^\d+$/.test(pin)) { setError('PIN must be 4 digits'); return; }
     setLoading(true);
     setError('');
+    setServerError(false);
     const result = await authenticate(username.trim(), pin);
     setLoading(false);
-    if (result.success) navigate('/categories');
-    else setError(result.error);
+    if (result.success) {
+      navigate('/categories');
+    } else if (result.isServerError) {
+      setServerError(true);
+    } else {
+      setError(result.error);
+    }
+  };
+
+  const handlePlayAsGuest = () => {
+    loginAsGuest();
+    navigate('/categories');
   };
 
   return (
@@ -48,6 +60,15 @@ export default function LoginPage() {
             disabled={loading}
           />
           {error && <p className="error">{error}</p>}
+          {serverError && (
+            <div className="server-error-banner">
+              <p>⚠️ The server is currently unavailable. Your progress and scores <strong>cannot be saved</strong> right now.</p>
+              <p>You can play as a guest and continue with the quiz, but results won't be persisted.</p>
+              <button type="button" className="btn-secondary" onClick={handlePlayAsGuest}>
+                Play as Guest →
+              </button>
+            </div>
+          )}
           <button type="submit" className="btn-primary" disabled={loading}>
             {loading ? 'Please wait…' : 'Play →'}
           </button>

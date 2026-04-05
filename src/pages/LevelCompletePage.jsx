@@ -12,7 +12,7 @@ export default function LevelCompletePage() {
   const [totalScore, setTotalScore] = useState(score);
 
   useEffect(() => {
-    if (!currentCategory || savedRef.current || !user) return;
+    if (!currentCategory || savedRef.current || !user || user.isGuest) return;
     savedRef.current = true;
 
     // Submit score and progress to the server in parallel

@@ -59,6 +59,20 @@
   text-align: center;
 }
 
+.server-error-banner {
+  background: rgba(233, 69, 96, 0.1);
+  border: 1px solid rgba(233, 69, 96, 0.4);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #eee;
+}
+.server-error-banner p { margin: 0 0 0.5rem; }
+.server-error-banner strong { color: #e94560; }
+.server-error-banner .btn-secondary { margin-top: 0.5rem; }
+
 /* === BUTTONS === */
 .btn-primary {
   width: 100%;
