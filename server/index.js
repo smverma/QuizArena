@@ -57,11 +57,15 @@ app.use((err, _req, res, _next) => {
 });
 
 
+// ── Startup: verify Firestore before accepting connections ─────────────────────
+// Fail fast so the process manager / Cloud Run knows the service is unhealthy
+// and does not route traffic to a server that cannot persist anything.
+const ok = await checkFirestoreConnectivity();
+if (!ok) {
+  console.error('Exiting: Firestore is not reachable. Fix the configuration errors above and restart.');
+  process.exit(1);
+}
+
 app.listen(PORT, () => {
   console.log(`QuizArena API listening on port ${PORT}`);
-  // Verify Firestore connectivity after the server starts so any database
-  // mis-configuration is surfaced immediately in the logs.
-  // Errors are already logged inside checkFirestoreConnectivity; suppress the
-  // unhandled-rejection here to avoid a redundant top-level error.
-  checkFirestoreConnectivity().catch(() => {});
 });
