@@ -123,6 +123,7 @@ gcloud run deploy quizarena-api \
   --port 8080 \
   --set-secrets "JWT_SECRET=QUIZ_JWT_SECRET:latest" \
   --set-env-vars "ALLOWED_ORIGINS=https://YOUR_FRONTEND_URL" \
+  --set-env-vars "GCP_PROJECT_ID=$PROJECT_ID" \
   --min-instances 0 \
   --max-instances 10
 ```
@@ -132,6 +133,10 @@ Note the deployed URL — you will need it for the frontend configuration.
 > **CORS**: The `ALLOWED_ORIGINS` env var must be set to your frontend Cloud Run URL
 > (e.g., `https://quizarena-abc123-uc.a.run.app`). Without this the browser will
 > block API requests from the frontend with a CORS error.
+
+> **Firestore**: Always set `GCP_PROJECT_ID` explicitly to avoid ADC resolving the
+> wrong project.  Do **not** set `FIRESTORE_DATABASE_ID` unless you created a named
+> database; leaving it unset uses the `(default)` database.
 
 ---
 
@@ -301,14 +306,56 @@ See `server/firestore.indexes.json`:
 
 ---
 
+## Troubleshooting: Cloud Run startup failures
+
+### Container fails to start and listen on PORT=8080
+
+**Symptom**: Cloud Run reports *"The user-provided container failed to start and listen on the port defined by the PORT=8080 environment variable"*.
+
+**Cause**: The startup Firestore connectivity check was failing (e.g. `gRPC 5 NOT_FOUND`), and the process was exiting before `app.listen()` was called.
+
+**Fix (preferred)**: Correct the Firestore configuration so connectivity succeeds:
+1. Set `GCP_PROJECT_ID` to your actual project ID (e.g. `quizarena-8279a`).
+2. Verify that Firestore is enabled in that project (`gcloud firestore databases list --project=quizarena-8279a`).
+3. Do **not** set `FIRESTORE_DATABASE_ID` unless you explicitly created a named database.
+4. Ensure the Cloud Run service account has the `roles/datastore.user` IAM role.
+
+**Workaround**: The server now always starts listening on PORT regardless of Firestore
+status.  When Firestore is misconfigured, `/health` still returns `{ ok: true, firestore: false }`
+and data routes return HTTP 503.  This lets Cloud Run complete startup while you fix
+the Firestore configuration via a new revision.
+
+### Checking Firestore connectivity from Cloud Run
+
+```bash
+# Verify which project and database the container is targeting
+gcloud run services describe quizarena-api --region=REGION \
+  --format="value(spec.template.spec.containers[0].env)"
+
+# List databases in the project
+gcloud firestore databases list --project=YOUR_PROJECT_ID
+```
+
+### gRPC error codes at startup
+
+| Code | Name | Likely cause |
+|------|------|--------------|
+| 5 | NOT_FOUND | Wrong `GCP_PROJECT_ID`, wrong `FIRESTORE_DATABASE_ID`, or Firestore not yet created in the project |
+| 7 | PERMISSION_DENIED | Service account missing `roles/datastore.user` |
+| 14 | UNAVAILABLE | Transient network issue or Firestore service outage |
+
+---
+
 ## Environment variables reference
 
 | Variable | Required | Default | Description |
 |---|---|---|---|
 | `JWT_SECRET` | ✅ | — | Secret for signing JWT tokens |
-| `PORT` | ❌ | 3001 | HTTP port (Cloud Run sets 8080) |
+| `PORT` | ❌ | 3001 | HTTP port (Cloud Run sets 8080 automatically) |
 | `JWT_EXPIRES_IN` | ❌ | 7d | Token expiry |
-| `GCP_PROJECT_ID` | ❌ | (from ADC) | GCP project ID |
+| `GCP_PROJECT_ID` | ⚠️ recommended | (from ADC) | GCP project ID – set explicitly to avoid ADC resolving the wrong project (e.g. `quizarena-8279a`) |
+| `FIRESTORE_DATABASE_ID` | ❌ | `(default)` | Firestore database ID – **leave unset** unless you created a named database; if set to a non-existent ID you will get `gRPC 5 NOT_FOUND` at startup |
+| `FAIL_FAST_ON_STARTUP` | ❌ | `false` | Set to `true` to exit the process if Firestore is unreachable at startup (restores legacy behavior) |
 | `ALLOWED_ORIGINS` | ❌ | localhost:5173 | CORS allowed origins |
 | `FIRESTORE_EMULATOR_HOST` | ❌ | — | Point to local emulator |
 | `GOOGLE_APPLICATION_CREDENTIALS` | ❌ | (from ADC) | Path to service account JSON |

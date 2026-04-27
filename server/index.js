@@ -30,14 +30,33 @@ app.use(
 
 app.use(express.json());
 
+// ── Firestore health state ────────────────────────────────────────────────────
+// Tracks whether the startup Firestore connectivity check succeeded.
+// Routes that depend on Firestore check this flag and return 503 immediately
+// instead of letting a Firestore error bubble up as an unhandled 500.
+let firestoreOk = false;
+
+// ── Middleware: require a reachable Firestore ─────────────────────────────────
+function requireFirestore(_req, res, next) {
+  if (!firestoreOk) {
+    return res.status(503).json({
+      error: 'Service temporarily unavailable. Firestore is not reachable. Please try again shortly.',
+    });
+  }
+  next();
+}
+
 // ── Health endpoint ───────────────────────────────────────────────────────────
-app.get('/health', (_req, res) => res.json({ ok: true }));
+// Always responds so Cloud Run startup and liveness probes succeed even when
+// Firestore is misconfigured.  The `firestore` field lets operators quickly
+// see whether the database connectivity check passed.
+app.get('/health', (_req, res) => res.json({ ok: true, firestore: firestoreOk }));
 
 // ── Routes ────────────────────────────────────────────────────────────────────
-app.use('/auth', authRoutes);
-app.use('/scores', scoresRoutes);
-app.use('/leaderboard', leaderboardRoutes);
-app.use('/progress', progressRoutes);
+app.use('/auth', requireFirestore, authRoutes);
+app.use('/scores', requireFirestore, scoresRoutes);
+app.use('/leaderboard', requireFirestore, leaderboardRoutes);
+app.use('/progress', requireFirestore, progressRoutes);
 
 // ── Global error handler ──────────────────────────────────────────────────────
 app.use((err, _req, res, _next) => {
@@ -57,15 +76,27 @@ app.use((err, _req, res, _next) => {
 });
 
 
-// ── Startup: verify Firestore before accepting connections ─────────────────────
-// Fail fast so the process manager / Cloud Run knows the service is unhealthy
-// and does not route traffic to a server that cannot persist anything.
-const ok = await checkFirestoreConnectivity();
-if (!ok) {
-  console.error('Exiting: Firestore is not reachable. Fix the configuration errors above and restart.');
-  process.exit(1);
-}
-
+// ── Startup: listen first, then verify Firestore ──────────────────────────────
+// The server always binds to PORT before the Firestore check so that Cloud Run
+// can detect a listening port and complete the startup health check.
+//
+// Set FAIL_FAST_ON_STARTUP=true to restore fail-fast behavior (the process
+// will exit if Firestore is unreachable, which prevents Cloud Run from serving
+// any traffic – use this only when a non-functional backend is unacceptable).
 app.listen(PORT, () => {
   console.log(`QuizArena API listening on port ${PORT}`);
 });
+
+const ok = await checkFirestoreConnectivity();
+if (ok) {
+  firestoreOk = true;
+} else {
+  if (process.env.FAIL_FAST_ON_STARTUP === 'true') {
+    console.error('FAIL_FAST_ON_STARTUP=true – Exiting: Firestore is not reachable. Fix the configuration errors above and restart.');
+    process.exit(1);
+  }
+  console.warn(
+    'WARNING: Firestore is not reachable. All data routes will return HTTP 503 until Firestore is available.\n' +
+    'Set FAIL_FAST_ON_STARTUP=true to exit the process instead of serving degraded traffic.'
+  );
+}
