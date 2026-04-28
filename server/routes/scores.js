@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { timingSafeEqual } from 'crypto';
-import { getFirestore } from '../db/firestore.js';
+import { getPool } from '../db/mysql.js';
 import { scoreLimiter } from '../middleware/limiters.js';
 
 const router = Router();
@@ -65,47 +65,51 @@ router.post('/', scoreLimiter, async (req, res, next) => {
       }
     }
 
-    const db = getFirestore();
-    const snap = await db
-      .collection('users')
-      .where('usernameLower', '==', usernameLower)
-      .limit(1)
-      .get();
+    const db = getPool();
+    const [rows] = await db.query(
+      'SELECT id, username, pin, total_score FROM users WHERE username_lower = ? LIMIT 1',
+      [usernameLower]
+    );
 
-    if (snap.empty) {
+    if (rows.length === 0) {
       return res.status(401).json({ error: 'User not found' });
     }
-    const doc = snap.docs[0];
-    const data = doc.data();
-    if (!safeComparePin(data.pin, pin)) {
+    const user = rows[0];
+    if (!safeComparePin(user.pin, pin)) {
       return res.status(401).json({ error: 'Invalid credentials' });
     }
 
-    // Record score entry
-    await db.collection('scores').add({
-      userId: doc.id,
-      usernameSnapshot: data.username,
-      score: numScore,
-      category: category || null,
-      level: level != null ? Number(level) : null,
-      createdAt: new Date(),
-    });
+    const conn = await db.getConnection();
+    let totalScore;
+    try {
+      await conn.beginTransaction();
 
-    // Update user's totalScore
-    const userRef = doc.ref;
-    await db.runTransaction(async (tx) => {
-      const userDoc = await tx.get(userRef);
-      if (!userDoc.exists) throw new Error('User not found');
-      const current = userDoc.data().totalScore || 0;
-      tx.update(userRef, { totalScore: current + numScore });
-    });
+      // Record score entry
+      await conn.query(
+        'INSERT INTO scores (user_id, username_snapshot, score, category, level, created_at) VALUES (?, ?, ?, ?, ?, ?)',
+        [user.id, user.username, numScore, category || null, level != null ? Number(level) : null, new Date()]
+      );
 
-    const updatedUser = await userRef.get();
-    const totalScore = updatedUser.data().totalScore;
+      // Update user's totalScore atomically
+      await conn.query(
+        'UPDATE users SET total_score = total_score + ? WHERE id = ?',
+        [numScore, user.id]
+      );
+
+      const [[updated]] = await conn.query('SELECT total_score FROM users WHERE id = ?', [user.id]);
+      totalScore = updated.total_score;
+
+      await conn.commit();
+    } catch (err) {
+      try { await conn.rollback(); } catch (rbErr) { console.error('Rollback failed:', rbErr); }
+      throw err;
+    } finally {
+      conn.release();
+    }
 
     res.json({
       ok: true,
-      username: data.username,
+      username: user.username,
       score: numScore,
       category: category || null,
       level: level != null ? Number(level) : null,

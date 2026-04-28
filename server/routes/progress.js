@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { timingSafeEqual } from 'crypto';
-import { getFirestore } from '../db/firestore.js';
+import { getPool } from '../db/mysql.js';
 import { progressLimiter } from '../middleware/limiters.js';
 
 const router = Router();
@@ -13,15 +13,14 @@ function safeComparePin(a, b) {
 }
 
 async function verifyUser(db, username, pin) {
-  const snap = await db
-    .collection('users')
-    .where('usernameLower', '==', username.toLowerCase())
-    .limit(1)
-    .get();
-  if (snap.empty) return null;
-  const doc = snap.docs[0];
-  if (!safeComparePin(doc.data().pin, pin)) return null;
-  return doc;
+  const [rows] = await db.query(
+    'SELECT id, username, pin FROM users WHERE username_lower = ? LIMIT 1',
+    [username.toLowerCase()]
+  );
+  if (rows.length === 0) return null;
+  const user = rows[0];
+  if (!safeComparePin(user.pin, pin)) return null;
+  return user;
 }
 
 /**
@@ -39,13 +38,16 @@ router.post('/fetch', progressLimiter, async (req, res, next) => {
     if (!username || !pin) {
       return res.status(400).json({ error: 'username and pin are required' });
     }
-    const db = getFirestore();
-    const doc = await verifyUser(db, username, pin);
-    if (!doc) {
+    const db = getPool();
+    const user = await verifyUser(db, username, pin);
+    if (!user) {
       return res.status(401).json({ error: 'Invalid credentials' });
     }
-    const snap = await db.collection('users').doc(doc.id).collection('progress').get();
-    res.json(snap.docs.map(d => d.data()));
+    const [rows] = await db.query(
+      'SELECT category, level, score FROM progress WHERE user_id = ?',
+      [user.id]
+    );
+    res.json(rows);
   } catch (err) {
     next(err);
   }
@@ -80,30 +82,21 @@ router.post('/', progressLimiter, async (req, res, next) => {
       return res.status(400).json({ error: 'score must be 0–200' });
     }
 
-    const db = getFirestore();
-    const doc = await verifyUser(db, username, pin);
-    if (!doc) {
+    const db = getPool();
+    const user = await verifyUser(db, username, pin);
+    if (!user) {
       return res.status(401).json({ error: 'Invalid credentials' });
     }
 
-    const progressRef = db
-      .collection('users')
-      .doc(doc.id)
-      .collection('progress')
-      .doc(category);
-
-    await db.runTransaction(async (tx) => {
-      const existing = await tx.get(progressRef);
-      if (existing.exists) {
-        const d = existing.data();
-        tx.update(progressRef, {
-          level: Math.max(d.level || 0, numLevel),
-          score: (d.score || 0) + numScore,
-        });
-      } else {
-        tx.set(progressRef, { category, level: numLevel, score: numScore });
-      }
-    });
+    // Upsert: insert or update level (take max) and accumulate score
+    await db.query(
+      `INSERT INTO progress (user_id, category, level, score)
+       VALUES (?, ?, ?, ?)
+       ON DUPLICATE KEY UPDATE
+         level  = GREATEST(level, VALUES(level)),
+         score  = score + VALUES(score)`,
+      [user.id, category, numLevel, numScore]
+    );
 
     res.json({ ok: true });
   } catch (err) {
