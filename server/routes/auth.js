@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { timingSafeEqual } from 'crypto';
 import { getPool } from '../db/mysql.js';
 import { authLimiter } from '../middleware/limiters.js';
 
@@ -7,6 +8,13 @@ const router = Router();
 // ── Validation helpers ────────────────────────────────────────────────────────
 const USERNAME_RE = /^[a-zA-Z0-9_\-.]{3,30}$/;
 const PIN_RE = /^\d{4}$/;
+
+function safeComparePin(a, b) {
+  const bufA = Buffer.from(String(a));
+  const bufB = Buffer.from(String(b));
+  if (bufA.length !== bufB.length) return false;
+  return timingSafeEqual(bufA, bufB);
+}
 
 /**
  * POST /auth
@@ -53,7 +61,7 @@ router.post('/', authLimiter, async (req, res, next) => {
 
     // ── Login existing user ──
     const user = rows[0];
-    if (user.pin !== pin) {
+    if (!safeComparePin(user.pin, pin)) {
       return res.status(401).json({
         ok: false,
         error: "Wrong PIN. If this isn't your account, try a different username.",

@@ -101,7 +101,7 @@ router.post('/', scoreLimiter, async (req, res, next) => {
 
       await conn.commit();
     } catch (err) {
-      await conn.rollback();
+      try { await conn.rollback(); } catch (rbErr) { console.error('Rollback failed:', rbErr); }
       throw err;
     } finally {
       conn.release();

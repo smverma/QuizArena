@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { getPool } from '../db/mysql.js';
+import { leaderboardLimiter } from '../middleware/limiters.js';
 
 const router = Router();
 
@@ -13,7 +14,7 @@ const router = Router();
  *   ...
  * ]
  */
-router.get('/', async (req, res, next) => {
+router.get('/', leaderboardLimiter, async (req, res, next) => {
   try {
     const limit = Math.min(Number(req.query.limit) || 50, 100);
     const db = getPool();

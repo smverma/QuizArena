@@ -5,17 +5,24 @@ let pool;
 
 /**
  * Returns the shared MySQL connection pool.
- * The pool is initialised from environment variables:
+ * All connection settings must be provided via environment variables:
  *   DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME
  */
 export function getPool() {
   if (!pool) {
+    const { DB_HOST, DB_USER, DB_PASSWORD, DB_NAME } = process.env;
+    if (!DB_HOST || !DB_USER || !DB_PASSWORD || !DB_NAME) {
+      throw new Error(
+        'Missing required database environment variables. ' +
+        'Please set DB_HOST, DB_USER, DB_PASSWORD, and DB_NAME.'
+      );
+    }
     pool = mysql.createPool({
-      host: process.env.DB_HOST || '34.22.246.245',
+      host: DB_HOST,
       port: Number(process.env.DB_PORT) || 3306,
-      user: process.env.DB_USER,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_NAME,
+      user: DB_USER,
+      password: DB_PASSWORD,
+      database: DB_NAME,
       waitForConnections: true,
       connectionLimit: 10,
       queueLimit: 0,
@@ -77,7 +84,7 @@ export async function checkDbConnectivity() {
     await db.query('SELECT 1');
     console.log(
       'MySQL connectivity OK (host: %s, database: %s)',
-      process.env.DB_HOST || '34.22.246.245',
+      process.env.DB_HOST,
       process.env.DB_NAME
     );
     return true;
