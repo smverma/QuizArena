@@ -5,7 +5,7 @@ import authRoutes from './routes/auth.js';
 import scoresRoutes from './routes/scores.js';
 import leaderboardRoutes from './routes/leaderboard.js';
 import progressRoutes from './routes/progress.js';
-import { checkFirestoreConnectivity } from './db/firestore.js';
+import { checkDbConnectivity, initSchema } from './db/mysql.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -30,17 +30,17 @@ app.use(
 
 app.use(express.json());
 
-// ── Firestore health state ────────────────────────────────────────────────────
-// Tracks whether the startup Firestore connectivity check succeeded.
-// Routes that depend on Firestore check this flag and return 503 immediately
-// instead of letting a Firestore error bubble up as an unhandled 500.
-let firestoreOk = false;
+// ── DB health state ───────────────────────────────────────────────────────────
+// Tracks whether the startup DB connectivity check succeeded.
+// Routes that depend on the DB check this flag and return 503 immediately
+// instead of letting a DB error bubble up as an unhandled 500.
+let dbOk = false;
 
-// ── Middleware: require a reachable Firestore ─────────────────────────────────
-function requireFirestore(_req, res, next) {
-  if (!firestoreOk) {
+// ── Middleware: require a reachable DB ────────────────────────────────────────
+function requireDb(_req, res, next) {
+  if (!dbOk) {
     return res.status(503).json({
-      error: 'Service temporarily unavailable. Firestore is not reachable. Please try again shortly.',
+      error: 'Service temporarily unavailable. Database is not reachable. Please try again shortly.',
     });
   }
   next();
@@ -48,55 +48,45 @@ function requireFirestore(_req, res, next) {
 
 // ── Health endpoint ───────────────────────────────────────────────────────────
 // Always responds so Cloud Run startup and liveness probes succeed even when
-// Firestore is misconfigured.  The `firestore` field lets operators quickly
+// the DB is misconfigured.  The `db` field lets operators quickly
 // see whether the database connectivity check passed.
-app.get('/health', (_req, res) => res.json({ ok: true, firestore: firestoreOk }));
+app.get('/health', (_req, res) => res.json({ ok: true, db: dbOk }));
 
 // ── Routes ────────────────────────────────────────────────────────────────────
-app.use('/auth', requireFirestore, authRoutes);
-app.use('/scores', requireFirestore, scoresRoutes);
-app.use('/leaderboard', requireFirestore, leaderboardRoutes);
-app.use('/progress', requireFirestore, progressRoutes);
+app.use('/auth', requireDb, authRoutes);
+app.use('/scores', requireDb, scoresRoutes);
+app.use('/leaderboard', requireDb, leaderboardRoutes);
+app.use('/progress', requireDb, progressRoutes);
 
 // ── Global error handler ──────────────────────────────────────────────────────
 app.use((err, _req, res, _next) => {
   console.error(err);
-
-  // gRPC NOT_FOUND (5): the Firestore database does not exist in this project.
-  // gRPC UNAVAILABLE (14): Firestore is temporarily unreachable.
-  // Return 503 so callers know the service is temporarily unavailable rather
-  // than treating it as a generic 500 (which suggests an application bug).
-  if (err.code === 5 || err.code === 14) {
-    return res.status(503).json({
-      error: 'Service temporarily unavailable. Please try again shortly.',
-    });
-  }
-
   res.status(err.status || 500).json({ error: err.message || 'Internal server error' });
 });
 
 
-// ── Startup: listen first, then verify Firestore ──────────────────────────────
-// The server always binds to PORT before the Firestore check so that Cloud Run
+// ── Startup: listen first, then verify DB ─────────────────────────────────────
+// The server always binds to PORT before the DB check so that Cloud Run
 // can detect a listening port and complete the startup health check.
 //
 // Set FAIL_FAST_ON_STARTUP=true to restore fail-fast behavior (the process
-// will exit if Firestore is unreachable, which prevents Cloud Run from serving
+// will exit if the DB is unreachable, which prevents Cloud Run from serving
 // any traffic – use this only when a non-functional backend is unacceptable).
 app.listen(PORT, () => {
   console.log(`QuizArena API listening on port ${PORT}`);
 });
 
-const ok = await checkFirestoreConnectivity();
+const ok = await checkDbConnectivity();
 if (ok) {
-  firestoreOk = true;
+  await initSchema();
+  dbOk = true;
 } else {
   if (process.env.FAIL_FAST_ON_STARTUP === 'true') {
-    console.error('FAIL_FAST_ON_STARTUP=true – Exiting: Firestore is not reachable. Fix the configuration errors above and restart.');
+    console.error('FAIL_FAST_ON_STARTUP=true – Exiting: Database is not reachable. Fix the configuration errors above and restart.');
     process.exit(1);
   }
   console.warn(
-    'WARNING: Firestore is not reachable. All data routes will return HTTP 503 until Firestore is available.\n' +
+    'WARNING: Database is not reachable. All data routes will return HTTP 503 until the database is available.\n' +
     'Set FAIL_FAST_ON_STARTUP=true to exit the process instead of serving degraded traffic.'
   );
 }

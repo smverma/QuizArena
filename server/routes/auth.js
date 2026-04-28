@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getFirestore } from '../db/firestore.js';
+import { getPool } from '../db/mysql.js';
 import { authLimiter } from '../middleware/limiters.js';
 
 const router = Router();
@@ -35,29 +35,32 @@ router.post('/', authLimiter, async (req, res, next) => {
       return res.status(400).json({ error: 'PIN must be exactly 4 digits' });
     }
 
-    const db = getFirestore();
-    const usersRef = db.collection('users');
-    const snap = await usersRef.where('usernameLower', '==', usernameLower).limit(1).get();
+    const db = getPool();
+    const [rows] = await db.query(
+      'SELECT id, username, pin, total_score FROM users WHERE username_lower = ? LIMIT 1',
+      [usernameLower]
+    );
 
-    if (snap.empty) {
+    if (rows.length === 0) {
       // ── Register new user ──
       const now = new Date();
-      const docRef = usersRef.doc();
-      await docRef.set({ username, usernameLower, pin, totalScore: 0, createdAt: now, lastLoginAt: now });
+      await db.query(
+        'INSERT INTO users (username, username_lower, pin, total_score, created_at, last_login_at) VALUES (?, ?, ?, 0, ?, ?)',
+        [username, usernameLower, pin, now, now]
+      );
       return res.json({ ok: true, user: { username, totalScore: 0 } });
     }
 
     // ── Login existing user ──
-    const doc = snap.docs[0];
-    const data = doc.data();
-    if (data.pin !== pin) {
+    const user = rows[0];
+    if (user.pin !== pin) {
       return res.status(401).json({
         ok: false,
         error: "Wrong PIN. If this isn't your account, try a different username.",
       });
     }
-    await doc.ref.update({ lastLoginAt: new Date() });
-    return res.json({ ok: true, user: { username: data.username, totalScore: data.totalScore || 0 } });
+    await db.query('UPDATE users SET last_login_at = ? WHERE id = ?', [new Date(), user.id]);
+    return res.json({ ok: true, user: { username: user.username, totalScore: user.total_score || 0 } });
   } catch (err) {
     next(err);
   }
