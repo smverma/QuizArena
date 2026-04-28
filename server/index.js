@@ -35,6 +35,8 @@ app.use(express.json());
 // Routes that depend on Firestore check this flag and return 503 immediately
 // instead of letting a Firestore error bubble up as an unhandled 500.
 let firestoreOk = false;
+// Number of background retry attempts made after a failed startup check.
+let firestoreRetryCount = 0;
 
 // ── Middleware: require a reachable Firestore ─────────────────────────────────
 function requireFirestore(_req, res, next) {
@@ -46,11 +48,35 @@ function requireFirestore(_req, res, next) {
   next();
 }
 
+// ── Background retry loop ─────────────────────────────────────────────────────
+// When the initial Firestore connectivity check fails the service stays up but
+// all data routes return 503.  This loop retries the check every
+// FIRESTORE_RETRY_INTERVAL_MS milliseconds so the service self-heals without
+// requiring a container restart (e.g. after a transient cold-start failure,
+// brief network blip, or IAM token refresh race).
+const FIRESTORE_RETRY_INTERVAL_MS = 30_000;
+
+async function startFirestoreRetryLoop() {
+  while (!firestoreOk) {
+    await new Promise(resolve => setTimeout(resolve, FIRESTORE_RETRY_INTERVAL_MS));
+    firestoreRetryCount += 1;
+    console.log(`Firestore retry attempt ${firestoreRetryCount}…`);
+    const ok = await checkFirestoreConnectivity();
+    if (ok) {
+      firestoreOk = true;
+      const word = firestoreRetryCount === 1 ? 'attempt' : 'attempts';
+      console.log(`Firestore is now reachable after ${firestoreRetryCount} retry ${word}. Resuming normal operation.`);
+    }
+  }
+}
+
 // ── Health endpoint ───────────────────────────────────────────────────────────
 // Always responds so Cloud Run startup and liveness probes succeed even when
 // Firestore is misconfigured.  The `firestore` field lets operators quickly
-// see whether the database connectivity check passed.
-app.get('/health', (_req, res) => res.json({ ok: true, firestore: firestoreOk }));
+// see whether the database connectivity check passed.  `firestoreRetries`
+// shows how many background retry attempts have been made after a failed
+// startup check (non-zero means the service is still in recovery mode).
+app.get('/health', (_req, res) => res.json({ ok: true, firestore: firestoreOk, firestoreRetries: firestoreRetryCount }));
 
 // ── Routes ────────────────────────────────────────────────────────────────────
 app.use('/auth', requireFirestore, authRoutes);
@@ -97,6 +123,11 @@ if (ok) {
   }
   console.warn(
     'WARNING: Firestore is not reachable. All data routes will return HTTP 503 until Firestore is available.\n' +
+    `Retrying every ${FIRESTORE_RETRY_INTERVAL_MS / 1000}s in the background.\n` +
     'Set FAIL_FAST_ON_STARTUP=true to exit the process instead of serving degraded traffic.'
   );
+  // Start the background retry loop – the process stays alive and the loop
+  // keeps running until Firestore becomes reachable.  We intentionally do not
+  // await this; it is meant to run concurrently while the server serves traffic.
+  startFirestoreRetryLoop();
 }
