@@ -23,10 +23,10 @@ export function getFirestore() {
     // which can cause NOT_FOUND errors if the wrong project is resolved.
     if (process.env.GCP_PROJECT_ID) opts.projectId = process.env.GCP_PROJECT_ID;
     // Always set databaseId explicitly so there is never any ambiguity about
-    // which Firestore database is targeted.  Defaults to "(default)" unless
-    // FIRESTORE_DATABASE_ID is provided (e.g. for a named database created via
-    // `gcloud firestore databases create --database=mydb`).
-    opts.databaseId = process.env.FIRESTORE_DATABASE_ID || '(default)';
+    // which Firestore database is targeted.  This project uses the named database
+    // "quiz-free-tier"; override via FIRESTORE_DATABASE_ID if needed (e.g. for a
+    // database created via `gcloud firestore databases create --database=mydb`).
+    opts.databaseId = process.env.FIRESTORE_DATABASE_ID || 'quiz-free-tier';
     // Emulator support: when FIRESTORE_EMULATOR_HOST is set, configure the SDK
     // to connect to it directly (host + ssl:false) for reliable local development.
     if (process.env.FIRESTORE_EMULATOR_HOST) {
